@@ -10,6 +10,13 @@
 \setCJKmainfont{SimSun}  %宋体
 \usepackage{tikzit}  %支持tikzit工具
 \input{sample.tikzstyles}   %导入tikzit样式
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Team \# 77824} 
+\chead{} 
+\rhead{page \thepage\ of \pageref{LastPage}} 
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -75,6 +82,7 @@ theorems-ams
 \topmargin 2.5cm
 \rightmargin 2.5cm
 \bottommargin 2.5cm
+\headsep 0.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -94,10 +102,6 @@ theorems-ams
 \end_header
 
 \begin_body
-
-\begin_layout Standard
-
-\end_layout
 
 \begin_layout Standard
 \begin_inset Note Comment
@@ -131,57 +135,12 @@ filename "first_page.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-目录页无页码
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-目录页无页码
-\end_layout
 
 \end_inset
 
@@ -195,38 +154,12 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{page}{1}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-这一页设为页码的第一页
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Overview
 \end_layout
 
 \begin_layout Standard
-test
+test context of reference
 \begin_inset CommandInset citation
 LatexCommand cite
 key "zynq"
@@ -594,13 +527,6 @@ Evaluations of current regulations
 Disadvantages of current regulations
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Other suggestions
 \end_layout
@@ -635,6 +561,13 @@ Overtaking more than one car
 
 \begin_layout Subsection
 Hidden danger besides overtaking
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
