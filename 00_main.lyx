@@ -1,0 +1,273 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{xeCJK}    %支持中、日、韩语言
+\setCJKmainfont{SimSun}  %宋体
+\usepackage{tikzit}  %支持tikzit工具
+\input{sample.tikzstyles}   %导入tikzit样式
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Team \# 77824} 
+\chead{} 
+\rhead{page \thepage\ of \pageref{LastPage}}
+\cfoot{}                                                
+\rfoot{}                                                     
+\lfoot{}   
+\usepackage{tocbibind}
+\end_preamble
+\use_default_options false
+\begin_modules
+shapepar
+tabs-within-sections
+eqs-within-sections
+figs-within-sections
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style unsrt
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headsep 0.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+1.已经设置按节为公式、图表编号，如：1.1，1.2，1.11等都属于第一节。
+\end_layout
+
+\begin_layout Plain Layout
+2.显示在LyX界面里的公式编号只是一个识别号，并不是生成PDF里实际的编号。
+\end_layout
+
+\begin_layout Plain Layout
+3.编辑main.lyx里的内容时，每次编译点更新主文档即可。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "01_first_page.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+这一页设为第一页
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "02_overview.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "03_notations.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "04_submodules.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "05_model_analyse.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "06_sensitivity_analysis.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "07_model_expansion.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "08_model_evaluation.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "09_conclusion.lyx"
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "reference"
+options "unsrt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset CommandInset include
+LatexCommand include
+filename "10_appendices.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
