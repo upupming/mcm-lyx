@@ -712,7 +712,8 @@ T1
 \end_inset
 
 
-\begin_inset space \thinspace{}
+\begin_inset space \hspace{}
+\length 0.11cm
 \end_inset
 
 
@@ -1320,11 +1321,8 @@ T2
 \end_inset
 
 
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
+\begin_inset space \hspace{}
+\length 0.17cm
 \end_inset
 
 
@@ -1854,11 +1852,8 @@ Problem Chosen
 \end_inset
 
 
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
+\begin_inset space \hspace{}
+\length 0.17cm
 \end_inset
 
 
