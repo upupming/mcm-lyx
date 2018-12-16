@@ -16,7 +16,10 @@
 \pagestyle{fancy}
 \lhead{Team \# 77824} 
 \chead{} 
-\rhead{page \thepage\ of \pageref{LastPage}} 
+\rhead{page \thepage\ of \pageref{LastPage}}
+\cfoot{}                                                
+\rfoot{}                                                     
+\lfoot{}   
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -142,7 +145,7 @@ status open
 
 
 \backslash
-thispagestyle{empty}
+setcounter{page}{1}
 \end_layout
 
 \end_inset
@@ -152,7 +155,7 @@ thispagestyle{empty}
 status open
 
 \begin_layout Plain Layout
-无页码
+这一页设为第一页
 \end_layout
 
 \end_inset
@@ -177,18 +180,6 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pagestyle{fancy}
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
