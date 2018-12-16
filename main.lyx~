@@ -96,15 +96,23 @@ theorems-ams
 \begin_body
 
 \begin_layout Standard
-\begin_inset Note Note
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-1.已经设置按节为公式、图表编号，如：1.1，1.2，1.11等都属于第一节
+1.已经设置按节为公式、图表编号，如：1.1，1.2，1.11等都属于第一节。
 \end_layout
 
 \begin_layout Plain Layout
-2.显示在LyX界面里的公式编号只是一个识别号，并不是生成PDF里实际的编号
+2.显示在LyX界面里的公式编号只是一个识别号，并不是生成PDF里实际的编号。
+\end_layout
+
+\begin_layout Plain Layout
+3.编辑main.lyx里的内容时，每次编译点更新主文档即可。
 \end_layout
 
 \end_inset

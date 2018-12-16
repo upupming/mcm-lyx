@@ -1,2 +1,2 @@
 # mcm
-mcm paper project
+mcm paper project of LyX.
