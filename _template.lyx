@@ -28,9 +28,9 @@
 \language_package none
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "default"
-\font_sans "default" "default"
-\font_typewriter "default" "default"
+\font_roman "default" "Times New Roman"
+\font_sans "default" "Times New Roman"
+\font_typewriter "default" "Times New Roman"
 \font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts true
@@ -47,7 +47,7 @@
 \index_command default
 \float_placement h
 \paperfontsize default
-\spacing single
+\spacing onehalf
 \use_hyperref false
 \papersize default
 \use_geometry true
