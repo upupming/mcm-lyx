@@ -5,6 +5,10 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
+\begin_preamble
+\usepackage{graphicx}
+\usepackage{subcaption}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -29,6 +33,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +49,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -111,7 +117,21 @@ Under different weather condition
 Traffic flow analysis
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+This is a demo for including pictures:
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "coffee.tex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
 Safety degree analysis
 \end_layout
 
@@ -121,6 +141,56 @@ Results
 
 \begin_layout Subsubsection
 Evaluations of current regulations
+\end_layout
+
+\begin_layout Standard
+Inline citation equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+fx\label{eq:1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+fx\label{eq:1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Citation from included files: figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:coffee3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
