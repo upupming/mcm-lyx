@@ -54,7 +54,7 @@ theorems-ams
 \index_command default
 \float_placement h
 \paperfontsize 12
-\spacing onehalf
+\spacing single
 \use_hyperref false
 \papersize a4paper
 \use_geometry true

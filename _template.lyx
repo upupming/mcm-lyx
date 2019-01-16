@@ -47,7 +47,7 @@
 \index_command default
 \float_placement h
 \paperfontsize default
-\spacing onehalf
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry true
