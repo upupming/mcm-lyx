@@ -94,6 +94,32 @@ figs-within-sections
 \begin_body
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+表示这一页不要页码
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 For office use only 
 \begin_inset space \thinspace{}
 \end_inset
@@ -2597,13 +2623,7 @@ textbf{
 
 	
 \backslash
-small{
-\backslash
-quad 
-\backslash
-quad 
-\backslash
-quad 2019 Mathematical Contest in Modeling(MCM) Summary Sheet}
+small{2019 Mathematical Contest in Modeling(MCM) Summary Sheet}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2636,13 +2656,6 @@ newpage
 relax
 \backslash
 maketitle}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
 \end_layout
 
 \end_inset

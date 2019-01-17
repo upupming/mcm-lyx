@@ -14,13 +14,15 @@
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{Team \# 77824} 
+\lhead{Team \# 1911426} 
 \chead{} 
 \rhead{page \thepage\ of \pageref{LastPage}}
 \cfoot{}                                                
 \rfoot{}                                                     
 \lfoot{}   
 \usepackage{tocbibind}
+\usepackage{graphicx}
+\usepackage{subcaption}
 \end_preamble
 \use_default_options false
 \begin_modules
