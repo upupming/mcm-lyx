@@ -167,6 +167,19 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+遇到陌生的单词、约定俗成的语法记得加入 glossary.md 中，方便大家后续阅读文献、术语统一。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -185,7 +198,7 @@ LatexCommand tableofcontents
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "02_overview.lyx"
+filename "02_introduction.lyx"
 
 \end_inset
 
@@ -195,7 +208,7 @@ filename "02_overview.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "03_notations.lyx"
+filename "03_assumptions_and_notations.lyx"
 
 \end_inset
 
@@ -215,7 +228,7 @@ filename "04_submodules.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "05_model_analyse.lyx"
+filename "05_results.lyx"
 
 \end_inset
 

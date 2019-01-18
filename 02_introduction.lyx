@@ -95,14 +95,24 @@
 \begin_body
 
 \begin_layout Section
-Overview
+Introduction
 \end_layout
 
 \begin_layout Standard
-test context of reference
+A freeway is a controlled-access highway designed for high-speed vehicles.
+ It provides an unhindered flow of traffic with no traffic lights or intersectio
+ns.
+ The Keep-Right-Except-To-Pass (KRETP) rule, also known as “Slower Traffic
+ Keep Right,” is often employed in right-hand traffic to raise traffic flow.
+ In this paper, we simulate different rules for overtaking and compare them
+ so as to attempt to find an optimal rule.
+\end_layout
+
+\begin_layout Standard
+Test context of reference
 \begin_inset CommandInset citation
 LatexCommand cite
-key "zynq"
+key "L-zynq"
 literal "false"
 
 \end_inset
@@ -133,7 +143,20 @@ F=ma
 
 \end_inset
 
-
+HF radio waves can be transmitted in the following three modes: skywave,
+ ground wave, direct wave [1].
+ The "Multi-hop HF Radio propagation" referred in the MCM’s problem A is
+ an application of sky wave.
+ Skywave which we use in our model is propagated relying the ionosphere
+ which is the high-level (80 to 1000 kilometers above the ground) atmosphere
+ ionized by solar radiation [6].
+ Because of the multiple reflections off the ionosphere and off the earth,
+ its propagation distance can be very far, generally more than 9600 kilometers
+ [2].
+ The disad-vantage is that it is affected by the climate and the transmission
+ signal is very unstable.
+ The short-wave frequency band is the best of the skywave propagation.
+ Figure 1 displays the propagation mode.
 \end_layout
 
 \begin_layout Subsection
@@ -146,7 +169,7 @@ This is a figure:
 
 \begin_layout Standard
 \begin_inset Float figure
-placement h
+placement H
 wide false
 sideways false
 status open
@@ -176,11 +199,25 @@ Flowchart
 
 \end_inset
 
+We are required to build a mathematical model to analyze the performance
+ of KRETP and alternative rules.
+ We have two subproblems:
+\end_layout
 
+\begin_layout Itemize
+Build a model that can simulate the overtaking process.
+\end_layout
+
+\begin_layout Itemize
+Propose mathematical criteria to determine the performance of a rule.
+ In the first step, we build a model with inputs such as the speed limit
+ plus other factors.
+ In the second step, we consider the tradeoff between traffic flow, safety,
+ and other factors.
 \end_layout
 
 \begin_layout Subsection
-Literature Review and Our Work
+Literature Review
 \end_layout
 
 \begin_layout Standard
@@ -192,6 +229,51 @@ X=\intop_{t_{0}}^{t}vdt
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Nagel and Schreckenberg [1992] built a model to simulate freeway traffic,
+ a simple cellular automaton model known as the “N-S model.” They defined
+ a one-dimensional lane.
+ In their model, each site may be occupied byone vehicle or else be empty.
+ Each vehicle hasan integer velocitybetween 0 and vmax.
+ At each time step, four sub-steps are performed: acceleration, slowing
+ down, random speeding or slowing, and car motion.
+\end_layout
+
+\begin_layout Standard
+Rickert et al.
+ [1996] introduced a model with two parallel lanes.
+ Several conditions have to be fulfilled before a vehicle changes lanes:
+\end_layout
+
+\begin_layout Itemize
+no other vehicle is in the way,
+\end_layout
+
+\begin_layout Itemize
+other lanes are better, and
+\end_layout
+
+\begin_layout Itemize
+no collision will occur.
+\end_layout
+
+\begin_layout Standard
+They too simulated using a cellular automaton, with reasonable results.
+\end_layout
+
+\begin_layout Standard
+A multi-lane model does not have to be lane-symmetric.
+ Differences may include different speed limits on each lane, different
+ kinds of vehicles, etc.
+ Chowdhuryet al.
+ [1997] created a model with different kinds of vehicles with different
+ maximum speeds.
+ They showed that even if the share of “slow cars” is relatively low, “fast
+ cars” can move only at a low speed.
+ However, Knospe and Santen [1999] suggested that the influence of “slow
+ cars” might have been overestimated.
 \end_layout
 
 \end_body

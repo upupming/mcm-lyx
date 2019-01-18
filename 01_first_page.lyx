@@ -2617,7 +2617,7 @@ newline
 
 	
 \backslash
-LARGE{Title of the Paper}
+LARGE{Keep Right to Keep “Right”}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2651,54 +2651,75 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Abstract
-HF radio waves will reflect several times between ionosphere and ocean surface
- to spread the information in a special direction.
- However, the characteristics of the ocean surface will influence its propagatio
-n a lot, which will complicate the situation.In order to study the rules
- of the transmission of HF radio waves, we first analyze the loss in each
- process, including launching, receiving and propagating.
- Next, we build three sub-models to discuss the three main processes in
- the sky-wave transmission.
+
+\series bold
+Our goal is a model to
+\series default
+ evaluate the performance of the keep-right-exceptto- pass (KRETP) rule
+ and other alternatives, by simulating the traffic flow on a freeway.
+ We construct models to analyze five influencing factors.
+ Then we integrate multiple criteria to judge the performance of nine rules
+ using a fuzzy synthetic evaluation (FSE).
 \end_layout
 
 \begin_layout Abstract
-In Sub-model I, we analyze the reflection and transmission of HF radio waves
- in ionosphere.
- We can calculate the value of MUF in a given condition, which is 10.99Hz.
- Our sub-model manifests that the higher the frequency of HF radio waves
- and the smaller the angle of incidence, the far less the loss caused by
- ionosphere.
+
+\series bold
+Our basic model focuses on
+\series default
+ lane-changing behavior, an essential component of overtaking (passing).
 \end_layout
 
 \begin_layout Abstract
-In Sub-model II, we discuss the differences of the reflection on between
- the calm and turbulent ocean surface.
- In the calm ocean situation,the loss is extremely small because the Fresnell
- reflection coefficient nearly equals to 1.Yet in the turbulent ocean, we
- can merely consider it as diffuse.
- Aimed to simplify the model, we take advantage of the sine function to
- simulate the shape of ocean waves, and get the probable density of reflection
- power in different angles.We find the reflection power on the turbulent
- surface is almost 100 times smaller than that on calm surface.
- 
+
+\series bold
+We extend our model
+\series default
+ with a cellular automaton-based approach.
+ We assume that the drivers will change the lane with a specific probability
+ if trigger and safety conditions are satisfied.
+ We simulate traffic flow on a long section of a freeway, controlling occupancy,
+ varying the number of lanes, maximum speed limit, minimum speed limit,
+ and signaling behavior.
 \end_layout
 
 \begin_layout Abstract
-In Sub-model III, we tend to consider a signal received by the ship in the
- turbulent ocean.
- First we assume a situation in the twodimensional space.
- Comparing to the signal reception on the calm ocean, we find: 1 the receivable
- distance will be shorter.
- 2 the receiving power intensity is unstable because the ocean is choppy
- causing the swing of the antenna.
+
+\series bold
+In addition to KRETP, we examine four other rules
+\series default
+ by revising the laws governing the cells in the cellular automaton.
+ Then we design five improved rules.
 \end_layout
 
 \begin_layout Abstract
-The sensitivity analysis of our model has pointed out that the MUF varies
- in different periods while the value is greater in the daytime and smaller
- at night.
- Also we find that the height of the ocean waves is not an important factor
- for the power of reflecting radio waves.
+We choose flow rate and average speed as traffic flow criteria, sharp braking
+ frequency as a safety criterion, and satisfaction and standard deviation
+ of speed as experience criteria.
+ Then we use a fuzzy synthetic evaluation technique to integrate these criteria
+ to determine the performance of each rule.
+ We find that in a light traffic, a partial-assigned-lane-and-keep-rightrule
+ performs the best, while in heavy traffic, a different-speed-limit-on-each-lane
+ rule is preferred.
+\end_layout
+
+\begin_layout Abstract
+We 
+\series bold
+change the probability of lane-changing
+\series default
+ to adjust our model to a country such as Great Britain.Moreover, we also
+ simulate a freeway fully controlled by an intelligent system.
+\end_layout
+
+\begin_layout Abstract
+Additionally, we 
+\series bold
+refine our extended model
+\series default
+ by considering the on- and off-ramps.
+ We adopt open boundary conditions and assume that the vehicles flowing
+ in are Poisson-distributed.
 \end_layout
 
 \begin_layout Standard

@@ -82,7 +82,7 @@
 \begin_body
 
 \begin_layout Section
-Model analyse
+Results
 \end_layout
 
 \begin_layout Subsection
@@ -133,10 +133,6 @@ filename "coffee.tex"
 
 \begin_layout Paragraph
 Safety degree analysis
-\end_layout
-
-\begin_layout Subsection
-Results
 \end_layout
 
 \begin_layout Subsubsection

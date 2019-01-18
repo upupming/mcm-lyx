@@ -76,255 +76,114 @@
 \begin_body
 
 \begin_layout Section
-Sub-model I:Analyse traffic flow towards continuous velocity field while
- overtaking
+The Keep-Right-Except-To-Pass Model
+\end_layout
+
+\begin_layout Subsection
+The Basic Lane-changing Model
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-U=IR
-\end{equation}
-
-\end_inset
-
-
+The basic model is a microscopic approach.
+ A typical overtaking behavior consists of five actions:
 \end_layout
 
-\begin_layout Subsection
-Assumption
+\begin_layout Itemize
+signal for three seconds,
 \end_layout
 
-\begin_layout Subsection
-Establishment
+\begin_layout Itemize
+change lane,
+\end_layout
+
+\begin_layout Itemize
+accelerate,
+\end_layout
+
+\begin_layout Itemize
+signal back, and
+\end_layout
+
+\begin_layout Itemize
+change back to the former lane.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-A test table
+Among these actions, lane-changing is the most crucial part.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Subsubsection
+Changing to the Left Lane
 \end_layout
 
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="6">
-<features booktabs="true" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
+\begin_layout Standard
+There are two main considerations [Chowdhury et al.
+ 1997]:
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2
+\begin_layout Itemize
+a reason or a trigger consideration, and
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3
+\begin_layout Itemize
+a safety consideration.
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4
+\begin_layout Standard
+The former means that the vehicle ahead moves slowly enough, triggering
+ the driver to overtake it.
+ The latter indicates that the driver will take safety into account.
+ In other words, if there is a high-speed vehicle driving on the left lane,
+ the driver will choose to stay in the current lane to avoid collision.
+ Based on these considerations, we can introduce some mathematical intuition
+ into the problem.
+ Figure 1 illustrates the situation that the red (dark) car intends to change
+ to the left lane.
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-parameter1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-parameter2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Sub-model II:Evaluation of safety degree towards an individual vehicle while
- overtaking
+\begin_layout Subsubsection
+Changing back to the right Lane
 \end_layout
 
 \begin_layout Subsection
-Assumption
+The Extended “Ring Road” Model
+\end_layout
+
+\begin_layout Subsubsection
+Assumptions of the Model
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Assumption.
+ 
+\series default
+Why.
+\end_layout
+
+\begin_layout Itemize
+...
+\end_layout
+
+\begin_layout Subsubsection
+Characteristics of Vehicles
+\end_layout
+
+\begin_layout Subsubsection
+Laws Governing the Cellular Automaton
+\end_layout
+
+\begin_layout Subsubsection
+Modeling Using Periodic Boundary Conditions
 \end_layout
 
 \begin_layout Subsection
-Establishment
+The Refined Model with Ramps
 \end_layout
 
-\begin_layout Section
-Sub-model III:Evaluation of overall safety degree towards continuous velocity
- field while overtaking
+\begin_layout Standard
+
 \end_layout
 
 \end_body
