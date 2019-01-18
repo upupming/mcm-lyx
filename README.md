@@ -12,8 +12,11 @@ mcm paper template for LyX.
 - 02_...
 - ... 子文档，文件名都是自解释的
 - 10_appendices.lyx
-- glossary.md 术语表
 ```
+
+## Glossary
+
+See https://docs.qq.com/sheet/DTFJVWkJDbnRVYmtZ?tab=BB08J2
 
 ## Tips
 
