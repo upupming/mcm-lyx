@@ -86,43 +86,13 @@ Assumptions and Justifications
 \begin_layout Itemize
 
 \series bold
-No pedestrian can affect the vehicles on freeways.
+We assume the source signals are sparse.
 
 \series default
- Usually, pedestrians have no access to freeways, let alone crossing a freeway.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-We ignore crosswinds during overtaking.
-
-\series default
- This impact is negligible compared with that of the headwind.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Drivers cannot drive in the emergency lane or on the shoulder.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-The freeway is completely flat and straight, with no curves or slopes.
-
-\series default
- This assumption allows us to focus on the nature of overtaking.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-We assume that all drivers act based on the same set of rules.
-
-\series default
- Drivers may be aggressive or not, but both groups follow the same rules.
+ If the input distribution is sparse, the mixing matrix can be estimated
+ either by external optimization or by clustering.Yet, when the signals per
+ se do not satisfy this assumption, sparsity can still be achieved by realizing
+ the separation in a sparser transformed domain.
 \end_layout
 
 \begin_layout Subsection
@@ -149,6 +119,18 @@ placement H
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Notations
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -223,9 +205,6 @@ Contants
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\lambda$
-\end_inset
-
 
 \end_layout
 
@@ -235,7 +214,7 @@ Contants
 \begin_inset Text
 
 \begin_layout Plain Layout
-Mean of Poisson distribution
+
 \end_layout
 
 \end_inset
@@ -244,7 +223,7 @@ Mean of Poisson distribution
 \begin_inset Text
 
 \begin_layout Plain Layout
-unitless
+
 \end_layout
 
 \end_inset
@@ -255,9 +234,6 @@ unitless
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $p_{slow}$
-\end_inset
-
 
 \end_layout
 
@@ -267,7 +243,7 @@ unitless
 \begin_inset Text
 
 \begin_layout Plain Layout
-Probability that a vehicle slows down randomly
+
 \end_layout
 
 \end_inset
@@ -276,7 +252,7 @@ Probability that a vehicle slows down randomly
 \begin_inset Text
 
 \begin_layout Plain Layout
-unitless
+
 \end_layout
 
 \end_inset
@@ -287,9 +263,6 @@ unitless
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $p_{left}$
-\end_inset
-
 
 \end_layout
 
@@ -299,7 +272,7 @@ unitless
 \begin_inset Text
 
 \begin_layout Plain Layout
-Probability that a vehicle shifts to the left lane when possible
+
 \end_layout
 
 \end_inset
@@ -308,7 +281,7 @@ Probability that a vehicle shifts to the left lane when possible
 \begin_inset Text
 
 \begin_layout Plain Layout
-unitless
+
 \end_layout
 
 \end_inset
@@ -350,9 +323,6 @@ Variables
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $v_{s}$
-\end_inset
-
 
 \end_layout
 
@@ -362,10 +332,6 @@ Variables
 \begin_inset Text
 
 \begin_layout Plain Layout
-Speed of vehicle 
-\begin_inset Formula $s$
-\end_inset
-
 
 \end_layout
 
@@ -375,7 +341,7 @@ Speed of vehicle
 \begin_inset Text
 
 \begin_layout Plain Layout
-cell/time step
+
 \end_layout
 
 \end_inset
@@ -386,9 +352,6 @@ cell/time step
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $v_{expect}$
-\end_inset
-
 
 \end_layout
 
@@ -398,10 +361,6 @@ cell/time step
 \begin_inset Text
 
 \begin_layout Plain Layout
-Expected speed of vehicle 
-\begin_inset Formula $s$
-\end_inset
-
 
 \end_layout
 
@@ -411,7 +370,7 @@ Expected speed of vehicle
 \begin_inset Text
 
 \begin_layout Plain Layout
-cell/time step
+
 \end_layout
 
 \end_inset
@@ -425,15 +384,6 @@ cell/time step
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Notations
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset label
 LatexCommand label
 name "table-notations"

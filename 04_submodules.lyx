@@ -76,106 +76,101 @@
 \begin_body
 
 \begin_layout Section
-The Keep-Right-Except-To-Pass Model
+Model establishment
+\end_layout
+
+\begin_layout Standard
+As problem set forth, the system contains five inputs and three outputs.
+ For the number of output is less than input, it is a Underdetermined Blind
+ Source Separation (UBSS) problem.
+ We can solve this kind of problem using clustering method.
 \end_layout
 
 \begin_layout Subsection
-The Basic Lane-changing Model
-\end_layout
-
-\begin_layout Standard
-The basic model is a microscopic approach.
- A typical overtaking behavior consists of five actions:
-\end_layout
-
-\begin_layout Itemize
-signal for three seconds,
-\end_layout
-
-\begin_layout Itemize
-change lane,
-\end_layout
-
-\begin_layout Itemize
-accelerate,
-\end_layout
-
-\begin_layout Itemize
-signal back, and
-\end_layout
-
-\begin_layout Itemize
-change back to the former lane.
-\end_layout
-
-\begin_layout Standard
-Among these actions, lane-changing is the most crucial part.
-\end_layout
-
-\begin_layout Subsubsection
-Changing to the Left Lane
-\end_layout
-
-\begin_layout Standard
-There are two main considerations [Chowdhury et al.
- 1997]:
-\end_layout
-
-\begin_layout Itemize
-a reason or a trigger consideration, and
-\end_layout
-
-\begin_layout Itemize
-a safety consideration.
-\end_layout
-
-\begin_layout Standard
-The former means that the vehicle ahead moves slowly enough, triggering
- the driver to overtake it.
- The latter indicates that the driver will take safety into account.
- In other words, if there is a high-speed vehicle driving on the left lane,
- the driver will choose to stay in the current lane to avoid collision.
- Based on these considerations, we can introduce some mathematical intuition
- into the problem.
- Figure 1 illustrates the situation that the red (dark) car intends to change
- to the left lane.
-\end_layout
-
-\begin_layout Subsubsection
-Changing back to the right Lane
+The filter Model
 \end_layout
 
 \begin_layout Subsection
-The Extended “Ring Road” Model
+The BSS Model
 \end_layout
 
 \begin_layout Subsubsection
-Assumptions of the Model
+Mathematical expression of UBSS problem
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+Let 
+\begin_inset Formula $X^{t}$
+\end_inset
 
-\series bold
-Assumption.
- 
-\series default
-Why.
+ be an 
+\begin_inset Formula $M$
+\end_inset
+
+-dimensional column vector corresponding to the output of 
+\begin_inset Formula $M$
+\end_inset
+
+ sensors at a given discrete time instant 
+\begin_inset Formula $t$
+\end_inset
+
+, and let 
+\begin_inset Formula $X$
+\end_inset
+
+ be an 
+\begin_inset Formula $M\times T$
+\end_inset
+
+ matrix corresponding to the sensor data at all times 
+\begin_inset Formula $t=1,...,T$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $S$
+\end_inset
+
+ be the 
+\begin_inset Formula $N\times T$
+\end_inset
+
+ matrix of underlying source signals and let 
+\begin_inset Formula $A$
+\end_inset
+
+ be the 
+\begin_inset Formula $M\times N$
+\end_inset
+
+ mixing matrix.
+ The problem of blind source separation consist of finding the solution
+ to the following system of equations:
 \end_layout
 
-\begin_layout Itemize
-...
-\end_layout
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X=AS
+\end{equation}
 
-\begin_layout Subsubsection
-Characteristics of Vehicles
-\end_layout
+\end_inset
 
-\begin_layout Subsubsection
-Laws Governing the Cellular Automaton
-\end_layout
+Because we have no information about the source signals or the mixing process,
+ matrix 
+\begin_inset Formula $A$
+\end_inset
 
-\begin_layout Subsubsection
-Modeling Using Periodic Boundary Conditions
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ are unknown (We assume the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ is of full rank).
 \end_layout
 
 \begin_layout Subsection
