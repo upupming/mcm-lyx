@@ -99,72 +99,22 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-A freeway is a controlled-access highway designed for high-speed vehicles.
- It provides an unhindered flow of traffic with no traffic lights or intersectio
-ns.
- The Keep-Right-Except-To-Pass (KRETP) rule, also known as “Slower Traffic
- Keep Right,” is often employed in right-hand traffic to raise traffic flow.
- In this paper, we simulate different rules for overtaking and compare them
- so as to attempt to find an optimal rule.
-\end_layout
-
-\begin_layout Standard
-Test context of reference
-\begin_inset CommandInset citation
-LatexCommand cite
-key "L-zynq"
-literal "false"
+For humans, it is very easy to switch attention between multiple sound sources.
+ It is so easy that we cannot even feel the existence of this process.
+ Unfortunately, machines are hard to achieve the same intelligence as humans.
+ So far, a computer can recognize a single speech signal with high precision,
+ but it cannot handle the case of multiple sound mixing.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Fig1.1:Schematic diagram of multiple sound mixing"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Subsection
-Background
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-E=mc^{2}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-F=ma
-\end{equation}
-
-\end_inset
-
-HF radio waves can be transmitted in the following three modes: skywave,
- ground wave, direct wave [1].
- The "Multi-hop HF Radio propagation" referred in the MCM’s problem A is
- an application of sky wave.
- Skywave which we use in our model is propagated relying the ionosphere
- which is the high-level (80 to 1000 kilometers above the ground) atmosphere
- ionized by solar radiation [6].
- Because of the multiple reflections off the ionosphere and off the earth,
- its propagation distance can be very far, generally more than 9600 kilometers
- [2].
- The disad-vantage is that it is affected by the climate and the transmission
- signal is very unstable.
- The short-wave frequency band is the best of the skywave propagation.
- Figure 1 displays the propagation mode.
-\end_layout
-
-\begin_layout Subsection
-Restatement of the problem
-\end_layout
-
-\begin_layout Standard
-This is a figure:
+ shows the scenario we discussed.
 \end_layout
 
 \begin_layout Standard
@@ -176,9 +126,9 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset CommandInset include
-LatexCommand include
-filename "figures/03_flowchart.tex"
+\begin_inset Graphics
+	filename figures/Introduction：Auditory scene.png
+	scale 50
 
 \end_inset
 
@@ -186,11 +136,19 @@ filename "figures/03_flowchart.tex"
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Flowchart
+Schematic diagram of multiple sound mixing
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Fig1.1:Schematic diagram of multiple sound mixing"
 
 \end_inset
 
@@ -199,21 +157,73 @@ Flowchart
 
 \end_inset
 
-We are required to build a mathematical model to analyze the performance
- of KRETP and alternative rules.
- We have two subproblems:
+
+\end_layout
+
+\begin_layout Subsection
+Background
+\end_layout
+
+\begin_layout Standard
+The Cocktail Party Problem (CPP), first proposed by 
+\shape italic
+Colin Cherry
+\shape default
+ in 1953
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Z-Introduction-MIT"
+literal "false"
+
+\end_inset
+
+.
+ It is a psychoacoustic phenomenon that refers to the remarkable human ability
+ to selectively attend to and recognize one source of auditory input in
+ a noisy environment, where the hearing interference is produced by competing
+ speech sounds or a variety of noises that are often assumed to be independent
+ of each other.
+ To unveil the mystery and imitate the human performance with a machine,
+ scientists have attempted to view and simplify this complex perceptual
+ task as a learning problem, for which tractable computational solutions
+ are sought.
+ One of the most efficient solutions is Blind Source Separation (BSS).
+\end_layout
+
+\begin_layout Standard
+Blind source separation, also known as blind signal separation, is a method
+ of the separation of a set of source signals from a set of mixed signals
+ without the aid of information about the source signals or the mixing process.
+ The BSS problem is usually divided into two categories: overdetermined
+ blind source separation and underdetermined blind source separation.
+\end_layout
+
+\begin_layout Subsection
+Restatement of the problem
+\end_layout
+
+\begin_layout Standard
+The problem simplified CPP into a system that can input five sound signals
+ and then output three sound signals.
+ Any one of the output signals is a linear combination of five input signals.
+ Without any information except three output signals, we aim to estimate
+ the five signals input.
+\end_layout
+
+\begin_layout Standard
+We reorganize the issue into the following tasks:
 \end_layout
 
 \begin_layout Itemize
-Build a model that can simulate the overtaking process.
+Get the sound we want and shield the rest of the noise;
 \end_layout
 
 \begin_layout Itemize
-Propose mathematical criteria to determine the performance of a rule.
- In the first step, we build a model with inputs such as the speed limit
- plus other factors.
- In the second step, we consider the tradeoff between traffic flow, safety,
- and other factors.
+Estimate and restore the five signals input;
+\end_layout
+
+\begin_layout Itemize
+Extend the model to be able to determine the number of signals.
 \end_layout
 
 \begin_layout Subsection
@@ -221,59 +231,99 @@ Literature Review
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-X=\intop_{t_{0}}^{t}vdt
-\end{equation}
+The research on BSS began in 1986
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Z-Introduction-11"
+literal "false"
 
 \end_inset
 
+.
+ The French scholars 
+\shape italic
+Herault
+\shape default
+ and
+\shape italic
+ Jutten
+\shape default
+ proposed a feedback neural network model and a Hebb learning rule-based
+ H-J algorithm to successfully implement two source signals' separation,
+ which is based on a linear mixing model.
+ Subsequently, 
+\shape italic
+E.Sorouchyari
+\shape default
+ and 
+\shape italic
+P.Comon
+\shape default
+ et al.
+ systematically proved the convergence and stability of the algorithm, which
+ promoted the development of BSS
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Z-Introduction-12,Z-Introduction-13"
+literal "false"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Nagel and Schreckenberg [1992] built a model to simulate freeway traffic,
- a simple cellular automaton model known as the “N-S model.” They defined
- a one-dimensional lane.
- In their model, each site may be occupied byone vehicle or else be empty.
- Each vehicle hasan integer velocitybetween 0 and vmax.
- At each time step, four sub-steps are performed: acceleration, slowing
- down, random speeding or slowing, and car motion.
+In 1991, 
+\shape italic
+L.Tong 
+\shape default
+pointed out that the reconstructed signal obtained by BSS remains the original
+ waveform characteristics
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Z-Introduction-identifiability"
+literal "false"
+
+\end_inset
+
+.Thus it ensures the information of the source signals is not lost.
+ It guaranteed the solvability of BSS problem.
 \end_layout
 
 \begin_layout Standard
-Rickert et al.
- [1996] introduced a model with two parallel lanes.
- Several conditions have to be fulfilled before a vehicle changes lanes:
-\end_layout
+In 2001, 
+\shape italic
+Bofill
+\shape default
+ and 
+\shape italic
+Zibulivsky
+\shape default
+ et al.
+ proposed a method for the underdetermined BSS problem based on 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Itemize
-no other vehicle is in the way,
-\end_layout
+two-stage
+\begin_inset Quotes erd
+\end_inset
 
-\begin_layout Itemize
-other lanes are better, and
-\end_layout
 
-\begin_layout Itemize
-no collision will occur.
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Z-Introduction-TwoStage"
+literal "false"
 
-\begin_layout Standard
-They too simulated using a cellular automaton, with reasonable results.
-\end_layout
+\end_inset
 
-\begin_layout Standard
-A multi-lane model does not have to be lane-symmetric.
- Differences may include different speed limits on each lane, different
- kinds of vehicles, etc.
- Chowdhuryet al.
- [1997] created a model with different kinds of vehicles with different
- maximum speeds.
- They showed that even if the share of “slow cars” is relatively low, “fast
- cars” can move only at a low speed.
- However, Knospe and Santen [1999] suggested that the influence of “slow
- cars” might have been overestimated.
+.
+ The first stage uses the potential function to recover mixing matrix.
+ The second stage is based on the mixing matrix obtained in the first stage,
+ and separate the source signals by the shortest path decomposition 
+\shape italic
+method
+\shape default
+.
 \end_layout
 
 \end_body
