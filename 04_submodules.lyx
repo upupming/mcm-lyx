@@ -91,7 +91,7 @@ The filter Model
 \end_layout
 
 \begin_layout Subsection
-The BSS Model
+The UBSS Model
 \end_layout
 
 \begin_layout Subsubsection
@@ -100,7 +100,7 @@ Mathematical expression of UBSS problem
 
 \begin_layout Standard
 Let 
-\begin_inset Formula $X^{t}$
+\begin_inset Formula $\mathbf{X}^{t}$
 \end_inset
 
  be an 
@@ -116,7 +116,7 @@ Let
 \end_inset
 
 , and let 
-\begin_inset Formula $X$
+\begin_inset Formula $\mathbf{X}$
 \end_inset
 
  be an 
@@ -129,7 +129,7 @@ Let
 
 .
  Let 
-\begin_inset Formula $S$
+\begin_inset Formula $\mathbf{S}$
 \end_inset
 
  be the 
@@ -137,7 +137,7 @@ Let
 \end_inset
 
  matrix of underlying source signals and let 
-\begin_inset Formula $A$
+\begin_inset Formula $\mathbf{A}$
 \end_inset
 
  be the 
@@ -152,32 +152,372 @@ Let
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X=AS
+\mathbf{X=AS}\label{eq:3.1}
 \end{equation}
 
 \end_inset
 
 Because we have no information about the source signals or the mixing process,
  matrix 
-\begin_inset Formula $A$
+\begin_inset Formula $\mathbf{A}$
 \end_inset
 
  and 
-\begin_inset Formula $S$
+\begin_inset Formula $\mathbf{S}$
 \end_inset
 
- are unknown (We assume the matrix 
-\begin_inset Formula $A$
+ are unknown (We assume matrix 
+\begin_inset Formula $\boldsymbol{\mathbf{A}}$
 \end_inset
 
  is of full rank).
 \end_layout
 
-\begin_layout Subsection
-The Refined Model with Ramps
+\begin_layout Standard
+Our step is to recover blind mixing matrix 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ first and then estimate source signals matrix 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+The recovery of blind mixing matrix
 \end_layout
 
 \begin_layout Standard
+We can decompose Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ into 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathbf{x^{\mathit{t}}}=\sum_{j=1}^{N}\mathbf{a^{\mathit{j}}}s_{j}^{t}\label{eq:3.2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We definite 
+\begin_inset Formula $\mathbf{a^{\mathit{j}}}$
+\end_inset
+
+ is a column vector of 
+\begin_inset Formula $M\times N$
+\end_inset
+
+ mixing matrix 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $s_{j}^{t}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ is the 
+\begin_inset Formula $jth$
+\end_inset
+
+ component of the vector 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+ at time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\mathbf{x^{\mathit{t}}}$
+\end_inset
+
+ is the output vector at time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Following from Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, if only one of the sources (say, source 
+\begin_inset Formula $i$
+\end_inset
+
+) was different from zero, then all 
+\begin_inset Formula $\mathbf{x^{\mathit{t}}}$
+\end_inset
+
+ would be propertional to 
+\begin_inset Formula $\mathbf{a}^{i}$
+\end_inset
+
+ and all data points in mixture space would be aligned along the direction
+ of this basis vector.
+ When the sources are sparse, for a given data point 
+\begin_inset Formula $t$
+\end_inset
+
+, if one of the sources is significantly larger, the remaining ones are
+ likely to be close to zero.
+ Thus, the density of data in mixture space shows a clear tendency to cluster
+ along the directions of the basis vectors 
+\begin_inset Formula $\mathbf{a}^{j}$
+\end_inset
+
+'s.
+\end_layout
+
+\begin_layout Standard
+Estimating the mixing matrix, then, consist of finding the directions of
+ maximum data density.
+ The directions is determined by column vectors 
+\begin_inset Formula $\mathbf{a}^{j}$
+\end_inset
+
+ of mixing matrix 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ We can determine the directions of maximun data density by using k-means
+ clustering algorithm.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+这里一鸣可以再加入一点k-means算法的原理
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+The estimation of source signals
+\end_layout
+
+\begin_layout Standard
+As it is an underdetermined system, Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are underdetermined equations.
+ Even when mixing matrix 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+is known, the solution of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is not unique.
+ Our approach to sparse UBSS consist of finding the solution that minimizes
+ the 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ norm.
+\end_layout
+
+\begin_layout Standard
+In the case that blind mixing matrix 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ is known, the problem of inferring the source can be formulated independently
+ for each data point 
+\begin_inset Formula $x^{t}$
+\end_inset
+
+, leading to 
+\begin_inset Formula $T$
+\end_inset
+
+ tractable small problems
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\min_{\mathbf{s}^{t}}\frac{1}{2\sigma^{2}}||\mathbf{A}\mathbf{s}^{t}-\mathbf{x}^{t}||^{2}+\sum_{j}\mid s_{j}^{t}\mid,\label{eq:3.3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for 
+\begin_inset Formula $t=1,...,T$
+\end_inset
+
+.
+ Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is in case with additive Gaussian noise 
+\begin_inset Formula $\mathbf{X=AS+V}$
+\end_inset
+
+, and assuming that 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ is uniformly distributed.
+ Variable 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+ is the variance of the noise 
+\begin_inset Formula $\mathbf{V}$
+\end_inset
+
+.
+ To simplify the problem, we only consider the case in the absence of noise.
+ Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ can be rewrited as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\min_{\mathbf{s}^{t}}\sum_{j}\mid s_{j}^{t}\mid\label{eq:3.4}
+\end{equation}
+
+\end_inset
+
+subject to 
+\begin_inset Formula $\mathbf{As^{\mathit{t}}=x^{\mathit{t}}}$
+\end_inset
+
+, for 
+\begin_inset Formula $t=1,...,T$
+\end_inset
+
+.
+ Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is equivalent to minimizing the 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ norm of 
+\begin_inset Formula $s^{t}$
+\end_inset
+
+.
+ We can solve this problem by using linear programming algorithm.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+这里一鸣可以再加入一点线性规划的原理
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

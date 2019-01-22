@@ -117,76 +117,12 @@ Under different weather condition
 Traffic flow analysis
 \end_layout
 
-\begin_layout Standard
-This is a demo for including pictures:
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "coffee.tex"
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Paragraph
 Safety degree analysis
 \end_layout
 
 \begin_layout Subsubsection
 Evaluations of current regulations
-\end_layout
-
-\begin_layout Standard
-Inline citation equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:1"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-fx\label{eq:1-1}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-fx\label{eq:1}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Citation from included files: figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:coffee3"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection

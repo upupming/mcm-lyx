@@ -2689,68 +2689,28 @@ status open
 
 
 \backslash
-title{
-\backslash
-noindent 
-\backslash
-textbf{
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-small{
-\backslash
-quad 
-\backslash
-quad 
-\backslash
-quad 2019 Mathematical Contest in Modeling(MCM) Summary Sheet}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-newline
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-LARGE{Keep Right to Keep “Right”}
-\end_layout
-
-\begin_layout Plain Layout
-
-}}
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\backslash
-let
-\backslash
-newpage
-\backslash
-relax
-\backslash
-maketitle}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
 thispagestyle{empty}
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size footnotesize
+2019 Mathematical Contest in Modeling(MCM) Summary Sheet
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Be a precision audience in the cocktail party
 \end_layout
 
 \begin_layout Abstract
@@ -2853,6 +2813,12 @@ small
 \begin_layout Plain Layout
 
 	
+\backslash
+quad
+\backslash
+quad
+\backslash
+quad
 \backslash
 textbf{Keywords: } #1
 \end_layout
