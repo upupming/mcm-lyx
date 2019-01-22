@@ -90,6 +90,406 @@ As problem set forth, the system contains five inputs and three outputs.
 The filter Model
 \end_layout
 
+\begin_layout Subsubsection
+Simulating basilar membrane with Gammatone filter bank 
+\end_layout
+
+\begin_layout Standard
+Human can use their basilar membrane to filter the noise and get the sound
+ they want.
+ In the case of pure tones input, when the frequency is high, the maximum
+ amplitude of the sound wave occurs at the bottom of the basilar membrane;
+ On the contray, it appears at the top.
+ As the input sound wave is compound, basilar membrane can sperate those
+ sound components with different frequency and amplitude, which will have
+ the function of spectrum analysis.
+\end_layout
+
+\begin_layout Standard
+Because basilar membrane have such function, we can use a series of filters
+ to simulate the process mentioned above.
+ The Commonly used filter banks include resonant filter bank
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-lyon1988-analog"
+literal "false"
+
+\end_inset
+
+, Round-Exponential filter bank
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-patterson-1986-auditory"
+literal "false"
+
+\end_inset
+
+ and Gammatone filter bank
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-johannesma-1972-pre"
+literal "false"
+
+\end_inset
+
+, ect.
+ Because Gammatone filter bank can primely stimulate the physiological propertie
+s by using less parameters and has a simple function of unit impulse response,
+ so we apply Gammatone filter bank to our model.
+\end_layout
+
+\begin_layout Standard
+Gammatone filter is defined by its function of unit impulse response in
+ time domain:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+g_{i}(t)=At^{n-1}exp(-2\pi b_{i}t)cos(2\pi f_{i}+\phi_{i})u(t),t\geq0,1\leq i\leq N\label{eq:3.c}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In formular 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $A$
+\end_inset
+
+ represents the gain of the filter, 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ represents filter's center frequency, 
+\begin_inset Formula $\phi_{i}$
+\end_inset
+
+ means the phase, 
+\begin_inset Formula $n$
+\end_inset
+
+ is the order of the filter and 
+\begin_inset Formula $N$
+\end_inset
+
+ is the number of Gammantone filter in the bank.
+ 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ is the decay factor of the filter, it determines the speed of impluse response'
+s attenuation, and it can be defined as follow:
+\begin_inset Formula 
+\begin{equation}
+bi=1.019ERB(f_{i})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ERB(f_{i})$
+\end_inset
+
+ is the equivalent rectangular bandwidth of Gammantone filter, and it has
+ the relationship with filter's center frequency 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ as follow:
+\begin_inset Formula 
+\begin{equation}
+ERB(f_{i})=24.7\times(4.37\times\frac{f_{i}}{1000}+1)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to simplify the model, we treat the phase 
+\begin_inset Formula $\phi=0$
+\end_inset
+
+, the filter's order 
+\begin_inset Formula $n=4$
+\end_inset
+
+.
+ Because all Gammatone filters use the same amplitude 
+\begin_inset Formula $A,$
+\end_inset
+
+so parameter 
+\begin_inset Formula $A$
+\end_inset
+
+ will not affect the final result, we set 
+\begin_inset Formula $A=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+The nonelinearal compression of auditory system
+\end_layout
+
+\begin_layout Standard
+By searching for the literature, we find that auditory system has the characteri
+stic of nonlinearity, which means the output power compression of high frequency
+ signal differs from the low frequency one.
+ This characteristic enhances anti-interference ability of auditory system
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-LiChaohui-2006-auditory"
+literal "false"
+
+\end_inset
+
+.
+ Scientists use 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ to analyze the nonlinearity of the auditory system, which is defined as
+ below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\lambda=\frac{10\lg(\frac{P_{o}}{P_{r}})}{10\lg(\frac{P_{i}}{P_{r}})}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The value of parameter 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ varies a lot in different literature, but there are two principles recognized
+ by most scholars: 
+\end_layout
+
+\begin_layout Standard
+(1) it shows a strong compressing effect among signals of which frequency
+ above 
+\begin_inset Formula $1KHz$
+\end_inset
+
+, and 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is almost the same.
+\end_layout
+
+\begin_layout Standard
+(2) if the signal's frequency is below 
+\begin_inset Formula $1KHz$
+\end_inset
+
+, with its frequency decaying, compressing effect damps a lot.
+ 
+\end_layout
+
+\begin_layout Standard
+We use one of functions between 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and signal's freqency 
+\begin_inset Formula $f$
+\end_inset
+
+obtainalbe in the literature satisfied those two priciples
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-HuFengson-2012-base-on"
+literal "false"
+
+\end_inset
+
+, which can be shown as the graph below:
+\end_layout
+
+\begin_layout Subsubsection
+Refining the signal by FFT method
+\end_layout
+
+\begin_layout Standard
+Basilar membrane's refining and shielding process is similar to choose a
+ group of 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ in a certain range for the Gammatone filter bank.
+ By selecting the center frequency 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ in the range 
+\begin_inset Formula $1KHz-5KHz$
+\end_inset
+
+ uniformly, and calculate 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, then we can get the sigals outputted by the auditory system.
+\end_layout
+
+\begin_layout Standard
+In order to make the sigals inputted more precise to the actual and apply
+ to the computers, we need to discretize firstly.
+ Then the discrete signals need to take the procedures of pre-emphasis,
+ framing.
+\end_layout
+
+\begin_layout Standard
+Set 
+\begin_inset Formula $x(n)$
+\end_inset
+
+ is the signal before pre-emphasis, 
+\begin_inset Formula $y(n)$
+\end_inset
+
+ is the signal after this process and 
+\begin_inset Formula $a$
+\end_inset
+
+ is the shifting parameter.
+ So pre-emphasis can be written as formula below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y(n)=x(n)-a\cdot x(n-1)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the process of framing, we use hamming window function 
+\begin_inset Formula $w(n)$
+\end_inset
+
+ to mutiple 
+\begin_inset Formula $y(n)$
+\end_inset
+
+ to get the signal 
+\begin_inset Formula $s_{w}(n)$
+\end_inset
+
+, which are as follow:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+s_{w}(n)=y(n)\cdot w(n)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Set 
+\begin_inset Formula $Y(k)$
+\end_inset
+
+ and 
+\begin_inset Formula $H_{i}(k)$
+\end_inset
+
+ are the discrete spectrum of the signals 
+\begin_inset Formula $y(n)$
+\end_inset
+
+ and 
+\begin_inset Formula $h_{i}(n)$
+\end_inset
+
+ respectively after FFT, and then we can get the spectrum of discrete signals
+ 
+\begin_inset Formula $M_{i}(k)$
+\end_inset
+
+ outputted by the filter 
+\begin_inset Formula $i$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M_{i}(k)=(Y^{2}(k)H(k))^{\lambda}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M(k)=\sum_{i=1}^{N}M_{i}(k)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N$
+\end_inset
+
+ is the number of the filter.
+ Appearently, 
+\begin_inset Formula $M(k)$
+\end_inset
+
+ is the whole power density spectrum of the output discrete signals.
+ Using the inverse FFT, we can get the discrete output signal 
+\begin_inset Formula $m(n)$
+\end_inset
+
+ in time domain.
+\end_layout
+
 \begin_layout Subsection
 The UBSS Model
 \end_layout
