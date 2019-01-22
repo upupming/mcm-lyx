@@ -184,11 +184,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Input signals, output signals, and matrix 
-\begin_inset Formula $A$
-\end_inset
-
- for case 1
+Input signals and output signals
 \end_layout
 
 \end_inset
@@ -406,7 +402,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Estimated input signals and error rates for case 1
+Estimated input signals and error rates
 \end_layout
 
 \end_inset
@@ -485,7 +481,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Error rate for case 1
+Error rates
 \end_layout
 
 \end_inset
@@ -1285,7 +1281,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\text{{NMSE}=10\ensuremath{\log_{10}\left(\frac{||\hat{\textbf{A}}-\textbf{A\_\{ns\}}||_{F}^{2}}{||\textbf{A\_\{ns\}}||_{F}^{2}}\right)}= }20\ensuremath{\log_{10}\left(\frac{||\hat{\textbf{A}}-\textbf{A\_\{ns\}}||_{F}}{||\textbf{A\_\{ns\}}||_{F}}\right)}\label{eq:L-A-1-2-1-1}
+\text{{NMSE}=10\ensuremath{\log_{10}\left(\frac{||\hat{\textbf{A}}-\textbf{A}_{ns}||_{F}^{2}}{||\textbf{A}_{ns}||_{F}^{2}}\right)}= }20\ensuremath{\log_{10}\left(\frac{||\hat{\textbf{A}}-\textbf{A}_{ns}||_{F}}{||\textbf{A}_{ns}||_{F}}\right)}\label{eq:L-A-1-2-1-1}
 \end{equation}
 
 \end_inset
@@ -1395,7 +1391,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Error rate for non-sparse signals
+Error rates for non-sparse signals
 \end_layout
 
 \end_inset
