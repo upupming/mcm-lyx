@@ -2714,75 +2714,65 @@ Be a precision audience in the cocktail party
 \end_layout
 
 \begin_layout Abstract
-
-\series bold
-Our goal is a model to
-\series default
- evaluate the performance of the keep-right-exceptto- pass (KRETP) rule
- and other alternatives, by simulating the traffic flow on a freeway.
- We construct models to analyze five influencing factors.
- Then we integrate multiple criteria to judge the performance of nine rules
- using a fuzzy synthetic evaluation (FSE).
+Cock Tail party problem (CPP) is a well-known problem in the field of computer
+ speech recognition.
+ Stimuli segregation is easy for human to realize, but hard for computers.
+ Thus for the compound-tone input case, we tend to find out a method that
+ can segregate those input pure-tone signals.
+ 
 \end_layout
 
 \begin_layout Abstract
-
-\series bold
-Our basic model focuses on
-\series default
- lane-changing behavior, an essential component of overtaking (passing).
+For part one, on the basis of the basilar membrane’s simulation in the literatur
+e, first we apply Gammatone filter into our model to shield the noise.
+ Then we consider the nonlinear effect of the auditory system, which shows
+ different power ratios of input and output signal varied with frequency.
+ After that, we use the method of pre-emphasis and framing to deal with
+ the sample discrete signals.
+ Finally we use STFT to treat those signals in frequency domain and get
+ the output signals.
+ 
 \end_layout
 
 \begin_layout Abstract
+For part two, provided with 3 output signals, we need to refine 5 original
+ signals input into the system.
+ It’s just a simple case of the underdetermined blind source separation
+ question.
+ We set two main steps to solve this problem: determine the mixing matrix
+ 
+\begin_inset Formula $A$
+\end_inset
 
-\series bold
-We extend our model
-\series default
- with a cellular automaton-based approach.
- We assume that the drivers will change the lane with a specific probability
- if trigger and safety conditions are satisfied.
- We simulate traffic flow on a long section of a freeway, controlling occupancy,
- varying the number of lanes, maximum speed limit, minimum speed limit,
- and signaling behavior.
+ and the original source vector 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ For finding the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+, we use the cluster method and get it’s column vectors.
+ By confirming the source vector 
+\begin_inset Formula $S$
+\end_inset
+
+, we set this to a linear programming problem, searching 
+\begin_inset Formula $S$
+\end_inset
+
+ to minimize its L1 norm.
+ As the original signals are sparse, the segregated signals have little
+ error compared with the original ones.
+ 
 \end_layout
 
 \begin_layout Abstract
-
-\series bold
-In addition to KRETP, we examine four other rules
-\series default
- by revising the laws governing the cells in the cellular automaton.
- Then we design five improved rules.
-\end_layout
-
-\begin_layout Abstract
-We choose flow rate and average speed as traffic flow criteria, sharp braking
- frequency as a safety criterion, and satisfaction and standard deviation
- of speed as experience criteria.
- Then we use a fuzzy synthetic evaluation technique to integrate these criteria
- to determine the performance of each rule.
- We find that in a light traffic, a partial-assigned-lane-and-keep-rightrule
- performs the best, while in heavy traffic, a different-speed-limit-on-each-lane
- rule is preferred.
-\end_layout
-
-\begin_layout Abstract
-We 
-\series bold
-change the probability of lane-changing
-\series default
- to adjust our model to a country such as Great Britain.Moreover, we also
- simulate a freeway fully controlled by an intelligent system.
-\end_layout
-
-\begin_layout Abstract
-Additionally, we 
-\series bold
-refine our extended model
-\series default
- by considering the on- and off-ramps.
- We adopt open boundary conditions and assume that the vehicles flowing
- in are Poisson-distributed.
+In sensitivity analysis, we calculate the underdetermine case by varying
+ the input and output source number, and we obtain that our model is robust
+ and do not rely on those signal number.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2832,7 +2822,8 @@ textbf{Keywords: } #1
 
 
 \backslash
-keywords{one, two, three, four}
+keywords{CPP, Gammatone filter, underdetermined source seperation, cluster
+ method}
 \end_layout
 
 \end_inset
