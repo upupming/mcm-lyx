@@ -86,14 +86,39 @@ Assumptions and Justifications
 \begin_layout Itemize
 
 \series bold
-We assume the source signals are sparse.
+Every element of the blind signals matrix and source signals is positive.
+ 
+\series default
+In the real world, the signals are all positive, and the mixing coefficients
+ of different signals are also positive.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+The source signals are sparse.
 
 \series default
+ A set of signals is said to be sparse if and only if only one signal is
+ positive at any time.
  If the input distribution is sparse, the mixing matrix can be estimated
  either by external optimization or by clustering.
  Yet, when the signals per se do not satisfy this assumption, sparsity can
  still be achieved by realizing the separation in a sparser transformed
  domain.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+The rank of the blind mixing matrix is exactly the number of rows of the
+ matrix.
+ 
+\series default
+Our algorithm takes advantage of the disproportionate nature of each column.
+ Also, if two rows are proportional, then two outputs will be proportional,
+ which is equivalent to the two output signals being the same and can be
+ considered as one signal.
 \end_layout
 
 \begin_layout Subsection
@@ -108,6 +133,17 @@ reference "table-notations"
 plural "false"
 caps "false"
 noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+如何左对齐表格中的某几行，参见 https://tex.stackexchange.com/questions/116448/how-to-decouple-ali
+gnment-of-rows-within-a-column-in-lyx
+\end_layout
 
 \end_inset
 
@@ -136,7 +172,7 @@ Notations
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="3">
+<lyxtabular version="3" rows="9" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -164,7 +200,7 @@ Definition
 \begin_inset Text
 
 \begin_layout Plain Layout
-Unit
+Dimensions/Unit
 \end_layout
 
 \end_inset
@@ -184,6 +220,8 @@ Unit
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Matrix
 \end_layout
 
@@ -214,11 +252,11 @@ Matrix
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-blind mixing matrix
+Blind mixing matrix
 \end_layout
 
 \end_inset
@@ -227,6 +265,9 @@ blind mixing matrix
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $M\times N$
+\end_inset
+
 
 \end_layout
 
@@ -246,11 +287,11 @@ blind mixing matrix
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-source signals matrix
+Source signals matrix
 \end_layout
 
 \end_inset
@@ -259,6 +300,9 @@ source signals matrix
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $N\times T$
+\end_inset
+
 
 \end_layout
 
@@ -278,11 +322,11 @@ source signals matrix
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-output signals matrix
+Output signals matrix
 \end_layout
 
 \end_inset
@@ -291,6 +335,9 @@ output signals matrix
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $M\times T$
+\end_inset
+
 
 \end_layout
 
@@ -311,6 +358,8 @@ output signals matrix
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Variable
 \end_layout
 
@@ -327,11 +376,87 @@ Variable
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of output signals
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+unitless
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of input signals
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+unitless
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $T$
+\end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of simple points
 \end_layout
 
 \end_inset
@@ -340,16 +465,7 @@ Variable
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+unitless
 \end_layout
 
 \end_inset

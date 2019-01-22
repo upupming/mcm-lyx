@@ -86,59 +86,1516 @@ Results
 \end_layout
 
 \begin_layout Subsection
-Under different traffic density
+Signals that satisfy the sparsity completely
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Signals-that-satisfy"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
-Traffic flow analysis
+Data generation
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Generation of source signals 
+\begin_inset Formula $\textbf{S}$
+\end_inset
+
+.
+ 
+\series default
+We randomly generate an 
+\begin_inset Formula $N\times T$
+\end_inset
+
+ matrix.
+ For each column of 
+\begin_inset Formula $\textbf{S}$
+\end_inset
+
+, we randomly select one of the rows to be reserved, and set all of the
+ rest to zero.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Blind mixing matrix 
+\begin_inset Formula $\text{A}$
+\end_inset
+
+.
+ 
+\series default
+Random generated, and the previous assumptions are satisfied.
 \end_layout
 
 \begin_layout Subsubsection
-Safety degree analysis
+Signal separation result
+\end_layout
+
+\begin_layout Standard
+The generated source signals 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+, output 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-res1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Input-and-Output-1.svg
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Input signals, output signals, and matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ for case 1
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-res1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this experiment, the matrix 
+\begin_inset Formula $\textbf{A}$
+\end_inset
+
+ we used are shown in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:L-A-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\textbf{A}=\left(\begin{array}{ccccc}
+11 & 22 & 34 & 45 & 56\\
+56 & 47 & 28 & 19 & 10\\
+55 & 64 & 32 & 72 & 21
+\end{array}\right)\label{eq:L-A-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Before we multiple 
+\begin_inset Formula $\textbf{A}$
+\end_inset
+
+ with 
+\begin_inset Formula $\textbf{S}$
+\end_inset
+
+ to get 
+\begin_inset Formula $\textbf{X}$
+\end_inset
+
+, we first normalize each column of 
+\begin_inset Formula $\textbf{A}$
+\end_inset
+
+ and sort the columns, then we apply the same sorting indices to 
+\begin_inset Formula $\textbf{A}$
+\end_inset
+
+ to make the 
+\begin_inset Formula $\textbf{A}$
+\end_inset
+
+ be comparable with our estimated result 
+\begin_inset Formula $\hat{\textbf{A}}$
+\end_inset
+
+.
+ The normalized and sorted 
+\begin_inset Formula $\textbf{A}_{ns}$
+\end_inset
+
+ is shown in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:L-A-1-3-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and th actual 
+\begin_inset Formula $\textbf{A}$
+\end_inset
+
+ we used is shown in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:L-A-1-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathbf{A}_{ns}=\left(\begin{array}{ccccc}
+0.64367816 & 0.36170213 & 0.09016393 & 0.16541353 & 0.33088235\\
+0.11494253 & 0.29787234 & 0.45901639 & 0.35338346 & 0.13970588\\
+0.24137931 & 0.34042553 & 0.45081967 & 0.48120301 & 0.52941176
+\end{array}\right)\label{eq:L-A-1-3-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\textbf{A}=\left(\begin{array}{ccccc}
+56 & 34 & 11 & 22 & 45\\
+10 & 28 & 56 & 47 & 19\\
+21 & 32 & 55 & 64 & 72
+\end{array}\right)\label{eq:L-A-1-3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Our result is shown in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:L-A-1-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Using our model, the estimated 
+\begin_inset Formula $\textbf{\ensuremath{\hat{\textbf{A}}}}$
+\end_inset
+
+ is nearly the same with the original 
+\begin_inset Formula $\textbf{A}_{ns}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\hat{\textbf{A}}=\left(\begin{array}{ccccc}
+0.64367816 & 0.36170213 & 0.09016393 & 0.16541353 & 0.33088235\\
+0.11494253 & 0.29787234 & 0.45901639 & 0.35338346 & 0.13970588\\
+0.24137931 & 0.34042553 & 0.45081967 & 0.48120301 & 0.52941176
+\end{array}\right)\label{eq:L-A-1-2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The estimated input signals are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-res2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Estimated-Input-1.svg
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estimated input signals and error rates for case 1
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-res2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The error rates for estimated signals are shown in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-error"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The error rate of estimated source signals
+\begin_inset Formula $\tilde{{\textbf{S}}}$
+\end_inset
+
+ is calculated by equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-eq:error"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ where 
+\begin_inset Formula $||\textbf{M}||_{F}$
+\end_inset
+
+ is the Frobenius norm of matrix 
+\begin_inset Formula $\textbf{M}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E=\frac{||\tilde{\textbf{S}}-\textbf{S}||_{F}}{||\textbf{S}||_{F}}\label{L-eq:error}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Error rate for case 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+# of signal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Error rate 
+\begin_inset Formula $E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $2.3132\times10^{-14}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $1.5195\times10^{-14}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $1.4231\times10^{-14}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $6.6989\times10^{-16}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $6.3543\times10^{-16}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\size default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-error"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+For case 2, the generated source signals 
+\begin_inset Formula $\mathbf{S}$
+\end_inset
+
+, output 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-res1-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Input-and-Output-2.svg
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Input signals, output signals, and matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ for case 2
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-res1-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+In this experiment, the matrix 
+\begin_inset Formula $\textbf{A}$
+\end_inset
+
+ we used are shown in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:L-A-1-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Note that the first column of 
+\begin_inset Formula $\textbf{A}$
+\end_inset
+
+ differs other columns by two orders of magnitude.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+A=\left(\begin{array}{ccccc}
+5100 & 22 & 34 & 45 & 56\\
+5600 & 47 & 28 & 19 & 10\\
+5500 & 64 & 32 & 72 & 21
+\end{array}\right)\label{eq:L-A-1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The estimated input signals are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-res2-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Estimated-Input-2.svg
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estimated input signals and error rates for case 2
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-res2-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+The error rates for estimated signals are shown in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-error-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Error rate for case 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+# of signal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Error rate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $2.0700\times10^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $3.6709\times10^{-3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $1.3465$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $1.1119\times10^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $5.5544$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\size default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-error-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the above results, we can see that the restored signals are almost
+ the same with the original signals.
+ We can conclude that our model works perfectly on the sparse signals, and
+ the main error is introduced in the second step which derives 
+\begin_inset Formula $\textbf{S}$
+\end_inset
+
+using the output signals 
+\begin_inset Formula $\textbf{X}$
+\end_inset
+
+and our estimated 
+\begin_inset Formula $\hat{\text{A}}.$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Under different maximum speed
+Signals that don't satisfy the sparsity completely
 \end_layout
 
 \begin_layout Subsubsection
-Traffic flow analysis
+Data generation
 \end_layout
 
-\begin_layout Subsubsection
-Safety degree analysis
+\begin_layout Itemize
+
+\series bold
+Generation of source signals 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ 
+\series default
+We randomly generate an 
+\begin_inset Formula $N\times T$
+\end_inset
+
+ matrix.
 \end_layout
 
-\begin_layout Subsection
-Under different weather condition
+\begin_layout Itemize
+
+\series bold
+Blind mixing matrix 
+\begin_inset Formula $\text{A}$
+\end_inset
+
+.
+ 
+\series default
+Random generated, and the previous assumptions are satisfied.
 \end_layout
 
-\begin_layout Subsubsection
-Traffic flow analysis
+\begin_layout Standard
+For signals that don't satisfy the sparsity completely, input and output
+ signals are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-res1-1-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Paragraph
-Safety degree analysis
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Input-and-Output-3.svg
+	scale 35
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsubsection
-Evaluations of current regulations
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Input signals, output signals, and matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ for non-sparse signals
 \end_layout
 
-\begin_layout Subsubsection
-Disadvantages of current regulations
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-res1-1-1"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection
-Other suggestions
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsubsection
-Alternative options
+\begin_layout Standard
+In this example, we use the same matrix 
+\begin_inset Formula $\textbf{A}$
+\end_inset
+
+ in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:L-A-1-3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Our estimated 
+\begin_inset Formula $\hat{\textbf{A}}$
+\end_inset
+
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+is
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ shown in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:L-A-1-2-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, which differs 
+\begin_inset Formula $\textbf{A}_{ns}$
+\end_inset
+
+ a lot.
+ So we use the Normalized Mean Square Error (NMSE) shown in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:L-A-1-2-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ to measure the error of our estimated 
+\begin_inset Formula $\hat{\textbf{A}}$
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Subsubsection
-Influence while driving left
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\hat{\textbf{A}}=\left(\begin{array}{ccccc}
+0.32976212 & 0.37185997 & 0.32307546 & 0.24419688 & 0.29094788\\
+0.28763198 & 0.22420494 & 0.24989554 & 0.32566172 & 0.27799753\\
+0.38260589 & 0.4039351 & 0.42702901 & 0.4301414 & 0.43105459
+\end{array}\right)\label{eq:L-A-1-2-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\text{{NMSE}=10\ensuremath{\log_{10}\left(\frac{||\hat{\textbf{A}}-\textbf{A\_\{ns\}}||_{F}^{2}}{||\textbf{A\_\{ns\}}||_{F}^{2}}\right)}= }20\ensuremath{\log_{10}\left(\frac{||\hat{\textbf{A}}-\textbf{A\_\{ns\}}||_{F}}{||\textbf{A\_\{ns\}}||_{F}}\right)}\label{eq:L-A-1-2-1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The NMSE result is shown in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:L-A-1-2-1-1-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\text{{NMSE}=-8.36988839305828}\label{eq:L-A-1-2-1-1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The estimated input signals and error rates are shown in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-res2-1-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-error-1-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Estimated-Input-3.svg
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estimated input signals and error rates for non-sparse signals
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-res2-1-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Error rate for non-sparse signals
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-error-1-1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+# of signal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Error rate 
+\begin_inset Formula $E$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $1.5544$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $1.3124$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $1.6403$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $8.3752\times10^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Formula $1.5942$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Form the results, we can see that our model cannot deal with non-sparsed
+ signals well.
+ The error rates are far larger than those of sparse signals.
+ Both the first step and second step introduce errors, so we need to transform
+ the signals to a sparser domain in order to get better results.
 \end_layout
 
 \end_body
