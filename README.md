@@ -6,7 +6,7 @@ mcm paper template for LyX.
 
 ```files
 - _template.lyx 只设置了 Document 属性的模板，咱们所有文件都应该从这个模板开始
-- 00_main.lyx 文档主入口，包含所有组件的引用
+- 1911426.lyx 文档主入口，包含所有组件的引用，1911426 Control Number
 
 - 01_first_page.lyx 首页，包括：标题、summary
 - 02_...
