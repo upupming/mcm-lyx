@@ -1087,7 +1087,7 @@ and our estimated
 \end_layout
 
 \begin_layout Subsection
-Signals that don't satisfy the sparsity completely
+Signals that do not satisfy the sparsity completely
 \end_layout
 
 \begin_layout Subsubsection
@@ -1125,7 +1125,7 @@ Random generated, and the previous assumptions are satisfied.
 \end_layout
 
 \begin_layout Standard
-For signals that don't satisfy the sparsity completely, input and output
+For signals that do not satisfy the sparsity completely, input and output
  signals are shown in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
