@@ -23,6 +23,7 @@
 \usepackage{tocbibind}
 \usepackage{graphicx}
 \usepackage{subcaption}
+\usepackage{indentfirst}
 \end_preamble
 \use_default_options false
 \begin_modules

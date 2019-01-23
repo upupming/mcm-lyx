@@ -80,10 +80,10 @@ Model establishment
 \end_layout
 
 \begin_layout Standard
-As problem set forth, the system contains five inputs and three outputs.
- For the number of output is less than input, it is a Underdetermined Blind
+As problem sets forth, the system contains five inputs and three outputs.
+ For the number of output is less than input, it is an Underdetermined Blind
  Source Separation (UBSS) problem.
- We can solve this kind of problem using clustering method.
+ We can solve this kind of problem using the clustering method.
 \end_layout
 
 \begin_layout Subsection
@@ -91,23 +91,33 @@ The filter Model
 \end_layout
 
 \begin_layout Subsubsection
-Simulating basilar membrane with Gammatone filter bank 
+Simulating basilar membrane with Gammatone filter bank
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+模拟的时候并没有实现，真正比赛的时候得实现
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Human can use their basilar membrane to filter the noise and get the sound
- they want.
+The human can use their basilar membrane to filter the noise and get the
+ sound they want.
  In the case of pure tones input, when the frequency is high, the maximum
  amplitude of the sound wave occurs at the bottom of the basilar membrane;
- On the contray, it appears at the top.
- As the input sound wave is compound, basilar membrane can sperate those
+ on the contrary, it appears at the top.
+ As the input sound wave is compound, the basilar membrane can sperate those
  sound components with different frequency and amplitude, which will have
  the function of spectrum analysis.
 \end_layout
 
 \begin_layout Standard
-Because basilar membrane have such function, we can use a series of filters
- to simulate the process mentioned above.
+Because the basilar membrane has such a function, we can use a series of
+ filters to simulate the process mentioned above.
  The Commonly used filter banks include resonant filter bank
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -132,15 +142,15 @@ literal "false"
 
 \end_inset
 
-, ect.
+, etc..
  Because Gammatone filter bank can primely stimulate the physiological propertie
-s by using less parameters and has a simple function of unit impulse response,
+s by using fewer parameters and has a simple function of unit impulse response,
  so we apply Gammatone filter bank to our model.
 \end_layout
 
 \begin_layout Standard
-Gammatone filter is defined by its function of unit impulse response in
- time domain:
+Gammatone filter is defined by its function of the unit impulse response
+ in the time domain:
 \end_layout
 
 \begin_layout Standard
@@ -155,7 +165,7 @@ g_{i}(t)=At^{n-1}exp(-2\pi b_{i}t)cos(2\pi f_{i}+\phi_{i})u(t),t\geq0,1\leq i\le
 \end_layout
 
 \begin_layout Standard
-In formular 
+In formula 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c"
@@ -190,8 +200,8 @@ noprefix "false"
 \begin_inset Formula $b_{i}$
 \end_inset
 
- is the decay factor of the filter, it determines the speed of impluse response'
-s attenuation, and it can be defined as follow:
+ is the decay factor of the filter, it determines the speed of the impulse
+ response's attenuation, and it can be defined as follows:
 \begin_inset Formula 
 \begin{equation}
 bi=1.019ERB(f_{i})
@@ -211,7 +221,7 @@ bi=1.019ERB(f_{i})
 \begin_inset Formula $f_{i}$
 \end_inset
 
- as follow:
+ as follows:
 \begin_inset Formula 
 \begin{equation}
 ERB(f_{i})=24.7\times(4.37\times\frac{f_{i}}{1000}+1)
@@ -236,11 +246,11 @@ In order to simplify the model, we treat the phase
 \begin_inset Formula $A,$
 \end_inset
 
-so parameter 
+ parameter 
 \begin_inset Formula $A$
 \end_inset
 
- will not affect the final result, we set 
+ will not affect the final result, thus we set 
 \begin_inset Formula $A=1$
 \end_inset
 
@@ -252,10 +262,11 @@ The nonelinearal compression of auditory system
 \end_layout
 
 \begin_layout Standard
-By searching for the literature, we find that auditory system has the characteri
-stic of nonlinearity, which means the output power compression of high frequency
- signal differs from the low frequency one.
- This characteristic enhances anti-interference ability of auditory system
+By searching for literature, we find that the auditory system has the characteri
+stic of nonlinearity, which means that the output power compression of high-freq
+uency signal differs from the low-frequency one.
+ This characteristic enhances the anti-interference ability of the auditory
+ system
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C-LiChaohui-2006-auditory"
@@ -284,46 +295,63 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+where
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p_{o}$
+\end_inset
+
+ is the output power of received signal,
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p_{r}$
+\end_inset
+
+is the reference power, and
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ is the input power of received signal.
+\end_layout
+
+\begin_layout Standard
 The value of parameter 
 \begin_inset Formula $\lambda$
 \end_inset
 
  varies a lot in different literature, but there are two principles recognized
- by most scholars: 
+ by most scholars:
 \end_layout
 
 \begin_layout Standard
 (1) it shows a strong compressing effect among signals of which frequency
- above 
-\begin_inset Formula $1KHz$
-\end_inset
-
-, and 
+ above 1 kHz and 
 \begin_inset Formula $\lambda$
 \end_inset
 
- is almost the same.
+ almost keeps the same.
 \end_layout
 
 \begin_layout Standard
-(2) if the signal's frequency is below 
-\begin_inset Formula $1KHz$
-\end_inset
-
-, with its frequency decaying, compressing effect damps a lot.
- 
+(2) if the signal's frequency is below 1 kHz, with its frequency decaying,
+ compressing effect damps a lot.
 \end_layout
 
 \begin_layout Standard
-We use one of functions between 
+We use one of the functions between 
 \begin_inset Formula $\lambda$
 \end_inset
 
- and signal's freqency 
+ and signal's frequency 
 \begin_inset Formula $f$
 \end_inset
 
-obtainalbe in the literature satisfied those two priciples
+ obtainable in the literature satisfied that two principles
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C-HuFengson-2012-base-on"
@@ -335,12 +363,12 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-Refining the signal by FFT method
+Refining signals by FFT
 \end_layout
 
 \begin_layout Standard
-Basilar membrane's refining and shielding process is similar to choose a
- group of 
+Basilar membrane's refining and shielding process is similar to choosing
+ a group of 
 \begin_inset Formula $f_{i}$
 \end_inset
 
@@ -349,39 +377,35 @@ Basilar membrane's refining and shielding process is similar to choose a
 \begin_inset Formula $f_{i}$
 \end_inset
 
- in the range 
-\begin_inset Formula $1KHz-5KHz$
-\end_inset
-
- uniformly, and calculate 
+ in the range 1 kHz - 5 kHz uniformly, and calculate 
 \begin_inset Formula $\lambda$
 \end_inset
 
-, then we can get the sigals outputted by the auditory system.
+, we can get the signals outputted by the auditory system.
 \end_layout
 
 \begin_layout Standard
-In order to make the sigals inputted more precise to the actual and apply
- to the computers, we need to discretize firstly.
- Then the discrete signals need to take the procedures of pre-emphasis,
+In order to make the signals inputted more precise to the actual and apply
+ to the computers, we need to discretize them firstly.
+ Then the discrete signals need to take the procedures of pre-emphasis and
  framing.
 \end_layout
 
 \begin_layout Standard
-Set 
+Let 
 \begin_inset Formula $x(n)$
 \end_inset
 
- is the signal before pre-emphasis, 
+ be the signal before pre-emphasis, 
 \begin_inset Formula $y(n)$
 \end_inset
 
- is the signal after this process and 
+ be the signal after this process and 
 \begin_inset Formula $a$
 \end_inset
 
- is the shifting parameter.
- So pre-emphasis can be written as formula below:
+ be the shifting parameter.
+ The pre-emphasis process can be written as formula below:
 \end_layout
 
 \begin_layout Standard
@@ -396,11 +420,11 @@ y(n)=x(n)-a\cdot x(n-1)
 \end_layout
 
 \begin_layout Standard
-For the process of framing, we use hamming window function 
+In the process of framing, we use hamming window function 
 \begin_inset Formula $w(n)$
 \end_inset
 
- to mutiple 
+ to mutiply 
 \begin_inset Formula $y(n)$
 \end_inset
 
@@ -408,7 +432,7 @@ For the process of framing, we use hamming window function
 \begin_inset Formula $s_{w}(n)$
 \end_inset
 
-, which are as follow:
+, which are is formulated as follows:
 \end_layout
 
 \begin_layout Standard
@@ -423,7 +447,7 @@ s_{w}(n)=y(n)\cdot w(n)
 \end_layout
 
 \begin_layout Standard
-Set 
+Let 
 \begin_inset Formula $Y(k)$
 \end_inset
 
@@ -431,7 +455,7 @@ Set
 \begin_inset Formula $H_{i}(k)$
 \end_inset
 
- are the discrete spectrum of the signals 
+ be the discrete spectrum of the signals 
 \begin_inset Formula $y(n)$
 \end_inset
 
@@ -439,7 +463,7 @@ Set
 \begin_inset Formula $h_{i}(n)$
 \end_inset
 
- respectively after FFT, and then we can get the spectrum of discrete signals
+ respectively after FFT, then we can get the spectrum of discrete signals
  
 \begin_inset Formula $M_{i}(k)$
 \end_inset
@@ -474,20 +498,29 @@ M(k)=\sum_{i=1}^{N}M_{i}(k)
 \end_layout
 
 \begin_layout Standard
+where
+\end_layout
+
+\begin_layout Itemize
 \begin_inset Formula $N$
 \end_inset
 
- is the number of the filter.
- Appearently, 
+ is the number of the filter,
+\end_layout
+
+\begin_layout Itemize
 \begin_inset Formula $M(k)$
 \end_inset
 
  is the whole power density spectrum of the output discrete signals.
- Using the inverse FFT, we can get the discrete output signal 
+\end_layout
+
+\begin_layout Standard
+Using inverse FFT, we can get the discrete output signal 
 \begin_inset Formula $m(n)$
 \end_inset
 
- in time domain.
+ in the time domain.
 \end_layout
 
 \begin_layout Subsection
@@ -536,7 +569,7 @@ Let
 \begin_inset Formula $N\times T$
 \end_inset
 
- matrix of underlying source signals and let 
+ matrix of underlying source signals, and 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
@@ -545,7 +578,7 @@ Let
 \end_inset
 
  mixing matrix.
- The problem of blind source separation consist of finding the solution
+ The problem of blind source separation consists of finding the solution
  to the following system of equations:
 \end_layout
 
@@ -574,11 +607,11 @@ Because we have no information about the source signals or the mixing process,
 \end_layout
 
 \begin_layout Standard
-Our step is to recover blind mixing matrix 
+Our steps are to recover blind mixing matrix 
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
- first and then estimate source signals matrix 
+ and to estimate source signals matrix 
 \begin_inset Formula $\mathbf{S}$
 \end_inset
 
@@ -601,7 +634,7 @@ noprefix "false"
 
 \end_inset
 
- into 
+ into
 \end_layout
 
 \begin_layout Standard
@@ -616,11 +649,18 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-We definite 
+where
+\end_layout
+
+\begin_layout Itemize
 \begin_inset Formula $\mathbf{a^{\mathit{j}}}$
 \end_inset
 
- is a column vector of 
+ is the 
+\begin_inset Formula $j$
+\end_inset
+
+th column vector of 
 \begin_inset Formula $M\times N$
 \end_inset
 
@@ -628,8 +668,11 @@ We definite
 \begin_inset Formula $\mathbf{A}$
 \end_inset
 
-.
- 
+,
+\end_layout
+
+\begin_layout Itemize
+
 \family roman
 \series medium
 \shape up
@@ -642,7 +685,6 @@ We definite
 \uwave off
 \noun off
 \color none
-
 \begin_inset Formula $s_{j}^{t}$
 \end_inset
 
@@ -660,10 +702,10 @@ We definite
 \noun default
 \color inherit
  is the 
-\begin_inset Formula $jth$
+\begin_inset Formula $j$
 \end_inset
 
- component of the vector 
+th component of the vector 
 \begin_inset Formula $\mathbf{S}$
 \end_inset
 
@@ -671,8 +713,10 @@ We definite
 \begin_inset Formula $t$
 \end_inset
 
-.
- 
+,
+\end_layout
+
+\begin_layout Itemize
 \begin_inset Formula $\mathbf{x^{\mathit{t}}}$
 \end_inset
 
@@ -681,7 +725,10 @@ We definite
 \end_inset
 
 .
- Following from Eq.
+\end_layout
+
+\begin_layout Standard
+Following Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -696,11 +743,11 @@ noprefix "false"
 \begin_inset Formula $i$
 \end_inset
 
-) was different from zero, then all 
+) is non-zero, then all 
 \begin_inset Formula $\mathbf{x^{\mathit{t}}}$
 \end_inset
 
- would be propertional to 
+ would be proportional to 
 \begin_inset Formula $\mathbf{a}^{i}$
 \end_inset
 
@@ -721,9 +768,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Estimating the mixing matrix, then, consist of finding the directions of
+Estimating the mixing matrix, then, consists of finding the directions of
  maximum data density.
- The directions is determined by column vectors 
+ The directions are determined by column vectors 
 \begin_inset Formula $\mathbf{a}^{j}$
 \end_inset
 
@@ -732,22 +779,30 @@ Estimating the mixing matrix, then, consist of finding the directions of
 \end_inset
 
 .
- We can determine the directions of maximun data density by using k-means
+ We can determine the directions of maximum data density by using k-means
  clustering algorithm.
- 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-这里一鸣可以再加入一点k-means算法的原理
-\end_layout
-
+When using the k-means algorithm, we first normalize all the resulting column
+ vectors to facilitate subsequent comparisons.
+ Thus, the normalized results obtained by all the column vectors with the
+ same direction will be small, that is to say, only 
+\begin_inset Formula $N$
 \end_inset
 
+ clusters.
+ We randomly initialize 
+\begin_inset Formula $N$
+\end_inset
 
+ center column vectors, find the nearest vector of all vectors, and calculate
+ the new center vectors after clustering.
+ After adequate iteration, the center vectors are the N columns in the 
+\begin_inset Formula $\textbf{A}$
+\end_inset
+
+ matrix we want.
 \end_layout
 
 \begin_layout Subsubsection
@@ -788,7 +843,7 @@ noprefix "false"
 \begin_inset Formula $l_{1}$
 \end_inset
 
- norm.
+ norm of source signals.
 \end_layout
 
 \begin_layout Standard
@@ -836,7 +891,7 @@ noprefix "false"
 
 \end_inset
 
- is in case with additive Gaussian noise 
+ is in the case with additive Gaussian noise 
 \begin_inset Formula $\mathbf{X=AS+V}$
 \end_inset
 
@@ -866,7 +921,7 @@ noprefix "false"
 
 \end_inset
 
- can be rewrited as:
+ can be rewritten as:
 \end_layout
 
 \begin_layout Standard
@@ -920,20 +975,11 @@ noprefix "false"
 
  will be smaller.
  We can solve this problem by using linear programming algorithm.
- 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-这里一鸣可以再加入一点线性规划的原理
-\end_layout
-
-\end_inset
-
-
+When using linear programming, we need to ensure that any two rows of the
+ A matrix are not proportional.
 \end_layout
 
 \end_body
