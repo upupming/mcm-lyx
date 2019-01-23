@@ -734,6 +734,7 @@ Estimating the mixing matrix, then, consist of finding the directions of
 .
  We can determine the directions of maximun data density by using k-means
  clustering algorithm.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -876,16 +877,19 @@ noprefix "false"
 
 \end_inset
 
-subject to 
-\begin_inset Formula $\mathbf{As^{\mathit{t}}=x^{\mathit{t}}}$
+
+\begin_inset Formula 
+\begin{equation}
+s.t\quad As^{\mathit{t}}=x^{\mathit{t}}\qquad t=1,...,T
+\end{equation}
+
 \end_inset
 
-, for 
-\begin_inset Formula $t=1,...,T$
-\end_inset
 
-.
- Eq.
+\end_layout
+
+\begin_layout Standard
+Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -905,7 +909,18 @@ noprefix "false"
 \end_inset
 
 .
+ It is obviously to find that if the original signals are sparser, the the
+ 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ norm of 
+\begin_inset Formula $s^{t}$
+\end_inset
+
+ will be smaller.
  We can solve this problem by using linear programming algorithm.
+ 
 \end_layout
 
 \begin_layout Standard

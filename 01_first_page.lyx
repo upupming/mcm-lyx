@@ -2753,7 +2753,7 @@ For part two, provided with 3 output signals, we need to refine 5 original
 \begin_inset Formula $A$
 \end_inset
 
-, we use the cluster method and get it’s column vectors.
+, we use the k-means cluster method and get it’s column vectors.
  By confirming the source vector 
 \begin_inset Formula $S$
 \end_inset
@@ -2822,8 +2822,8 @@ textbf{Keywords: } #1
 
 
 \backslash
-keywords{CPP, Gammatone filter, underdetermined source seperation, cluster
- method}
+keywords{CPP, Gammatone filter, underdetermined source seperation, k-means
+ cluster method}
 \end_layout
 
 \end_inset
