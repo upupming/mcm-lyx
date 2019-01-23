@@ -134,7 +134,7 @@ status open
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "01_first_page.lyx"
+filename "00_first_page.lyx"
 
 \end_inset
 
@@ -199,7 +199,7 @@ LatexCommand tableofcontents
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "02_introduction.lyx"
+filename "01_introduction.lyx"
 
 \end_inset
 
@@ -209,7 +209,7 @@ filename "02_introduction.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "03_assumptions_and_notations.lyx"
+filename "02_assumptions_and_notations.lyx"
 
 \end_inset
 
@@ -219,7 +219,7 @@ filename "03_assumptions_and_notations.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "04_submodules.lyx"
+filename "03_submodules.lyx"
 
 \end_inset
 
@@ -229,7 +229,7 @@ filename "04_submodules.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "05_results.lyx"
+filename "04_results.lyx"
 
 \end_inset
 
@@ -239,7 +239,7 @@ filename "05_results.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "06_sensitivity_analysis.lyx"
+filename "05_sensitivity_analysis.lyx"
 
 \end_inset
 
@@ -249,7 +249,7 @@ filename "06_sensitivity_analysis.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "07_model_expansion.lyx"
+filename "06.1_conclusion.lyx"
 
 \end_inset
 
@@ -259,7 +259,7 @@ filename "07_model_expansion.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "08_model_evaluation.lyx"
+filename "06.2_strengths_and_weaknesses.lyx"
 
 \end_inset
 
@@ -269,11 +269,14 @@ filename "08_model_evaluation.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "09_conclusion.lyx"
+filename "06.3_future_work.lyx"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -293,10 +296,9 @@ options "unsrt"
 \end_layout
 
 \begin_layout Standard
-\start_of_appendix
 \begin_inset CommandInset include
 LatexCommand include
-filename "10_appendices.lyx"
+filename "07_appendices.lyx"
 
 \end_inset
 

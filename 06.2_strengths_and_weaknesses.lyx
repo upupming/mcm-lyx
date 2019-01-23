@@ -75,48 +75,44 @@
 
 \begin_body
 
-\begin_layout Section
-Conclusion
+\begin_layout Subsection
+Strengths and Weaknesses
 \end_layout
 
-\begin_layout Standard
-By simulating the basilar membrane, we apply Gammatone filter into our model
- to shield the noise.
- Our model shows different power ratios of input and output signal varied
- with frequency, considering the nonlinear effect of the auditory system.
- Thus, we use the method of pre-emphasis and framing to deal with the sample
- discrete signals and use STFT to treat those signals in frequency domain
- and get the output signals.
+\begin_layout Subsubsection
+Strength
 \end_layout
 
-\begin_layout Standard
-For UBSS, Our model set two main steps to solve this problem: (1) Use the
- k-means cluster method and get it's column vectors to recover the mixing
- matrix A; (2) Set the problem of searching S to a linear programming problem,
- minimizing its 
-\begin_inset Formula $l_{1}$
-\end_inset
-
- norm, to estimate the source matrix S.
- To verify the correctness of our model, we performed a segregation experiment
- using a random mixing matrix and source signals.
- Result shows that the restored signals' error rate is very small.
- Our model works perfectly on the sparse signals.
- Then we verified that our model cannot deal with the case that source signals
- don not satisfy the sparsity assumption.
+\begin_layout Itemize
+We use a series of filters to simulate the operating mode of basilar membrane.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-再加一点sensitivity analysis结论即可
+\begin_layout Itemize
+Our model can successfully implement five source signals' separation through
+ three outputs of linear mixing.
 \end_layout
 
-\end_inset
+\begin_layout Itemize
+By performing domain conversion before separation, our model can deal with
+ the case that source signals are not sparse in the time domain.
+\end_layout
 
+\begin_layout Subsubsection
+Weakness
+\end_layout
 
+\begin_layout Itemize
+If there is a source signal whose strength is much greater than others',
+ our model cannot estimate the blind mixing matrix and source signals precisely.
+\end_layout
+
+\begin_layout Itemize
+The effect of model estimation depends on the parameters of the mixing matrix.
+\end_layout
+
+\begin_layout Itemize
+The k-means algorithm relies on the selection of random initial points,
+ so there are some differences in the results of each run.
 \end_layout
 
 \end_body
