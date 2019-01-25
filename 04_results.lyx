@@ -176,17 +176,17 @@ using SciPy's scipy.optimize.fsolve function.
  measure its accuracy, and finally find the optimal solution.
  According to the range of b, we take three special values 30, 35, and 40
  to solve the parameters, and the final result is shown in Tab.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "L-solve-res"
-plural "false"
-caps "false"
-noprefix "false"
+ 4.1.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+特别注意，这里没用标签！
+\end_layout
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -197,6 +197,23 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Solving results 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -338,30 +355,6 @@ status open
 \end_inset
 
 
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Solving results 
-\begin_inset Formula $\lambda$
-\end_inset
-
-and 
-\begin_inset Formula $\mu_{m}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "L-solve-res"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -371,17 +364,17 @@ name "L-solve-res"
 
 \begin_layout Standard
 From Tab.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "L-solve-res"
-plural "false"
-caps "false"
-noprefix "false"
+ 4.1,
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+特别注意，这里没用标签
+\end_layout
 
 \end_inset
 
-, we can conclude that when 
+ we can conclude that when 
 \begin_inset Formula $A$
 \end_inset
 
@@ -423,7 +416,7 @@ Once
 \begin_inset Formula $\mu_{m}$
 \end_inset
 
-are determined, we can draw the tangent of 
+ are determined, we can draw the tangent of 
 \begin_inset Formula $y$
 \end_inset
 
@@ -485,7 +478,18 @@ When
 \begin_inset Formula $b=40$
 \end_inset
 
-, the results of our solution are shown in Fig .
+, the results of our solution are shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-fig1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -580,7 +584,7 @@ The time when the dragon reaches maximum growth rate
 \begin_inset Formula $\mu_{m}$
 \end_inset
 
-is around 52 years old, and it weights 81,800.71 kg.
+ is around 52 years old, and it weights 81,800.71 kg.
 \end_layout
 
 \end_body
