@@ -79,24 +79,23 @@
 Model Establishment
 \end_layout
 
-\begin_layout Standard
-As problem sets forth, the system contains five inputs and three outputs.
- For the number of output is less than input, it is an Underdetermined Blind
- Source Separation (UBSS) problem.
- We can solve this kind of problem using the clustering method.
-\end_layout
-
 \begin_layout Subsection
-The filter Model
+The Model of Dragon growing
 \end_layout
 
-\begin_layout Subsubsection
-Simulating basilar membrane with Gammatone filter bank
+\begin_layout Standard
+Organism has a common feature on it's growing speed, which can be discribed
+ as Slow-Fast-Slow.
+ Figure Clarifies the growth process of the organism.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-模拟的时候并没有实现，真正比赛的时候得实现
+这里需要插入一个关于生长过程S曲线描述的图片，在Richards模型的论文中的图1
 \end_layout
 
 \end_inset
@@ -105,371 +104,32 @@ status open
 \end_layout
 
 \begin_layout Standard
-The human can use their basilar membrane to filter the noise and get the
- sound they want.
- In the case of pure tones input, when the frequency is high, the maximum
- amplitude of the sound wave occurs at the bottom of the basilar membrane;
- on the contrary, it appears at the top.
- As the input sound wave is compound, the basilar membrane can sperate those
- sound components with different frequency and amplitude, which will have
- the function of spectrum analysis.
-\end_layout
-
-\begin_layout Standard
-Because the basilar membrane has such a function, we can use a series of
- filters to simulate the process mentioned above.
- The Commonly used filter banks include resonant filter bank
-\begin_inset CommandInset citation
-LatexCommand cite
-key "C-lyon1988-analog"
-literal "false"
-
+As we can see, the total growth of the organism shows a 'S' tendency that
+ includes three stages: the initial growing stage, the exponential growing
+ stage and the steady growing stage.
+ Richards equation can simulate those three stages by four parameters with
+ boilogical meanings: the maximum specific growth rate 
+\begin_inset Formula $\mu_{m}$
 \end_inset
 
-, Round-Exponential filter bank
-\begin_inset CommandInset citation
-LatexCommand cite
-key "C-patterson-1986-auditory"
-literal "false"
-
+, the lag time 
+\begin_inset Formula $\lambda$
 \end_inset
 
- and Gammatone filter bank
-\begin_inset CommandInset citation
-LatexCommand cite
-key "C-johannesma-1972-pre"
-literal "false"
-
-\end_inset
-
-, etc..
- Because Gammatone filter bank can primely stimulate the physiological propertie
-s by using fewer parameters and has a simple function of unit impulse response,
- so we apply Gammatone filter bank to our model.
-\end_layout
-
-\begin_layout Standard
-Gammatone filter is defined by its function of the unit impulse response
- in the time domain:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-g_{i}(t)=At^{n-1}exp(-2\pi b_{i}t)cos(2\pi f_{i}+\phi_{i})u(t),t\geq0,1\leq i\leq N\label{eq:3.c}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In formula 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.c"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, 
+, the asymptotic value 
 \begin_inset Formula $A$
 \end_inset
 
- represents the gain of the filter, 
-\begin_inset Formula $f_{i}$
+ and the shape parameter 
+\begin_inset Formula $v$
 \end_inset
 
- represents filter's center frequency, 
-\begin_inset Formula $\phi_{i}$
-\end_inset
-
- means the phase, 
-\begin_inset Formula $n$
-\end_inset
-
- is the order of the filter and 
-\begin_inset Formula $N$
-\end_inset
-
- is the number of Gammantone filter in the bank.
- 
-\begin_inset Formula $b_{i}$
-\end_inset
-
- is the decay factor of the filter, it determines the speed of the impulse
- response's attenuation, and it can be defined as follows:
-\begin_inset Formula 
-\begin{equation}
-bi=1.019ERB(f_{i})
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $ERB(f_{i})$
-\end_inset
-
- is the equivalent rectangular bandwidth of Gammantone filter, and it has
- the relationship with filter's center frequency 
-\begin_inset Formula $f_{i}$
-\end_inset
-
- as follows:
-\begin_inset Formula 
-\begin{equation}
-ERB(f_{i})=24.7\times(4.37\times\frac{f_{i}}{1000}+1)
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In order to simplify the model, we treat the phase 
-\begin_inset Formula $\phi=0$
-\end_inset
-
-, the filter's order 
-\begin_inset Formula $n=4$
-\end_inset
-
-.
- Because all Gammatone filters use the same amplitude 
-\begin_inset Formula $A,$
-\end_inset
-
- parameter 
-\begin_inset Formula $A$
-\end_inset
-
- will not affect the final result, thus we set 
-\begin_inset Formula $A=1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection
-The nonelinearal compression of auditory system
-\end_layout
-
-\begin_layout Standard
-By searching for literature, we find that the auditory system has the characteri
-stic of nonlinearity, which means that the output power compression of high-freq
-uency signal differs from the low-frequency one.
- This characteristic enhances the anti-interference ability of the auditory
- system
+, which can be written as below
 \begin_inset CommandInset citation
 LatexCommand cite
-key "C-LiChaohui-2006-auditory"
+key "C-zwietering-1990-modeling"
 literal "false"
 
-\end_inset
-
-.
- Scientists use 
-\begin_inset Formula $\lambda$
-\end_inset
-
- to analyze the nonlinearity of the auditory system, which is defined as
- below:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\lambda=\frac{10\lg(\frac{P_{o}}{P_{r}})}{10\lg(\frac{P_{i}}{P_{r}})}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-where
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $p_{o}$
-\end_inset
-
- is the output power of received signal,
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $p_{r}$
-\end_inset
-
-is the reference power, and
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $p_{i}$
-\end_inset
-
- is the input power of received signal.
-\end_layout
-
-\begin_layout Standard
-The value of parameter 
-\begin_inset Formula $\lambda$
-\end_inset
-
- varies a lot in different literature, but there are two principles recognized
- by most scholars:
-\end_layout
-
-\begin_layout Standard
-(1) it shows a strong compressing effect among signals of which frequency
- above 1 kHz and 
-\begin_inset Formula $\lambda$
-\end_inset
-
- almost keeps the same.
-\end_layout
-
-\begin_layout Standard
-(2) if the signal's frequency is below 1 kHz, with its frequency decaying,
- compressing effect damps a lot.
-\end_layout
-
-\begin_layout Standard
-We use one of the functions between 
-\begin_inset Formula $\lambda$
-\end_inset
-
- and signal's frequency 
-\begin_inset Formula $f$
-\end_inset
-
- obtainable in the literature satisfied that two principles
-\begin_inset CommandInset citation
-LatexCommand cite
-key "C-HuFengson-2012-base-on"
-literal "false"
-
-\end_inset
-
-, which can be shown as the graph below:
-\end_layout
-
-\begin_layout Subsubsection
-Refining signals by FFT
-\end_layout
-
-\begin_layout Standard
-Basilar membrane's refining and shielding process is similar to choosing
- a group of 
-\begin_inset Formula $f_{i}$
-\end_inset
-
- in a certain range for the Gammatone filter bank.
- By selecting the center frequency 
-\begin_inset Formula $f_{i}$
-\end_inset
-
- in the range 1 kHz - 5 kHz uniformly, and calculate 
-\begin_inset Formula $\lambda$
-\end_inset
-
-, we can get the signals outputted by the auditory system.
-\end_layout
-
-\begin_layout Standard
-In order to make the signals inputted more precise to the actual and apply
- to the computers, we need to discretize them firstly.
- Then the discrete signals need to take the procedures of pre-emphasis and
- framing.
-\end_layout
-
-\begin_layout Standard
-Let 
-\begin_inset Formula $x(n)$
-\end_inset
-
- be the signal before pre-emphasis, 
-\begin_inset Formula $y(n)$
-\end_inset
-
- be the signal after this process and 
-\begin_inset Formula $a$
-\end_inset
-
- be the shifting parameter.
- The pre-emphasis process can be written as formula below:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-y(n)=x(n)-a\cdot x(n-1)
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In the process of framing, we use hamming window function 
-\begin_inset Formula $w(n)$
-\end_inset
-
- to mutiply 
-\begin_inset Formula $y(n)$
-\end_inset
-
- to get the signal 
-\begin_inset Formula $s_{w}(n)$
-\end_inset
-
-, which are is formulated as follows:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-s_{w}(n)=y(n)\cdot w(n)
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Let 
-\begin_inset Formula $Y(k)$
-\end_inset
-
- and 
-\begin_inset Formula $H_{i}(k)$
-\end_inset
-
- be the discrete spectrum of the signals 
-\begin_inset Formula $y(n)$
-\end_inset
-
- and 
-\begin_inset Formula $h_{i}(n)$
-\end_inset
-
- respectively after FFT, then we can get the spectrum of discrete signals
- 
-\begin_inset Formula $M_{i}(k)$
-\end_inset
-
- outputted by the filter 
-\begin_inset Formula $i$
 \end_inset
 
 :
@@ -478,18 +138,32 @@ Let
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-M_{i}(k)=(Y^{2}(k)H(k))^{\lambda}
+y=A\left\{ 1+v\cdot\exp(1+v)\cdot\exp\left[\frac{\mu_{m}}{A}\cdot\left(1+v\right)^{\left(1+\frac{1}{v}\right)}\cdot(\lambda-t)\right]\right\} ^{\left(-\frac{1}{v}\right)}\label{eq:c.3.1}
 \end{equation}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+In order to simplify the problem, We suppose the dragon's Shape satisfying
+ geometrically similar with time going by
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-giordano-2013-first"
+literal "false"
+
+\end_inset
+
+.
+ This can be shown as:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-M(k)=\sum_{i=1}^{N}M_{i}(k)
+S=kV^{\frac{2}{3}}\label{eq:3.c.2}
 \end{equation}
 
 \end_inset
@@ -498,488 +172,63 @@ M(k)=\sum_{i=1}^{N}M_{i}(k)
 \end_layout
 
 \begin_layout Standard
-where
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $N$
+While 
+\begin_inset Formula $S$
 \end_inset
 
- is the number of the filter,
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $M(k)$
+ is the surface area of the dragon, 
+\begin_inset Formula $V$
 \end_inset
 
- is the whole power density spectrum of the output discrete signals.
+ is the volume of the dragon and 
+\begin_inset Formula $k$
+\end_inset
+
+ is a constant.
+ If Richards equation satisfies 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ , we could yield 
+\begin_inset Formula $v=-\frac{1}{3}$
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:c.3.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ only has three parameters that need to determine.
+ Considering the requirements in the problem that dragons' weight is 
+\begin_inset Formula $10$
+\end_inset
+
+kg when they were hatched and 
+\begin_inset Formula $30-40$
+\end_inset
+
+kg when they grew after a year, so we need another requirement.
+ We tend to determine this by estimating the maximum weight of the dragon.
 \end_layout
 
 \begin_layout Standard
-Using inverse FFT, we can get the discrete output signal 
-\begin_inset Formula $m(n)$
-\end_inset
-
- in the time domain.
+Since the dragon metioned in Game of Thrones doesn't exist in the real life,
+ ....
 \end_layout
 
 \begin_layout Subsection
 The UBSS Model
-\end_layout
-
-\begin_layout Subsubsection
-Mathematical expression of UBSS problem
-\end_layout
-
-\begin_layout Standard
-Let 
-\begin_inset Formula $\mathbf{X}^{t}$
-\end_inset
-
- be an 
-\begin_inset Formula $M$
-\end_inset
-
--dimensional column vector corresponding to the output of 
-\begin_inset Formula $M$
-\end_inset
-
- sensors at a given discrete time instant 
-\begin_inset Formula $t$
-\end_inset
-
-, and let 
-\begin_inset Formula $\mathbf{X}$
-\end_inset
-
- be an 
-\begin_inset Formula $M\times T$
-\end_inset
-
- matrix corresponding to the sensor data at all times 
-\begin_inset Formula $t=1,...,T$
-\end_inset
-
-.
- Let 
-\begin_inset Formula $\mathbf{S}$
-\end_inset
-
- be the 
-\begin_inset Formula $N\times T$
-\end_inset
-
- matrix of underlying source signals, and 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- be the 
-\begin_inset Formula $M\times N$
-\end_inset
-
- mixing matrix.
- The problem of blind source separation consists of finding the solution
- to the following system of equations:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathbf{X=AS}\label{eq:3.1}
-\end{equation}
-
-\end_inset
-
-Because we have no information about the source signals or the mixing process,
- matrix 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- and 
-\begin_inset Formula $\mathbf{S}$
-\end_inset
-
- are unknown (We assume matrix 
-\begin_inset Formula $\boldsymbol{\mathbf{A}}$
-\end_inset
-
- is of full rank).
-\end_layout
-
-\begin_layout Standard
-Our steps are to recover blind mixing matrix 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- and to estimate source signals matrix 
-\begin_inset Formula $\mathbf{S}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection
-The recovery of blind mixing matrix
-\end_layout
-
-\begin_layout Standard
-We can decompose Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.1"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- into
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathbf{x^{\mathit{t}}}=\sum_{j=1}^{N}\mathbf{a^{\mathit{j}}}s_{j}^{t}\label{eq:3.2}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-where
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\mathbf{a^{\mathit{j}}}$
-\end_inset
-
- is the 
-\begin_inset Formula $j$
-\end_inset
-
-th column vector of 
-\begin_inset Formula $M\times N$
-\end_inset
-
- mixing matrix 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
-,
-\end_layout
-
-\begin_layout Itemize
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Formula $s_{j}^{t}$
-\end_inset
-
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- is the 
-\begin_inset Formula $j$
-\end_inset
-
-th component of the vector 
-\begin_inset Formula $\mathbf{S}$
-\end_inset
-
- at time 
-\begin_inset Formula $t$
-\end_inset
-
-,
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\mathbf{x^{\mathit{t}}}$
-\end_inset
-
- is the output vector at time 
-\begin_inset Formula $t$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Following Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, if only one of the sources (say, source 
-\begin_inset Formula $i$
-\end_inset
-
-) is non-zero, then all 
-\begin_inset Formula $\mathbf{x^{\mathit{t}}}$
-\end_inset
-
- would be proportional to 
-\begin_inset Formula $\mathbf{a}^{i}$
-\end_inset
-
- and all data points in mixture space would be aligned along the direction
- of this basis vector.
- When the sources are sparse, for a given data point 
-\begin_inset Formula $t$
-\end_inset
-
-, if one of the sources is significantly larger, the remaining ones are
- likely to be close to zero.
- Thus, the density of data in mixture space shows a clear tendency to cluster
- along the directions of the basis vectors 
-\begin_inset Formula $\mathbf{a}^{j}$
-\end_inset
-
-'s.
-\end_layout
-
-\begin_layout Standard
-Estimating the mixing matrix, then, consists of finding the directions of
- maximum data density.
- The directions are determined by column vectors 
-\begin_inset Formula $\mathbf{a}^{j}$
-\end_inset
-
- of mixing matrix 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
-.
- We can determine the directions of maximum data density by using k-means
- clustering algorithm.
-\end_layout
-
-\begin_layout Standard
-When using the k-means algorithm, we first normalize all the resulting column
- vectors to facilitate subsequent comparisons.
- Thus, the normalized results obtained by all the column vectors with the
- same direction will be small, that is to say, only 
-\begin_inset Formula $N$
-\end_inset
-
- clusters.
- We randomly initialize 
-\begin_inset Formula $N$
-\end_inset
-
- center column vectors, find the nearest vector of all vectors, and calculate
- the new center vectors after clustering.
- After adequate iteration, the center vectors are the N columns in the 
-\begin_inset Formula $\textbf{A}$
-\end_inset
-
- matrix we want.
-\end_layout
-
-\begin_layout Subsubsection
-The estimation of source signals
-\end_layout
-
-\begin_layout Standard
-As it is an underdetermined system, Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- are underdetermined equations.
- Even when mixing matrix 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
-is known, the solution of Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.2"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is not unique.
- Our approach to sparse UBSS consist of finding the solution that minimizes
- the 
-\begin_inset Formula $l_{1}$
-\end_inset
-
- norm of source signals.
-\end_layout
-
-\begin_layout Standard
-In the case that blind mixing matrix 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- is known, the problem of inferring the source can be formulated independently
- for each data point 
-\begin_inset Formula $x^{t}$
-\end_inset
-
-, leading to 
-\begin_inset Formula $T$
-\end_inset
-
- tractable small problems
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\min_{\mathbf{s}^{t}}\frac{1}{2\sigma^{2}}||\mathbf{A}\mathbf{s}^{t}-\mathbf{x}^{t}||^{2}+\sum_{j}\mid s_{j}^{t}\mid,\label{eq:3.3}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-for 
-\begin_inset Formula $t=1,...,T$
-\end_inset
-
-.
- Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.3"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is in the case with additive Gaussian noise 
-\begin_inset Formula $\mathbf{X=AS+V}$
-\end_inset
-
-, and assuming that 
-\begin_inset Formula $\mathbf{A}$
-\end_inset
-
- is uniformly distributed.
- Variable 
-\begin_inset Formula $\sigma^{2}$
-\end_inset
-
- is the variance of the noise 
-\begin_inset Formula $\mathbf{V}$
-\end_inset
-
-.
- To simplify the problem, we only consider the case in the absence of noise.
- Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.3"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- can be rewritten as:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\min_{\mathbf{s}^{t}}\sum_{j}\mid s_{j}^{t}\mid\label{eq:3.4}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-s.t\quad As^{\mathit{t}}=x^{\mathit{t}}\qquad t=1,...,T
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.4"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is equivalent to minimizing the 
-\begin_inset Formula $l_{1}$
-\end_inset
-
- norm of 
-\begin_inset Formula $s^{t}$
-\end_inset
-
-.
- It is obviously to find that if the original signals are sparser, the the
- 
-\begin_inset Formula $l_{1}$
-\end_inset
-
- norm of 
-\begin_inset Formula $s^{t}$
-\end_inset
-
- will be smaller.
- We can solve this problem by using linear programming algorithm.
-\end_layout
-
-\begin_layout Standard
-When using linear programming, we need to ensure that any two rows of the
- A matrix are not proportional.
 \end_layout
 
 \end_body
