@@ -80,7 +80,7 @@ Model Establishment
 \end_layout
 
 \begin_layout Subsection
-The Model of Dragon growing
+The Model of Dragon Growing
 \end_layout
 
 \begin_layout Standard
@@ -261,7 +261,7 @@ kg when they were hatched and
 \begin_inset Formula $30-40$
 \end_inset
 
-kg when they grew after a year, so we need another requirement.
+ kg when they grew after a year, so we need another requirement.
  We tend to determine this by estimating the maximum weight of the dragon.
 \end_layout
 
@@ -303,10 +303,11 @@ Z：需要补上原文
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Formula 
-\begin{equation}
-\frac{14.85\times10^{3}}{A}=\frac{1.5^{3}}{4^{3}}\label{eq:Z-geometrically similar}
-\end{equation}
+\[
+\frac{14.85\times10^{3}}{A}=\frac{1.5^{3}}{4^{3}}
+\]
 
 \end_inset
 
@@ -314,18 +315,7 @@ Z：需要补上原文
 \end_layout
 
 \begin_layout Standard
-By solving Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Z-geometrically similar"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, we yield 
+We yield 
 \begin_inset Formula $A=281.6$
 \end_inset
 
