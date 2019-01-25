@@ -86,16 +86,59 @@ The Model of Dragon growing
 \begin_layout Standard
 Organism has a common feature on it's growing speed, which can be discribed
  as Slow-Fast-Slow.
- Figure Clarifies the growth process of the organism.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Fig: growth curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ Clarifies the growth process of the organism.
  
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-这里需要插入一个关于生长过程S曲线描述的图片，在Richards模型的论文中的图1
+\align center
+\begin_inset Graphics
+	filename figures/Growth Curve.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sigmoid form curve of growth process
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Fig: growth curve"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
