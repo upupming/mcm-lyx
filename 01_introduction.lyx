@@ -112,8 +112,8 @@ and its original novel series
  A Song of Ice and Fire , Daenerys Targaryen 
 \shape default
 is one of the most popular characters.
- The New York Times cites her as one of the author's finest creations.
- She is called the 
+ The New York Times cites her as one of the author's finest creatures, named
+ as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -134,17 +134,20 @@ We appreciate
 \shape italic
 Daenerys Stormborn
 \shape default
-, and happy to see her conquering the Westeros with her dragons.
- But there is another question attracting our interest now.
- What if these three fictional dragons are living today?
+, and are willing to see her conquering the Westeros with her dragons.
+ But there is another question catching our eyesight now.
+ What if these three fictional dragons are alive today?
 \end_layout
 
 \begin_layout Standard
 Dragons are the creatures standing on the top of the food chain.
  Their existence will have an great impact on the ecological environment.
- It will consume a large amount of resources to supply their survival.
- In order to make the existence of the dragon possible, we need to figure
- out these processes.
+ It will consume quantities of resources to supply their survival.
+ In order to make the existence of the dragon more possible, we need to
+ figure out those processes.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -162,21 +165,21 @@ Restatement of the problem
 \end_layout
 
 \begin_layout Standard
-To find out what the dragon will live in in a real world.
+To find out how the dragon will live in in a real world.
  We need to analyze the following questions:
 \end_layout
 
 \begin_layout Itemize
-How does the dragon grow?
+How will the dragon grow?
 \end_layout
 
 \begin_layout Itemize
-How does the dragon interact with the ecological environment?
+How will the dragon interact with the ecological environment?
 \end_layout
 
 \begin_layout Itemize
-Does the dragon perform differently in different environments? If so, how
- is it?
+Will the dragon perform differently in different environments? If ture,
+ how is the discrepancy?
 \end_layout
 
 \begin_layout Standard
@@ -215,8 +218,8 @@ Does the dragon perform differently in different environments? If so, how
 \begin_inset space \thinspace{}
 \end_inset
 
-In order to answer these questions, we draw on some of the scientific research
- results in the field of biology today.
+In order to answer these questions, we take some of the scientific research
+ results in the field of biology today into consideration.
 \end_layout
 
 \begin_layout Subsection
@@ -224,10 +227,10 @@ Literature Review
 \end_layout
 
 \begin_layout Standard
-The growth curve model is a model for studying the law of a certain biological
- indicator's change varies with time.
+The growth curve model is a model for studying the laws of a certain biological
+ indicator's change varying with time.
  So far, scientists have used nonlinear curves to fit the growth trajectory
- of animals.
+ related to animals.
  In 1838, 
 \shape italic
 Verhulst
@@ -254,14 +257,13 @@ literal "false"
 
 \end_inset
 
-.
- And he used it for fish weight gain studies successfully.
+, and he used it for fish weight studies successfully.
  In 1959, 
 \shape italic
 F.J.
  Richards
 \shape default
- extended the Bertalanffy growth curve, and proposed the Richards grows
+ extended the Bertalanffy growth curve, and proposed the Richards growth
  curve
 \begin_inset CommandInset citation
 LatexCommand cite

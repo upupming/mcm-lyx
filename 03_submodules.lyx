@@ -273,8 +273,8 @@ Since the dragon does not exist in the real life, we can use the data of
  rex weighs about 14.85 tons.
  The latest T.
  rex was found in Montana, USA, in 1987.
- It is the most complete specimen found; And it has a skull about five feet
- long, which is equals to about 1.5 m
+ It is the most complete specimen found, and it has a skull about five feet
+ long, which is equal to about 1.5 m
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Z-T.Rex"
@@ -298,8 +298,8 @@ Z：需要补上原文
 \end_inset
 
 .
- We set the carriage to a length of 4 m.
- Then, accoarding to geometrically similar, we derive:
+ We set the carriage to have length of 4 m.
+ Then, accoarding to geometrically similar, we can derive:
 \end_layout
 
 \begin_layout Standard
@@ -314,7 +314,7 @@ Z：需要补上原文
 \end_layout
 
 \begin_layout Standard
-Solving Eq.
+By solving Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
