@@ -85,5 +85,503 @@
 Results
 \end_layout
 
+\begin_layout Subsection
+Results of the Model of Dragon Growing
+\end_layout
+
+\begin_layout Subsubsection
+Determination of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+According to Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:c.3.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the dragon's weight 
+\begin_inset Formula $y$
+\end_inset
+
+ is a function of time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $A=281.6$
+\end_inset
+
+ tons is a constant, there are only two undetermined parameters: 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{m}$
+\end_inset
+
+.
+ By using the constraints given by the problem description:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+f(0)=10\\
+f(1)=b & 30\le b\le40
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we solve the value of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{m}$
+\end_inset
+
+using SciPy's scipy.optimize.fsolve function.
+ Because the result obtained by SciPy is related to the given initial value,
+ we traverse all the initial values using step size 10 from 1 to 1000 for
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{m}$
+\end_inset
+
+, and then substitute the obtained solution into the original equation to
+ measure its accuracy, and finally find the optimal solution.
+ According to the range of b, we take three special values 30, 35, and 40
+ to solve the parameters, and the final result is shown in Tab.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-solve-res"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mu_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26.31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1895.42
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22.42
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2224.25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.76
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2523.83
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Solving results 
+\begin_inset Formula $\lambda$
+\end_inset
+
+and 
+\begin_inset Formula $\mu_{m}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-solve-res"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From Tab.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-solve-res"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can conclude that when 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $y(0)$
+\end_inset
+
+ is a constant, the larger 
+\begin_inset Formula $y(1)$
+\end_inset
+
+, the smaller 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, because the faster the growth rate, the shorter the lag time; the larger
+ 
+\begin_inset Formula $y(1)$
+\end_inset
+
+, the larger 
+\begin_inset Formula $\mu_{m}$
+\end_inset
+
+, because the dragon can grow bigger at a short time, and then it will grow
+ faster when bigger, which forms a virtuous cycle.
+\end_layout
+
+\begin_layout Subsubsection
+Determination of Growth Stages
+\end_layout
+
+\begin_layout Standard
+Once 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{m}$
+\end_inset
+
+are determined, we can draw the tangent of 
+\begin_inset Formula $y$
+\end_inset
+
+ at the inflection point, which can be written as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=\mu_{m}(t-\lambda)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then we can derive the three essential points and stages of the growth curve
+ by
+\end_layout
+
+\begin_layout Itemize
+the intersection of a vertical line which passes the intersection of the
+ tangent and the horizontal line 
+\begin_inset Formula $y=0$
+\end_inset
+
+ and the original 
+\begin_inset Formula $y$
+\end_inset
+
+-curve,
+\end_layout
+
+\begin_layout Itemize
+the intersection of the tangent and the original 
+\begin_inset Formula $y$
+\end_inset
+
+-curve,
+\end_layout
+
+\begin_layout Itemize
+and the intersection of a vertical line which passes the intersection of
+ the tangent and the horizontal line 
+\begin_inset Formula $y=A$
+\end_inset
+
+ and the original 
+\begin_inset Formula $y$
+\end_inset
+
+-curve.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $b=40$
+\end_inset
+
+, the results of our solution are shown in Fig .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Growth-curve-y_1=40.svg
+	scale 40
+	BoundingBox 0bp 0bp 980bp 720bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Groth curve of a dragon when 
+\begin_inset Formula $b=40$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-fig1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Form Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-fig1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can conclude that, when 
+\begin_inset Formula $y(1)=40$
+\end_inset
+
+, the dragon's asymptotic weight value 
+\begin_inset Formula $A$
+\end_inset
+
+ can be reached after nearly 280 years, which is a long time.
+ The periods of the three stages of a dragon are:
+\end_layout
+
+\begin_layout Enumerate
+Initial growth stage: 0 - 19 years old
+\end_layout
+
+\begin_layout Enumerate
+Exponential growth stage: 19 - 131 years old
+\end_layout
+
+\begin_layout Enumerate
+Steady growth stage: 
+\begin_inset Formula $>$
+\end_inset
+
+ 131 years old
+\end_layout
+
+\begin_layout Standard
+The time when the dragon reaches maximum growth rate 
+\begin_inset Formula $\mu_{m}$
+\end_inset
+
+is around 52 years old, and it weights 81,800.71 kg.
+\end_layout
+
 \end_body
 \end_document

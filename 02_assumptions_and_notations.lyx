@@ -176,7 +176,7 @@ Notations
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="3">
+<lyxtabular version="3" rows="10" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -226,7 +226,7 @@ Dimensions/Unit
 \begin_layout Plain Layout
 
 \series bold
-Matrix
+Variable
 \end_layout
 
 \end_inset
@@ -248,7 +248,7 @@ Matrix
 \begin_layout Plain Layout
 
 \series bold
-\begin_inset Formula $\mathbf{A}$
+\begin_inset Formula $\mathbf{\lambda}$
 \end_inset
 
 
@@ -260,7 +260,7 @@ Matrix
 \begin_inset Text
 
 \begin_layout Plain Layout
-Blind mixing matrix
+The lag time before growing rapidly
 \end_layout
 
 \end_inset
@@ -283,7 +283,7 @@ Blind mixing matrix
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mathbf{S}$
+\begin_inset Formula $\mathbf{\mu_{m}}$
 \end_inset
 
 
@@ -295,7 +295,7 @@ Blind mixing matrix
 \begin_inset Text
 
 \begin_layout Plain Layout
-Source signals matrix
+The maximum specific growth rate
 \end_layout
 
 \end_inset
@@ -318,7 +318,7 @@ Source signals matrix
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mathbf{X}$
+\begin_inset Formula $A$
 \end_inset
 
 
@@ -330,7 +330,7 @@ Source signals matrix
 \begin_inset Text
 
 \begin_layout Plain Layout
-Output signals matrix
+The asymptotic value of a dragon's weight
 \end_layout
 
 \end_inset
@@ -353,6 +353,38 @@ Output signals matrix
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $v$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The shape parameter in Richards equation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -364,7 +396,7 @@ Output signals matrix
 \begin_layout Plain Layout
 
 \series bold
-Variable
+Constant
 \end_layout
 
 \end_inset
