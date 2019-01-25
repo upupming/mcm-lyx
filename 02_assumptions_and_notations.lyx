@@ -86,39 +86,43 @@ Assumptions and Justifications
 \begin_layout Itemize
 
 \series bold
-Every element of the blind signals matrix and source signals is positive.
+There is no human intervention in the ecosystem we discuss.
  
 \series default
-In the real world, the signals are all positive, and the mixing coefficients
- of different signals are also positive.
+We only discuss the case of dragons living in a natural environment without
+ human, because human behavior can often affect the objective laws of nature.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-The source signals are sparse.
-
+The dragons do not fly except for predation.
+ 
 \series default
- A set of signals is said to be sparse if and only if only one signal is
- positive at any time.
- If the input distribution is sparse, the mixing matrix can be estimated
- either by external optimization or by clustering.
- Yet, when the signals per se do not satisfy this assumption, sparsity can
- still be achieved by realizing the separation in a sparser transformed
- domain.
+The dragons' flight must consume a lot of energy, and the purposeless flight
+ is not conducive to survival.
+ Thus we assume that the dragon will not fly outside the time of predation.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-The rank of the blind mixing matrix is exactly the number of rows of the
- matrix.
+The energy of the dragons' fire is from food.
  
 \series default
-Our algorithm takes advantage of the disproportionate nature of each column.
- Also, if two rows are proportional, then two outputs will be proportional,
- which is equivalent to the two output signals being the same and can be
- considered as one signal.
+In the real world, we do not consider the elements of magic.
+ According to the law of conservation of energy, it is impossible for a
+ dragon to create the energy for fire.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+The dragons are carnivores.
+ 
+\series default
+The dragons are ferocious animals, and only eating meat can meet the huge
+ energy intake needs.
 \end_layout
 
 \begin_layout Subsection
@@ -126,7 +130,8 @@ Notations
 \end_layout
 
 \begin_layout Standard
-Some notations used in this paper are listed in Table 
+Some notations used in this paper are listed in Tab.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "table-notations"

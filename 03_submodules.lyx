@@ -147,7 +147,7 @@ y=A\left\{ 1+v\cdot\exp(1+v)\cdot\exp\left[\frac{\mu_{m}}{A}\cdot\left(1+v\right
 \end_layout
 
 \begin_layout Standard
-In order to simplify the problem, We suppose the dragon's Shape satisfying
+In order to simplify the problem, We suppose the dragon's shape satisfying
  geometrically similar with time going by
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -223,8 +223,70 @@ kg when they grew after a year, so we need another requirement.
 \end_layout
 
 \begin_layout Standard
-Since the dragon metioned in Game of Thrones doesn't exist in the real life,
- ....
+Since the dragon does not exist in the real life, we can use the data of
+ real creatures to analogize the weight of adult dragons.
+ Tyrannosaurus Rex is a good choice whose shape is very similar to the dragon.
+ After investigation, we found that the largest T.
+ rex weighs about 14.85 tons.
+ The latest T.
+ rex was found in Montana, USA, in 1987.
+ It is the most complete specimen found; And it has a skull about five feet
+ long, which is equals to about 1.5 m
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Z-T.Rex"
+literal "false"
+
+\end_inset
+
+.
+ For the dragon, we refer to the description in 
+\shape italic
+Game of Thrones
+\shape default
+, '....'s head is as large as a carriage'
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Z：需要补上原文
+\end_layout
+
+\end_inset
+
+.
+ We set the carriage to a length of 4 m.
+ Then, accoarding to geometrically similar, we derive:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{14.85\times10^{3}}{A}=\frac{1.5^{3}}{4^{3}}\label{eq:Z-geometrically similar}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solving Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Z-geometrically similar"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we yield 
+\begin_inset Formula $A=281.6$
+\end_inset
+
+ tons.
 \end_layout
 
 \begin_layout Subsection

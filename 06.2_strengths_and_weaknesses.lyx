@@ -83,36 +83,8 @@ Strengths and Weaknesses
 Strength
 \end_layout
 
-\begin_layout Itemize
-We use a series of filters to simulate the operating mode of basilar membrane.
-\end_layout
-
-\begin_layout Itemize
-Our model can successfully implement five source signals' separation through
- three outputs of linear mixing.
-\end_layout
-
-\begin_layout Itemize
-By performing domain conversion before separation, our model can deal with
- the case that source signals are not sparse in the time domain.
-\end_layout
-
 \begin_layout Subsubsection
 Weakness
-\end_layout
-
-\begin_layout Itemize
-If there is a source signal whose strength is much greater than others',
- our model cannot estimate the blind mixing matrix and source signals precisely.
-\end_layout
-
-\begin_layout Itemize
-The effect of model estimation depends on the parameters of the mixing matrix.
-\end_layout
-
-\begin_layout Itemize
-The k-means algorithm relies on the selection of random initial points,
- so there are some differences in the results of each run.
 \end_layout
 
 \end_body

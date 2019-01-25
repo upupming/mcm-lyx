@@ -98,104 +98,63 @@
 Introduction
 \end_layout
 
-\begin_layout Standard
-For humans, it is very easy to switch attention between multiple sound sources.
- It is so easy that we cannot even feel the existence of this process.
- Unfortunately, machines are hard to achieve the same intelligence as humans.
- So far, a computer can recognize a single speech signal with high precision,
- but it cannot handle the case of multiple sound mixing.
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Fig1.1:Schematic diagram of multiple sound mixing"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- shows the scenario we discussed.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/Schematic diagram of multiple sound mixing.jpg
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Schematic diagram of multiple sound mixing
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "Fig1.1:Schematic diagram of multiple sound mixing"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Background
 \end_layout
 
 \begin_layout Standard
-The Cocktail Party Problem (CPP), first proposed by 
+In the famous fantasy drama television series 
 \shape italic
-Colin Cherry
+Game of Thrones 
 \shape default
- in 1953
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Z-Introduction-MIT"
-literal "false"
-
+and its original novel series
+\shape italic
+ A Song of Ice and Fire , Daenerys Targaryen 
+\shape default
+is one of the most popular characters.
+ The New York Times cites her as one of the author's finest creations.
+ She is called the 
+\begin_inset Quotes eld
 \end_inset
 
-.
- It is a psychoacoustic phenomenon that refers to the remarkable human ability
- to selectively attend to and recognize one source of auditory input in
- a noisy environment, where the hearing interference is produced by competing
- speech sounds or a variety of noises that are often assumed to be independent
- of each other.
- To unveil the mystery and imitate the human performance with a machine,
- scientists have attempted to view and simplify this complex perceptual
- task as a learning problem, for which tractable computational solutions
- are sought.
- One of the most efficient solutions is Blind Source Separation (BSS).
+Mother of Dragons
+\begin_inset Quotes erd
+\end_inset
+
+, for she has three dragons: 
+\shape italic
+Drogon, Rhaegal, 
+\shape default
+and
+\shape italic
+ Viserion.
+ 
+\shape default
+We appreciate 
+\shape italic
+Daenerys Stormborn
+\shape default
+, and happy to see her conquering the Westeros with her dragons.
+ But there is another question attracting our interest now.
+ What if these three fictional dragons are living today?
 \end_layout
 
 \begin_layout Standard
-Blind source separation, also known as blind signal separation, is a method
- of the separation of a set of source signals from a set of mixed signals
- without the aid of information about the source signals or the mixing process.
- The BSS problem is usually divided into two categories: overdetermined
- blind source separation and underdetermined blind source separation.
+Dragons are the creatures standing on the top of the food chain.
+ Their existence will have an great impact on the ecological environment.
+ It will consume a large amount of resources to supply their survival.
+ In order to make the existence of the dragon possible, we need to figure
+ out these processes.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Z: these processes, 我觉得用词不太当，你们可以改成更好的表达。
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -203,27 +162,61 @@ Restatement of the problem
 \end_layout
 
 \begin_layout Standard
-The problem simplified CPP into a system that can input five sound signals
- and then output three sound signals.
- Any one of the output signals is a linear combination of five input signals.
- Without any information except three output signals, we aim to estimate
- the five signals input.
+To find out what the dragon will live in in a real world.
+ We need to analyze the following questions:
+\end_layout
+
+\begin_layout Itemize
+How does the dragon grow?
+\end_layout
+
+\begin_layout Itemize
+How does the dragon interact with the ecological environment?
+\end_layout
+
+\begin_layout Itemize
+Does the dragon perform differently in different environments? If so, how
+ is it?
 \end_layout
 
 \begin_layout Standard
-We reorganize the issue into the following tasks:
-\end_layout
+\begin_inset space ~
+\end_inset
 
-\begin_layout Itemize
-Get the sound we want and shield the rest of the noise;
-\end_layout
 
-\begin_layout Itemize
-Estimate and restore the five signals input;
-\end_layout
+\begin_inset space \thinspace{}
+\end_inset
 
-\begin_layout Itemize
-Extend the model to be able to determine the number of signals.
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+In order to answer these questions, we draw on some of the scientific research
+ results in the field of biology today.
 \end_layout
 
 \begin_layout Subsection
@@ -231,98 +224,52 @@ Literature Review
 \end_layout
 
 \begin_layout Standard
-The research on BSS began in 1986
+The growth curve model is a model for studying the law of a certain biological
+ indicator's change varies with time.
+ So far, scientists have used nonlinear curves to fit the growth trajectory
+ of animals.
+ In 1838, 
+\shape italic
+Verhulst
+\shape default
+ proposed the Logistic growth curve equation
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Z-Introduction-11"
+key "Z-Logistic"
 literal "false"
 
 \end_inset
 
 .
- The French scholars 
+ In 1938, 
 \shape italic
-Herault
+Von Bertalanffy
 \shape default
- and
-\shape italic
- Jutten
-\shape default
- proposed a feedback neural network model and a Hebb learning rule-based
- H-J algorithm to successfully implement two source signals' separation,
- which is based on a linear mixing model.
- Subsequently, 
-\shape italic
-E.Sorouchyari
-\shape default
- and 
-\shape italic
-P.Comon
-\shape default
- et al.
- systematically proved the convergence and stability of the algorithm, which
- promoted the development of BSS
+ corrected the Logistic growth curve to accommodate the metabolic laws of
+ the organism
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Z-Introduction-12,Z-Introduction-13"
+key "Z-Von_Bertalanffy"
 literal "false"
 
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-In 1991, 
+ And he used it for fish weight gain studies successfully.
+ In 1959, 
 \shape italic
-L.Tong 
+F.J.
+ Richards
 \shape default
-pointed out that the reconstructed signal obtained by BSS remains the original
- waveform characteristics
+ extended the Bertalanffy growth curve, and proposed the Richards grows
+ curve
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Z-Introduction-identifiability"
+key "Z-Richards"
 literal "false"
 
 \end_inset
 
-.Thus it ensures the information of the source signals is not lost.
- It guaranteed the solvability of BSS problem.
-\end_layout
-
-\begin_layout Standard
-In 2001, 
-\shape italic
-Bofill
-\shape default
- and 
-\shape italic
-Zibulivsky
-\shape default
- et al.
- proposed a method for the underdetermined BSS problem based on 
-\begin_inset Quotes eld
-\end_inset
-
-two-stage
-\begin_inset Quotes erd
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Z-Introduction-TwoStage"
-literal "false"
-
-\end_inset
-
-.
- The first stage uses the potential function to recover mixing matrix.
- The second stage is based on the mixing matrix obtained in the first stage,
- and separate the source signals by the shortest path decomposition 
-\shape italic
-method
-\shape default
 .
 \end_layout
 
