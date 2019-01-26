@@ -392,6 +392,17 @@ To estimate the total energy intake of a dragon, we need to determine net
  By our analysis, net energy can be divided into five parts, which are:
  Energy for basic metabolish, Energy for growth, Energy for flight, Energy
  for breathing fire and Energy for recovery of trauma.
+ As we can see them showing in Tab 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Energy-cost-activities"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -406,6 +417,13 @@ status open
 
 \begin_layout Plain Layout
 Energy cost activities we need to analyze
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Energy-cost-activities"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -605,6 +623,43 @@ constant
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Then the total energy 
+\begin_inset Formula $E$
+\end_inset
+
+ for the dragon consuming can be written as Eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.Energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E=E_{m}+E_{g}+E_{f}+E_{b}+E_{t}\label{eq:3.c.Energy}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Next we will determine each five part of 
+\begin_inset Formula $E$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
