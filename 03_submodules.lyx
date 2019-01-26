@@ -809,7 +809,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Pinju/Desktop/growth energy.png
+	filename figures/growth energy.png
 	scale 50
 
 \end_inset
@@ -1161,7 +1161,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Pinju/Desktop/Fire.png
+	filename figures/Fire.png
 	scale 50
 
 \end_inset
