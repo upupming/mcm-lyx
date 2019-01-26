@@ -1617,5 +1617,120 @@ noprefix "false"
  times of the absorbing energy.
 \end_layout
 
+\begin_layout Subsection
+The model of the climate condition
+\end_layout
+
+\begin_layout Standard
+Climate condition changes may have several influence on our model, mostly
+ changing the temperature and the humidity of environment.
+ We tend to analyze this influence for two parts: the influence on the dragon
+ itself and the influence on the preies's distribution.
+\end_layout
+
+\begin_layout Subsubsection
+The influence on the dragon
+\end_layout
+
+\begin_layout Standard
+After referring to the literature, we find that the higher environment temperatu
+re causes the more energy consuming for basic metabolish and we suppose
+ that the tendency of this phemomenon is similar to the bird.
+ Then we can get Eq
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.22.c"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ by averaging the consumption in daytime and at night:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+此处也存在一个文献无法插入的情况
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{E_{m}(T_{e})}{E_{m}\left(T_{r}\right)}=\frac{V_{E}\left(T_{e}\right)}{V_{E}\left(T_{r}\right)}=1.82-0.033T\label{eq:3.22.c}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{r}$
+\end_inset
+
+ is the reference temperature, which was defined to be 
+\begin_inset Formula $25$
+\end_inset
+
+ ℃.
+ 
+\begin_inset Formula $E_{m}\left(T_{e}\right)$
+\end_inset
+
+ is the energy consuming for basic metabolish at 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+ while 
+\begin_inset Formula $E_{m}\left(T_{r}\right)$
+\end_inset
+
+ is that at 
+\begin_inset Formula $T_{r}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Obviously, the temperature of environment will also influnce 
+\begin_inset Formula $E_{b}$
+\end_inset
+
+ by affecting 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+.
+ From Eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.15"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we can see: while 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+ is lower, 
+\begin_inset Formula $E_{b}$
+\end_inset
+
+ becomes greater.
+\end_layout
+
 \end_body
 \end_document
