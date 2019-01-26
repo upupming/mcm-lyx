@@ -228,7 +228,7 @@ While
 \end_inset
 
  is a constant.
- If Richards equation satisfies 
+ If Richards equation satisfies Eq
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.2"
@@ -242,7 +242,7 @@ noprefix "false"
 \begin_inset Formula $v=-\frac{1}{3}$
 \end_inset
 
-, and 
+, and Eq
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:c.3.1"
@@ -730,7 +730,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{m}=\frac{\rho_{o}m_{d}V_{E}t}{\mu_{o}}E_{o}
+E_{m}=\frac{\rho_{o}m_{d}V_{E}t}{6\mu_{o}}E_{o}
 \end{equation}
 
 \end_inset
@@ -758,7 +758,7 @@ E_{m}=\frac{\rho_{o}m_{d}V_{E}t}{\mu_{o}}E_{o}
 \begin_inset Formula $1$
 \end_inset
 
- mol oxygen through 
+ mol oxygen through Eq
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.2.1.c"
@@ -907,7 +907,7 @@ In order to keep the ratio of bone and muscle in cross section the same,
 \end_layout
 
 \begin_layout Standard
-Combining 
+Combining Eq 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.5"
@@ -917,7 +917,7 @@ noprefix "false"
 
 \end_inset
 
- and 
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.6"
@@ -1061,7 +1061,7 @@ We set
 \end_inset
 
 .
- Through 
+ Through Eq 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.10.c"
@@ -1076,7 +1076,7 @@ noprefix "false"
 \end_inset
 
  .
- Then we can derive the energy of growth by 
+ Then we can derive the energy of growth by Eq 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.11.c"
