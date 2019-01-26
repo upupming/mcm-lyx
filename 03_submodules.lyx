@@ -367,6 +367,13 @@ status open
 
 \begin_layout Plain Layout
 Flow chart of energy distribution
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Flow-chart-of"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -626,11 +633,11 @@ constant
 \end_layout
 
 \begin_layout Standard
-Then the total energy 
-\begin_inset Formula $E$
+From the consuming side, the total energy 
+\begin_inset Formula $E_{n}$
 \end_inset
 
- for the dragon consuming can be written as Eq 
+ for the dragon can be written as Eq 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.Energy"
@@ -646,7 +653,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E=E_{m}+E_{g}+E_{f}+E_{b}+E_{t}\label{eq:3.c.Energy}
+E_{n}=E_{m}+E_{g}+E_{f}+E_{b}+E_{t}\label{eq:3.c.Energy}
 \end{equation}
 
 \end_inset
@@ -656,7 +663,7 @@ E=E_{m}+E_{g}+E_{f}+E_{b}+E_{t}\label{eq:3.c.Energy}
 
 \begin_layout Standard
 Next we will determine each five part of 
-\begin_inset Formula $E$
+\begin_inset Formula $E_{n}$
 \end_inset
 
 .
@@ -1112,7 +1119,7 @@ E_{g}=E_{gm}+E_{gb}=\left(\rho_{m}\frac{r_{m}^{2}}{r_{m}^{2}+r_{b}^{2}}E_{p}+\rh
 
 \begin_layout Standard
 We set 
-\begin_inset Formula $r_{b}=4r_{m}$
+\begin_inset Formula $r_{b}=0.8r_{m}$
 \end_inset
 
 .
@@ -1525,6 +1532,89 @@ E_{t}=\xi E_{m}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Energy absorbing in the environment
+\end_layout
+
+\begin_layout Standard
+Eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.Energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ determines 
+\begin_inset Formula $E_{q}$
+\end_inset
+
+ from the consuming side.
+ In the aspect of absorbing side, We can calculate the net energy by Eq
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.21"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{n}=0.57\eta nm_{p}E_{a}\label{eq:3.c.21}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Not all parts of the preies can be eaten by the dragon.
+ 
+\begin_inset Formula $\eta$
+\end_inset
+
+ is the efficiency which indicates the propotion of preie that the dragon
+ eats.
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ is the number of the preies, and 
+\begin_inset Formula $E_{a}$
+\end_inset
+
+ is the energy per kg for the preies.
+ From Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Flow-chart-of"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can get 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ is 
+\begin_inset Formula $0.57$
+\end_inset
+
+ times of the absorbing energy.
 \end_layout
 
 \end_body
