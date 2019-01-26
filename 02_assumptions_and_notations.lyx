@@ -83,6 +83,19 @@ Assumptions and Notations
 Assumptions and Justifications
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+龙生长满足几何相似性特性的假设很重要，考虑是否应该加入该假设在主要假设中
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 
 \series bold

@@ -1090,6 +1090,79 @@ noprefix "false"
 \end_layout
 
 \begin_layout Subsubsection
+Energy for flight
+\end_layout
+
+\begin_layout Standard
+The dragons are aggresive, so they do not have any natural enemy.
+ We suppose that the drangons always fly in the speed by consuming minimum
+ power, because they will not escape.
+ Accroding to the literature, we can get the relationship between dragon's
+ flying speed and its weight:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+此处有个文献无法插入，注意后续要插入
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v_{d}=5.70m_{d}^{0.16}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $L_{d}$
+\end_inset
+
+ be the distance that the dragon fly to the prey, 
+\begin_inset Formula $E_{v}$
+\end_inset
+
+ be the cost energy /kg per hour which can be estimated by the literature.
+ We can get the energy for flight below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+此处也存在一个文献无法插入的情况
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{f}=m_{d}\frac{L_{d}}{v_{d}}E_{v}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
 Energy for breathing fire
 \end_layout
 
@@ -1365,6 +1438,33 @@ noprefix "false"
 \begin_inset Formula 
 \begin{equation}
 E_{b}=\phi_{t}t_{p}=c_{p}m_{p}\left(1+\frac{2l_{c}}{r_{h}}\right)\left(T_{p}-T_{e}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Energy for recovery of trauma
+\end_layout
+
+\begin_layout Standard
+As we metioned above, the dragons are aggresive, so they seldom get hurt
+ from the preies.
+ We suppose this part of energy is propotional to the energy for basic metabolis
+h, and the coeficient for the ratio 
+\begin_inset Formula $\xi$
+\end_inset
+
+ is small.
+ So the energy for recovery of trama can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{t}=\xi E_{m}
 \end{equation}
 
 \end_inset
