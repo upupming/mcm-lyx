@@ -781,15 +781,62 @@ The dragon's body mostly consists of bone and muscle, so the energy for
  As we assume that the dragon's shape satisfying geometrically similar varying
  with time, the aixal growth rate for those two conponents remains the same
  but becomes different in radial direction.
- This process can be shown by Fig :
+ This process can be shown by Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-muscle&bone"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-这里插入肌肉的径横向图与生长图
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Pinju/Desktop/growth energy.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sketch of Muscle and Bone
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Z-muscle&bone"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1090,15 +1137,58 @@ In the SFM, we suppose
 \noun default
 \color inherit
 , so the shape of the fire is chosen to be a circular cylinder, which can
- be depict by the Fig below:
+ be depict by the Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-Heat_transfer"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-这里注意插入传热图
+\align center
+\begin_inset Graphics
+	filename C:/Users/Pinju/Desktop/Fire.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sketch of Heat Transfer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Z-Heat_transfer"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
