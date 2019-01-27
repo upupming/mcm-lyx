@@ -1246,7 +1246,7 @@ Accroding to our assumption, the dragon need to roast preies, for they have
  to eat them.
  The breathing fire can be depicted by flame.
  For analysis, we do not need the whole temperature field's distribution
- accurately, but using the Solid Flame Model(SFM) to simplify the flame
+ accurately, but using the Solid Flame Model (SFM) to simplify the flame
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C-raj2005large"
@@ -1679,7 +1679,11 @@ Our algorithm supposes that the dragon will find the nearest preies relating
 \end_layout
 
 \begin_layout Standard
-Step 1: Initialize the age of the dragon 
+
+\series bold
+Step 1:
+\series default
+ Initialize the age of the dragon 
 \begin_inset Formula $year$
 \end_inset
 
@@ -1697,7 +1701,11 @@ Step 1: Initialize the age of the dragon
 \end_layout
 
 \begin_layout Standard
-Step 2: Initialize the number of the preies 
+
+\series bold
+Step 2:
+\series default
+ Initialize the number of the preies 
 \begin_inset Formula $n$
 \end_inset
 
@@ -1714,7 +1722,11 @@ Step 2: Initialize the number of the preies
 \end_layout
 
 \begin_layout Standard
-Step 3: Judge the age of the dragon.
+
+\series bold
+Step 3:
+\series default
+ Judge the age of the dragon.
  If 
 \begin_inset Formula $year$
 \end_inset
@@ -1724,12 +1736,20 @@ Step 3: Judge the age of the dragon.
 \end_layout
 
 \begin_layout Standard
-Step 4: Initialize the preies' positon by ...
+
+\series bold
+Step 4:
+\series default
+ Initialize the preies' positon by ...
  distribution randomly.
 \end_layout
 
 \begin_layout Standard
-Step 5: Search the nearest prey 
+
+\series bold
+Step 5:
+\series default
+ Search the nearest prey 
 \begin_inset Formula $\left(x_{n},y_{n}\right)$
 \end_inset
 
@@ -1756,7 +1776,11 @@ L_{d}(n+1,year)=L_{d}\left(n,year\right)+L\left(x_{n},y_{n},year\right)
 \end_layout
 
 \begin_layout Standard
-Step 6: Calculate the 
+
+\series bold
+Step 6:
+\series default
+ Calculate the 
 \begin_inset Formula $E_{m}+E_{g}+E_{f}(n)+E_{b}(n)+E_{t}$
 \end_inset
 
@@ -1779,7 +1803,11 @@ Step 6: Calculate the
 \end_layout
 
 \begin_layout Standard
-Step 7: 
+
+\series bold
+Step 7:
+\series default
+ 
 \begin_inset Formula $n=n+1$
 \end_inset
 

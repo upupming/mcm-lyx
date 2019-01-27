@@ -87,5 +87,33 @@ Strength
 Weakness
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+在比较龙在不同气候下的表现时，我们的模型使用澳大利亚的气候数据和羊群分布数据来对比不同气候下龙的食物的分布密度。然而即使是澳大利亚温度或湿度相差最大的两个州，它
+们的差距也不算太大。所以，如果使用气候差异更大的地区的牛羊密度数据，得出的结果将会更有意义。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+在确定供养一只龙所需要的最小面积时，我们的设定区域内只有羊和牛可供龙捕食。现实世界的猎物成分可能更复杂，而且可能还存在其他的猎食者。猎物与猎物之间存在竞争关系，
+龙与其他捕食者之间也存在竞争关系。我们的模型没办法分析这些情况。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

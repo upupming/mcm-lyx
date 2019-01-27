@@ -79,5 +79,58 @@
 Future Work
 \end_layout
 
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+可以考虑各种气候下龙的猎物物种的变化，比如：龙在北极可以捕食北极熊或者海象等等。但是这些食物在热带地区是没有的。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+可以考虑各种气候下，龙的捕食环境对捕食难度的影响。比如：在温带地区，地貌多为草原，龙可以很容易地捕食到猎物；在热带地区，地貌多为从林，猎物可以更好地藏匿，这给龙
+捕食带来了难度。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+在分析龙对生态系统的影响的时候，可以进一步分析龙的加入对于其他肉食动物的影响。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+可以改进模型使其可以分析龙在海上捕食的情况。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

@@ -2710,69 +2710,91 @@ thispagestyle{empty}
 
 \series bold
 \size larger
-Be A Precision Audience in the Cocktail Party
+Fictional Dragons in Real World 
 \end_layout
 
 \begin_layout Abstract
-Cock Tail party problem (CPP) is a well-known problem in the field of computer
- speech recognition.
- Stimuli segregation is easy for human to realize, but hard for computers.
- Thus for the compound-tone input case, we tend to find out a method that
- can segregate those input pure-tone signals.
- 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+龙是一种广为人知的奇幻而强大的魔法生物。权力的游戏和冰与火之歌中的三条龙尤其受到人们的喜爱。长久以来，一直困扰我们的一个问题是，龙这种生物是否真的有可能存在？使
+用我们建立的模型可以详细地分析出龙在现实世界中生活所需要的条件。
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Abstract
-For part one, on the basis of the basilar membrane’s simulation in the literatur
-e, first we apply Gammatone filter into our model to shield the noise.
- Then we consider the nonlinear effect of the auditory system, which shows
- different power ratios of input and output signal varied with frequency.
- After that, we use the method of pre-emphasis and framing to deal with
- the sample discrete signals.
- Finally we use STFT to treat those signals in frequency domain and get
- the output signals.
- 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+为了确定出龙的生长过程，我们假设...。我们用...生长曲线方程拟合出龙的生长曲线，呈现S型。我们将该曲线分为三段，分别是：...。几岁到几岁是什么期（三个stages），其中，
+在他多少岁的时候，龙的生长速度达到最快。
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Abstract
-For part two, provided with 3 output signals, we need to refine 5 original
- signals input into the system.
- It’s just a simple case of the underdetermined blind source separation
- question.
- We set two main steps to solve this problem: determine the mixing matrix
- 
-\begin_inset Formula $A$
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+为了确定出龙的生存所需要的能量开支，我们假设...。我们首先确定了龙的食物能流转化效率，其中可用的净能占食物能量的57%。我们将这部分能量分为龙的五个能量开支，分别是
+：五个分支...。五个分支分别用了什么方法来确定...。since这个能量与龙的食物分布耦合到一起，我们采用模拟龙捕食的算法来解这个隐式方程。结果表明，所需的能量也随时间呈
+现S型分布。对于这部分能量需要多大面积来提供，我们采用“牛吃草”问题的思想来解决。
+\end_layout
+
 \end_inset
 
- and the original source vector 
-\begin_inset Formula $S$
-\end_inset
 
-.
- For finding the matrix 
-\begin_inset Formula $A$
-\end_inset
-
-, we use the k-means cluster method and get it’s column vectors.
- By confirming the source vector 
-\begin_inset Formula $S$
-\end_inset
-
-, we set this to a linear programming problem, searching 
-\begin_inset Formula $S$
-\end_inset
-
- to minimize its L1 norm.
- As the original signals are sparse, the segregated signals have little
- error compared with the original ones.
- 
 \end_layout
 
 \begin_layout Abstract
-In sensitivity analysis, we calculate the underdetermine case by varying
- the input and output source number, and we obtain that our model is robust
- and do not rely on those signal number.
- 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+然后我们建立了分析龙在不同气候下的表现的模型。不同气候同时影响龙本身对能量的需求和龙的食物分布。对龙本身，...；对食物分布，主要体现在不同气候下，龙的猎物的分布密度
+不同。我们以羊和牛为例，使用澳大利亚大陆上不同气候地区的牛羊密度代入模型。结果说明，...。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+最后，我们的模型分析了龙与生态环境的interaction。我们将生态环境分为三层：。通过...方法，确定出interaction of 第一层和第二层；通过最大熵法
+，确定第二层与第三层的关系。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+敏感性分析情况。
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
