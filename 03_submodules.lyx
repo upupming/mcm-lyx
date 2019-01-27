@@ -5,6 +5,11 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
+\begin_preamble
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -29,6 +34,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +50,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -1329,7 +1336,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1582,7 +1589,8 @@ Algorithm for calculating the total energy expenditure
 \end_layout
 
 \begin_layout Standard
-Eq 
+Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.Energy"
@@ -1593,11 +1601,11 @@ noprefix "false"
 \end_inset
 
  determines 
-\begin_inset Formula $E_{q}$
+\begin_inset Formula $E_{n}$
 \end_inset
 
  from the consuming side.
- In the aspect of absorbing side, We can calculate the net energy by Eq
+ In the aspect of absorbing side, We can calculate the net energy by Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1634,7 +1642,7 @@ Not all parts of the preies can be eaten by the dragon.
 \begin_inset Formula $E_{a}$
 \end_inset
 
- is the energy per kg for the preies.
+ is the energy per kilograms for the preies.
  From Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1691,16 +1699,24 @@ noprefix "false"
  the preies' distribution, and this will make the total energy expenditure
  uncertain.
  In order to calculate the total energy expenditure, we develop an algorithm
- and keep the catagory of the preies and their distribution type fixed.
- We also find the population density of these preies in Australia online
+ and keep the category of the preys and their distribution type fixed.
+ We also find the population density of these preys in Australia online
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Z-Sheep,Z-Cattle"
+literal "false"
+
+\end_inset
+
  for a better simulation.
  
 \end_layout
 
 \begin_layout Standard
 Our algorithm supposes that the dragon will find the nearest preies relating
- to its position, for this corresponds the lowest energy expenditure.
- Our algorithm's steps are shown in Algorithm 
+ to its position, because this corresponds the lowest energy expenditure.
+ Our algorithm is shown in Algorithm 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "Z-algorithm"
@@ -1725,146 +1741,334 @@ status open
 \series bold
 Step 1:
 \series default
- Initialize the age of the dragon 
-\begin_inset Formula $year$
+ Set a maximum of age 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $age_{max}$
 \end_inset
 
- and its position 
-\begin_inset Formula $\left(x_{d},y_{d}\right)$
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ to be simulated.
+ For the age of dragon 
+\begin_inset Formula $age$
 \end_inset
 
- in the ...
- square area.
- Set 
-\begin_inset Formula $year=1$
+ from 
+\begin_inset Formula $0$
 \end_inset
 
-.
+ to 
+\begin_inset Formula $age_{max}-1$
+\end_inset
+
+, do the following steps:
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
 
 \series bold
 Step 2:
 \series default
- Initialize the number of the preies 
-\begin_inset Formula $n$
+ Initialize a square area according the preset side length 
+\begin_inset Formula $a$
 \end_inset
 
- predated by dragon.
- Set 
-\begin_inset Formula $n=0$
+, and generate preys(cattles and sheep) according the area of the square
+ and the density of each kind of prey using random distribution.
+ Initialize the number of preys caught by the dragon 
+\begin_inset Formula $n_{cattles}=n_{sheep}=0$
 \end_inset
 
-, 
-\begin_inset Formula $L_{d}\left(year\right)=0$
-\end_inset
-
-
+.
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
 
 \series bold
 Step 3:
 \series default
- Judge the age of the dragon.
- If 
-\begin_inset Formula $year$
+ Initialize the position of dragon 
+\begin_inset Formula $\left(x_{d},y_{d}\right)$
 \end_inset
 
- reaches the maximum stage, stop the algorithm.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-output what? 还有要设定一个时间周期td
-\end_layout
-
-\end_inset
-
-
+ in the square area.
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
 
 \series bold
 Step 4:
 \series default
- Initialize the preies' positon by ...
- distribution randomly.
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-Step 5:
-\series default
- Search the nearest prey 
-\begin_inset Formula $\left(x_{n},y_{n}\right)$
+ Set the time period for predating 
+\begin_inset Formula $period=$
 \end_inset
 
- in the square area.
-\begin_inset Formula 
-\[
-L(x_{n},y_{n},year)=\sqrt{\left(x_{n}-x_{d}\right)^{2}+\left(y_{n}-y_{d}\right)^{2}}
-\]
-
+2 days.
+ Calculate the growing speed 
+\begin_inset Formula $\mu$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-L_{d}(n+1,year)=L_{d}\left(n,year\right)+L\left(x_{n},y_{n},year\right)
-\]
-
+ and weight 
+\begin_inset Formula $weight$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\series bold
-Step 6:
-\series default
- Calculate the 
-\begin_inset Formula $E_{m}+E_{g}+E_{f}(n)+E_{b}(n)+E_{t}$
-\end_inset
-
-, and judge that whether it is smaller than 
-\begin_inset Formula $0.57\eta nm_{p}E_{a}$
+ at age 
+\begin_inset Formula $age$
 \end_inset
 
 .
- If ture: 
-\begin_inset Formula $year=year+1$
+ Then calculate 
+\begin_inset Formula $E_{m},E_{g},E_{t}$
 \end_inset
 
-, 
-\begin_inset Formula $E_{n}(year)=0.57\eta nm_{p}E_{a}$
+, and initialize 
+\begin_inset Formula $E_{f}=E_{b}=0$
 \end_inset
 
-, and then jump to Step 2.
- Otherwise to Step 7.
- 
+.
+ Initialize absorbed energy 
+\begin_inset Formula $E_{a}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $E_{n}=E_{m}+E_{g}+E_{t}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Plain Layout
-
-\series bold
-Step 7:
-\series default
- 
-\begin_inset Formula $n=n+1$
+\begin_inset space \thinspace{}
 \end_inset
 
-, then jump to Step 5.
- 
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+Step 5: 
+\series default
+While 
+\begin_inset Formula $0.57\eta nm_{p}E_{a}<E_{n},$
+\end_inset
+
+do the following steps:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+Step 6: 
+\series default
+Search the nearest prey 
+\begin_inset Formula $\left(x^{*},y^{*}\right)$
+\end_inset
+
+ in the square area.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+L(x,y)=\sqrt{\left(x-x_{d}\right)^{2}+\left(y-y_{d}\right)^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(x^{*},y^{*}\right)=\argmin_{(x,y)} L(x,y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\series bold
+Step 7: 
+\series default
+Eat the prey at position 
+\begin_inset Formula $\left(x^{*},y^{*}\right)$
+\end_inset
+
+ and update 
+\begin_inset Formula $n_{cattles}$
+\end_inset
+
+or 
+\begin_inset Formula $n_{sheep},$
+\end_inset
+
+and update 
+\begin_inset Formula $(x_{d},y_{d})=(x^{*},y^{*})$
+\end_inset
+
+.
+ Calculate the energy for flying 
+\begin_inset Formula $E_{f}$
+\end_inset
+
+ and energy for breathing fire 
+\begin_inset Formula $E_{b}$
+\end_inset
+
+, and update the energy consumed 
+\begin_inset Formula $E_{n}=E_{n}+E_{f}+E_{b}$
+\end_inset
+
+.
+ Update the energy absorbed = 
+\begin_inset Formula $E_{a}=E_{a}+E_{prey}$
+\end_inset
+
+where the 
+\begin_inset Formula $E_{prey}$
+\end_inset
+
+ is the energy of the prey eaten.
 \end_layout
 
 \begin_layout Plain Layout
@@ -1893,19 +2097,26 @@ name "Z-algorithm"
 
 \begin_layout Standard
 We can calculate the energy expenditure 
-\begin_inset Formula $E_{n}(year)$
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ for each 
+\begin_inset Formula $age$
 \end_inset
 
  through this algorithm, and get the curve of 
-\begin_inset Formula $E_{n}(year)$
+\begin_inset Formula $E_{n}$
 \end_inset
 
- versus time.
+ versus 
+\begin_inset Formula $age$
+\end_inset
+
+.
  Then we can estimate the minimun area for the living of three dragons.
  This is similar to the famous 'Cattle grazing problem' proposed by Newton.
  Dragons are eating the preies and the preies will reproduce, and they would
  reach a transient balance.
- 
 \end_layout
 
 \begin_layout Standard

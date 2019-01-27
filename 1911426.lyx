@@ -24,6 +24,9 @@
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{indentfirst}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
 \end_preamble
 \use_default_options false
 \begin_modules
