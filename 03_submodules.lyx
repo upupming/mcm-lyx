@@ -931,6 +931,19 @@ Let
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+这里的面积符号不对，要进行校对为体积符号
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \frac{dS_{b}}{dS_{m}}=\frac{2\pi r_{b}\cdot dr_{b}}{2\pi r_{m}\cdot dr_{m}}\label{eq:3.c.5}
@@ -1192,7 +1205,7 @@ Let
 \begin_inset Formula $L_{d}$
 \end_inset
 
- be the distance that the dragon fly to the prey, 
+ be the total distance that the dragon fly to the prey, 
 \begin_inset Formula $E_{v}$
 \end_inset
 
@@ -1216,7 +1229,7 @@ status open
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{f}=m_{d}\frac{L_{d}}{v_{d}}E_{v}
+E_{f}=m_{d}\frac{L_{d}}{v_{d}}E_{v}\label{eq:3.c.15-1}
 \end{equation}
 
 \end_inset
@@ -1459,7 +1472,12 @@ We set the heat capacity of the prey as
 \end_layout
 
 \begin_layout Standard
-Accroding to the Eq 
+We let 
+\begin_inset Formula $n$
+\end_inset
+
+ be the number of the preies.
+ Accroding to the Eq 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.13"
@@ -1499,7 +1517,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{b}=\phi_{t}t_{p}=c_{p}m_{p}\left(1+\frac{2l_{c}}{r_{h}}\right)\left(T_{p}-T_{e}\right)
+E_{b}=\phi_{t}t_{p}=nc_{p}m_{p}\left(1+\frac{2l_{c}}{r_{h}}\right)\left(T_{p}-T_{e}\right)\label{eq:3.c.19}
 \end{equation}
 
 \end_inset
@@ -1535,7 +1553,7 @@ E_{t}=\xi E_{m}
 \end_layout
 
 \begin_layout Subsubsection
-Energy absorbing in the environment
+Algorithm for calculating the total energy expenditure
 \end_layout
 
 \begin_layout Standard
@@ -1588,10 +1606,6 @@ Not all parts of the preies can be eaten by the dragon.
  is the efficiency which indicates the propotion of preie that the dragon
  eats.
  
-\begin_inset Formula $n$
-\end_inset
-
- is the number of the preies, and 
 \begin_inset Formula $E_{a}$
 \end_inset
 
@@ -1615,6 +1629,292 @@ noprefix "false"
 \end_inset
 
  times of the absorbing energy.
+\end_layout
+
+\begin_layout Standard
+From Eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.15-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can get that 
+\begin_inset Formula $E_{f}$
+\end_inset
+
+ is proportional to the flying distance.
+ From Eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.19"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can know that 
+\begin_inset Formula $E_{b}$
+\end_inset
+
+ is proportional to the number of preies.
+ So these two parts of energy are associated to a single prey's energy and
+ the preies' distribution, and this will make the total energy expenditure
+ uncertain.
+ In order to calculate the total energy expenditure, we develop an algorithm
+ and keep the catagory of the preies and their distribution type fixed.
+ We also find the population density of these preies in Australia online
+ for a better simulation.
+ 
+\end_layout
+
+\begin_layout Standard
+Our algorithm supposes that the dragon will find the nearest preies relating
+ to its position, for this corresponds the lowest energy expenditure.
+ Here are our algorithm's steps:
+\end_layout
+
+\begin_layout Standard
+Step 1: Initialize the age of the dragon 
+\begin_inset Formula $year$
+\end_inset
+
+ and its position 
+\begin_inset Formula $\left(x_{d},y_{d}\right)$
+\end_inset
+
+ in the ...
+ square area.
+ Set 
+\begin_inset Formula $year=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Step 2: Initialize the number of the preies 
+\begin_inset Formula $n$
+\end_inset
+
+ predated by dragon.
+ Set 
+\begin_inset Formula $n=0$
+\end_inset
+
+, 
+\begin_inset Formula $L_{d}\left(year\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Step 3: Judge the age of the dragon.
+ If 
+\begin_inset Formula $year$
+\end_inset
+
+ reaches the maximum stage, stop the algorithm.
+ 
+\end_layout
+
+\begin_layout Standard
+Step 4: Initialize the preies' positon by ...
+ distribution randomly.
+\end_layout
+
+\begin_layout Standard
+Step 5: Search the nearest prey 
+\begin_inset Formula $\left(x_{n},y_{n}\right)$
+\end_inset
+
+ in the square area.
+\begin_inset Formula 
+\[
+L(x_{n},y_{n},year)=\sqrt{\left(x_{n}-x_{d}\right)^{2}+\left(y_{n}-y_{d}\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{d}(n+1,year)=L_{d}\left(n,year\right)+L\left(x_{n},y_{n},year\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Step 6: Calculate the 
+\begin_inset Formula $E_{m}+E_{g}+E_{f}(n)+E_{b}(n)+E_{t}$
+\end_inset
+
+, and judge that whether it is smaller than 
+\begin_inset Formula $0.57\eta nm_{p}E_{a}$
+\end_inset
+
+.
+ If ture: 
+\begin_inset Formula $year=year+1$
+\end_inset
+
+, 
+\begin_inset Formula $E_{n}(year)=0.57\eta nm_{p}E_{a}$
+\end_inset
+
+, and then jump to Step 2.
+ Otherwise to Step 7.
+ 
+\end_layout
+
+\begin_layout Standard
+Step 7: 
+\begin_inset Formula $n=n+1$
+\end_inset
+
+, then jump to Step 5.
+ 
+\end_layout
+
+\begin_layout Standard
+We can calculate the energy expenditure 
+\begin_inset Formula $E_{n}(year)$
+\end_inset
+
+ through this algorithm, and get the curve of 
+\begin_inset Formula $E_{n}(year)$
+\end_inset
+
+ versus time.
+ Then we can estimate the minimun area for the living of three dragons.
+ This is similar to the famous 'Cattle grazing problem' proposed by Newton.
+ Dragons are eating the preies and the preies will reproduce, and they would
+ reach a transient balance.
+ 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ be the adding number of prey type 
+\begin_inset Formula $i$
+\end_inset
+
+ by considering breeding among time peroid 
+\begin_inset Formula $t_{b}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{d}$
+\end_inset
+
+ be the time period for the dragon's predation.
+ Then the absorbing energy producing by prey type 
+\begin_inset Formula $i$
+\end_inset
+
+ in peroid 
+\begin_inset Formula $t_{b}$
+\end_inset
+
+ in supported area 
+\begin_inset Formula $S(year)$
+\end_inset
+
+ can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v_{i}=\frac{B_{i}}{2\frac{t_{b}}{t_{d}}}\cdot\eta_{i}m_{pi}E_{ai}\rho_{i}S(year)\label{eq:3.c.22}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.22"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ , the formula dividing 
+\begin_inset Formula $2$
+\end_inset
+
+ means that each newborn prey is breeded by two mature preies.
+ Also we can get Eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.23"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+by transient energy balance:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{n}(year)=\sum_{i=1}^{w}v_{i}\label{eq:3.c.23}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we can derive 
+\begin_inset Formula $S$
+\end_inset
+
+ by Eq 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.24"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S(year)=2\frac{t_{b}}{t_{d}}\cdot\frac{E_{n}(year)}{\sum_{i=1}^{w}B_{i}\eta_{i}m_{pi}E_{ai}\rho_{i}}\label{eq:3.c.24}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
