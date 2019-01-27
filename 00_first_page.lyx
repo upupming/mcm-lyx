@@ -2715,8 +2715,15 @@ Fictional Dragons in Real World
 
 \begin_layout Abstract
 The dragon is a mysterious and formidable creature widely known by people.
- Three dragons appearing in Game of Throne and A Song of Ice and Fire are
- people's favorite.
+ Three dragons appearing in 
+\shape italic
+Game of Throne
+\shape default
+ and 
+\shape italic
+A Song of Ice and Fire
+\shape default
+ are people's favorite.
  For a long time, we people do not even know whether the dragon exists.
  Through our model, we can analyze the requirements for the dragon's living
  detaily.
@@ -2727,7 +2734,7 @@ The dragon is a mysterious and formidable creature widely known by people.
 To determine the growth of the dragon, we suppose the dragon is geometrical
  similar as time goes by.
  We use Richards equation to simulate, which presents a clear 'S' curve
- varying with curve.
+ varying with time.
  This curve could be divided into three parts, iincluding initial growth
  stage, exponential growth stage and steady growth stage.
  The turning points to divide these three stages are at the age of 
@@ -2749,7 +2756,7 @@ To determine the growth of the dragon, we suppose the dragon is geometrical
 
 \begin_layout Abstract
 To calculate the energy expenditure for the dragon, we suppose that the
- dragon will not fly and breathing fire unless predating.
+ dragon will not fly and breathe fire unless predating.
  First we yield the conversion efficiency of the dragon's preies that net
  energy takes over 
 \begin_inset Formula $57\%$
@@ -2786,7 +2793,7 @@ After that, we build a model analyzing the manifestation of the dragon under
 
 \begin_layout Abstract
 At last, our model analyze the interaction between the dragon and environment.
- We divide the ecosystem into three layers: the predator, the preies and
+ We divide the ecosystem into three layers: the predators, the preies and
  the environment.
  Through ...
  method, we determine the impact between first two layers.

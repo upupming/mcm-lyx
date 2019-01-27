@@ -284,11 +284,22 @@ filename "06.3_future_work.lyx"
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
 bibfiles "reference"
 options "unsrt"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+参考文献有两个网站不对，需要写tex代码。
+\end_layout
 
 \end_inset
 

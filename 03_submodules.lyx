@@ -262,7 +262,24 @@ kg when they were hatched and
 \end_inset
 
  kg when they grew after a year, so we need another requirement.
- We tend to determine this by estimating the maximum weight of the dragon.
+ We tend to determine this by estimating 
+\begin_inset Formula $A$
+\end_inset
+
+, the maximum weight of the dragon.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+此处需要加入一个从Richards model to Vontenly model关系的说明
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -982,7 +999,8 @@ In order to keep the ratio of bone and muscle in cross section the same,
 \end_layout
 
 \begin_layout Standard
-Combining Eq 
+Combining Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.5"
@@ -992,6 +1010,7 @@ noprefix "false"
 
 \end_inset
 
+ and Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1021,7 +1040,7 @@ Let
 \begin_inset Formula $dm_{b}$
 \end_inset
 
-be the bone's mass increment, 
+ be the bone's mass increment, 
 \begin_inset Formula $dm_{m}$
 \end_inset
 
@@ -2076,16 +2095,6 @@ literal "false"
 
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-插入引用
-\end_layout
-
-\end_inset
-
 , we can find the temperature and humidity of different states.
  According to website 
 \begin_inset CommandInset citation
@@ -2095,17 +2104,7 @@ literal "false"
 
 \end_inset
 
-, 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-插入引用
-\end_layout
-
-\end_inset
-
-we can determine the number of cattle and sheep in different states.
+, we can determine the number of cattle and sheep in different states.
  
 \end_layout
 
@@ -2326,10 +2325,14 @@ low
 
 \begin_layout Plain Layout
 Area (
-\begin_inset Formula $10^{4}$
+\begin_inset Formula $\times10^{4}$
 \end_inset
 
- square kilometers)
+ km
+\begin_inset Formula $^{2}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -2470,7 +2473,15 @@ Number of Cattle (million)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Density of Sheep (per square kilometer)
+Density of Sheep (
+\begin_inset Formula $/$
+\end_inset
+
+km
+\begin_inset Formula $^{2}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -2517,7 +2528,15 @@ Density of Sheep (per square kilometer)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Density of Cattle (per square kilometer)
+Density of Cattle (
+\begin_inset Formula $/$
+\end_inset
+
+km
+\begin_inset Formula $^{2}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -2595,6 +2614,329 @@ noprefix "false"
 
  that different climates affect the distribution density of sheep and cattle,
  thus changing the input parameters of our models.
+\end_layout
+
+\begin_layout Subsection
+Model of Interaction with Environment
+\end_layout
+
+\begin_layout Standard
+The relationship between the dragon and the environment can be divided into
+ three layers, which is shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-Interaction Structure"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ We will discuss 
+\series bold
+Interaction Ⅰ
+\series default
+ and 
+\series bold
+Interaction Ⅱ
+\series default
+ respectively.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Interaction.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Interaction Structure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Z-Interaction Structure"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Interaction 
+\series bold
+Ⅰ
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+In this part, we tend to determine which type of prey will be affected mostly
+ by the dragon.
+ We define three preies in our model, which are different in distribution
+ density and meat energy.
+ The detailed data of them is shown in Tab.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-three preies"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Detailed Data of Three Preies
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Preies
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Distribution Density (
+\begin_inset Formula $/$
+\end_inset
+
+km
+\begin_inset Formula $^{2}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Meat Energy (kcal
+\begin_inset Formula $/100$
+\end_inset
+
+g)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sheep
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.4514 (high)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+118 (middle)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cattle
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.4130 (middle)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+125 (high)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hare
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.426 (low)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+102 (low)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\shape italic
+(Accorading to biological principle, it is impossible for a species to contain
+ high individual energy as well as high distribution density.)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Z-three preies"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To determine the ecological impact of the dragon, we can input the species
+ in Tab.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-three preies"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ into our model, and statistic out the changes in distribution of each species.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Interaction 
+\series bold
+Ⅱ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+我们之前的模型忽略了环境的作用，采用随机分布来模拟猎物的分布。（前面需要加上假设）实际上，因为环境的差异，物种在一个区域内不可能总是随机分布。我们使用网站上的软
+件，最大熵...，可以运行出实际环境影响下物种分布的情况。进而可以对我们的模型中的物种分布进行修正，使其更贴近于实际的情况。
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
