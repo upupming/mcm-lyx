@@ -83,8 +83,44 @@ Strengths and Weaknesses
 Strength
 \end_layout
 
+\begin_layout Itemize
+Our model simplify the whole predating and growing process of the dragon
+ and it is easy for us to calculate the total energy expenditure, which
+ will make the analysis clearer.
+ For example: our model simplify the analysis of the energy for flying and
+ recovery of trauma, and the results exactly prove that these two parts
+ takes a small proportion.
+ 
+\end_layout
+
+\begin_layout Itemize
+Our model use some convincing data and achievements in the literature, which
+ will make the result be more realistic and in accrodence with our basic
+ experience.
+ For example: the energy for breathing fire will increase while the dragon
+ is in frigid zone comparing to the tropic zone.
+ 
+\end_layout
+
 \begin_layout Subsubsection
 Weakness
+\end_layout
+
+\begin_layout Itemize
+While comparing the manifistation between different climate, our model chooses
+ the data of climate and the distribution of sheep and cattle to simulate.
+ Nevertheless, due to the lackness of data, the maximum discrepancy of temperatu
+re and humidity betwen two states in Australia that we get are not prominent
+ enough.
+ If the dispcrepancy is more distinctive, results will be more meaningful.
+\end_layout
+
+\begin_layout Itemize
+As we determine the minimum area needed for growing three dragons, we suppose
+ that there are only sheep and cattle for the dragons to predate.
+ However, the preies' distribution will be more complex, and competition
+ effect among the dagons and other predators will exist.
+ Our model could not analyze this situation.
 \end_layout
 
 \begin_layout Itemize
