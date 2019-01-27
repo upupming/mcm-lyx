@@ -2714,6 +2714,92 @@ Fictional Dragons in Real World
 \end_layout
 
 \begin_layout Abstract
+The dragon is a mysterious and formidable creature widely known by people.
+ Three dragons appearing in Game of Throne and A Song of Ice and Fire are
+ people's favorite.
+ For a long time, we people do not even know whether the dragon exists.
+ Through our model, we can analyze the requirements for the dragon's living
+ detaily.
+ 
+\end_layout
+
+\begin_layout Abstract
+To determine the growth of the dragon, we suppose the dragon is geometrical
+ similar as time goes by.
+ We use Richards equation to simulate, which presents a clear 'S' curve
+ varying with curve.
+ This curve could be divided into three parts, iincluding initial growth
+ stage, exponential growth stage and steady growth stage.
+ The turning points to divide these three stages are at the age of 
+\begin_inset Formula $19$
+\end_inset
+
+ and 
+\begin_inset Formula $131$
+\end_inset
+
+.
+ The fastest growing speed occurs when the dragon is 
+\begin_inset Formula $52$
+\end_inset
+
+ years old.
+ 
+\end_layout
+
+\begin_layout Abstract
+To calculate the energy expenditure for the dragon, we suppose that the
+ dragon will not fly and breathing fire unless predating.
+ First we yield the conversion efficiency of the dragon's preies that net
+ energy takes over 
+\begin_inset Formula $57\%$
+\end_inset
+
+ of the whole absorbing energy.
+ Second, we divide the net energy into five parts, which are: the energy
+ for basic metabolish, the energy for growth, the energy for flight, the
+ energy for breathing fire and energy for recovery of trauma.
+ These five parts are derived by the chemical formula of dragon's respiration,
+ the derivative of 'S' trend curve, the emprical formula between speed consuming
+ minimum power and the dragon's weight, the SFM model of the heating transferati
+on and the coefficient describing the posibility of trauma.
+ Since the energy of flying and breathing fire are coupling with the total
+ energy expenditure by the flying distance and the number of preies, we
+ develop an algorithm to calculate the total energy expenditure.
+ This energy also presents a 'S' curve as time goes by.
+ Finally, we answer the question of 'how much area is required to the three
+ dragons', we use the method solving 'Cattle grazing problem' for reference.
+\end_layout
+
+\begin_layout Abstract
+After that, we build a model analyzing the manifestation of the dragon under
+ different climate condition.
+ The total energy expenditure and the distribution of the preies will both
+ be affected by this factor.
+ For the aspect of the total energy expenditure, the temperature declining
+ causing by the climate changes will increase the energy of breathing fire
+ and for basic metabolish, which is in accrodance with our life experience.
+ For the aspect of the preies distribution, we use the density of sheep
+ and cattle in Australia, and the result shows that ...
+ .
+\end_layout
+
+\begin_layout Abstract
+At last, our model analyze the interaction between the dragon and environment.
+ We divide the ecosystem into three layers: the predator, the preies and
+ the environment.
+ Through ...
+ method, we determine the impact between first two layers.
+ By using the maximum entropy method, we set forth the interaction between
+ last two layers.
+ 
+\end_layout
+
+\begin_layout Abstract
+Sensitivity analysis shows that ...
+\end_layout
+
+\begin_layout Abstract
 \begin_inset Note Note
 status open
 
@@ -2844,8 +2930,7 @@ textbf{Keywords: } #1
 
 
 \backslash
-keywords{CPP, Gammatone filter, underdetermined source seperation, k-means
- cluster method}
+keywords{the dragon, growth curve, the SFM model, Maximum entropy method}
 \end_layout
 
 \end_inset
