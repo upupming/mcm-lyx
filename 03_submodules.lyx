@@ -2678,84 +2678,6 @@ Model of Interaction with Environment
 \end_layout
 
 \begin_layout Standard
-The relationship between the dragon and the environment can be divided into
- three layers, which is shown in Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Z-Interaction Structure"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
- We will discuss 
-\series bold
-Interaction Ⅰ
-\series default
- and 
-\series bold
-Interaction Ⅱ
-\series default
- respectively.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/Interaction.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Interaction Structure
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "Z-Interaction Structure"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Interaction 
-\series bold
-Ⅰ
-\series default
- 
-\end_layout
-
-\begin_layout Standard
 In this part, we tend to determine which type of prey will be affected mostly
  by the dragon.
  We define three preies in our model, which are different in distribution
@@ -2974,26 +2896,6 @@ noprefix "false"
 
  into our model, and statistic out the changes in distribution of each species.
  
-\end_layout
-
-\begin_layout Subsubsection
-Interaction 
-\series bold
-Ⅱ
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-我们之前的模型忽略了环境的作用，采用随机分布来模拟猎物的分布。（前面需要加上假设）实际上，因为环境的差异，物种在一个区域内不可能总是随机分布。我们使用网站上的软
-件，最大熵...，可以运行出实际环境影响下物种分布的情况。进而可以对我们的模型中的物种分布进行修正，使其更贴近于实际的情况。
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

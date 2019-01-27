@@ -76,11 +76,7 @@
 \begin_body
 
 \begin_layout Section
-Conclusion
-\end_layout
-
-\begin_layout Subsection
-Our Conclusion
+Model Expansion
 \end_layout
 
 \begin_layout Standard
@@ -88,26 +84,8 @@ Our Conclusion
 status open
 
 \begin_layout Plain Layout
-What is the ecological impact and requirements of the dragons? 
-\end_layout
-
-\begin_layout Plain Layout
-What are the energy expenditures of the dragons, and what are their caloric
- intake requirements? 
-\end_layout
-
-\begin_layout Plain Layout
-How much area is required to support the three dragons? 
-\end_layout
-
-\begin_layout Plain Layout
-How large a community is necessary to support a dragon for varying levels
- of assistance that can be provided to the dragons? 
-\end_layout
-
-\begin_layout Plain Layout
-Be clear about what factors you are considering when addressing these questions.
- 
+我们前面的模型是基于物种服从随机分布的假设。然而现实世界中，没有任何一种物种的种群分布是随机分布的。为了更接近实际的情况，我们使用哪个作者的什么算法程序记性预测
+。这个算法是基于什么原理的，简单介绍一两句。
 \end_layout
 
 \end_inset
@@ -120,45 +98,14 @@ Be clear about what factors you are considering when addressing these questions.
 status open
 
 \begin_layout Plain Layout
-前面叙述结论，最后可以加一段，考虑到物种的繁衍，龙能稳定存在所需要的最小种群规模是多大，才不至于近亲繁殖灭绝。这个最小种群规模，需要多大的面积来供养他们。结合地
-球实际的数据，我们断定，龙是不可能在地球上生存的。
+我们根据澳大利亚各州的牛和羊的数量，确定出一个物种密度的测试样本。根据测试样本，我们通过机器学习进行训练...。最后得出了澳大利亚上物种适宜生存程度的分布图如图几所示
+。可以合理地认为，越适合物种生存的地方，该物种的分布密度应该越大。所以我们使用物种适宜生存程度分布图来代表物种的分布密度。用这个分布密度来取代随机分布，将使我们
+的模型更加符合实际情况。
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Through our model, we derived that the dragon's growth curve is S-shaped.
- It takes 280 years for a dragon to reach the upper limit of weight.
- The dragon is in initial growth stage before the age of 19.
- After the age of 131, the dragon enter steady growth stage.
- The age from 19 to 131 is exponential growth stage.
- The dragon grew fastest at the age of 52.
-\end_layout
-
-\begin_layout Standard
-By analyzing the energy composition required by a dragon, our model figured
- out that a dragon's energy expenditures consist of five categories.
- The curve of the energy a gragon need vary with time is also S-shaped.
- A mature dragon need about 140000 million calories per two days, which
- consist of a community of 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-多少只羊，多少只牛
-\end_layout
-
-\end_inset
-
-.
- And it needs at least about 14000 km
-\begin_inset Formula $^{2}$
-\end_inset
-
- area to support three mature dragons.
 \end_layout
 
 \end_body
