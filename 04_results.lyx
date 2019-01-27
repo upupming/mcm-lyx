@@ -142,8 +142,8 @@ noprefix "false"
 \begin_inset Formula 
 \[
 \begin{cases}
-f(0)=10\\
-f(1)=b & 30\le b\le40
+y(0)=10\\
+y(1)=b & 30\le b\le40
 \end{cases}
 \]
 
@@ -194,7 +194,7 @@ status open
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -592,8 +592,103 @@ Results of the Model of Dragon's Energy Expenditures
 \end_layout
 
 \begin_layout Standard
-We consume that dragons eat once every two days.
- By running Algorithm 1, we get the output as Fig.
+In our implementation of Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we keep the preset parameters unchanged, run and output the results for
+ further analysis.
+\end_layout
+
+\begin_layout Subsubsection
+Preset Parameters
+\end_layout
+
+\begin_layout Itemize
+We simulate the age of dragon form 
+\begin_inset Formula $0$
+\end_inset
+
+ to 
+\begin_inset Formula $500$
+\end_inset
+
+ years old.
+\end_layout
+
+\begin_layout Itemize
+The dragon hunts once every 2 days.
+\end_layout
+
+\begin_layout Itemize
+We assume 
+\begin_inset Formula $y(1)=40$
+\end_inset
+
+ and make use of the result of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-fig1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ If using other value of 
+\begin_inset Formula $y(1)$
+\end_inset
+
+, the results will be similar.
+\end_layout
+
+\begin_layout Itemize
+The side of the square area is empirically set to 
+\begin_inset Formula $10$
+\end_inset
+
+ meters to meet the dragon's hunting demand.
+\end_layout
+
+\begin_layout Itemize
+The dragon starts hunting at position 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+, which is the left-bottom of the square.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\eta=0.7$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Simulation Results
+\end_layout
+
+\begin_layout Standard
+By running Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we get the output as Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -604,7 +699,8 @@ noprefix "false"
 
 \end_inset
 
- and 
+ and Fig.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "Z-2"
@@ -629,12 +725,110 @@ noprefix "false"
 
 \end_inset
 
-, we can see the energy a dragon need is also S-shaped.
- A mature dragon need 140000 million calories per two days.
+, we can see that:
+\end_layout
+
+\begin_layout Itemize
+The energy a dragon need is also S-shaped.
+ This is because 
+\begin_inset Formula $E_{m}$
+\end_inset
+
+ and 
+\begin_inset Formula $E_{t}$
+\end_inset
+
+ increase as 
+\begin_inset Formula $y$
+\end_inset
+
+ increases.
+\end_layout
+
+\begin_layout Itemize
+The curve is steeper than the growth curve Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-fig1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ at the inflection age (52 years old).
+ This is because 
+\begin_inset Formula $E_{g}$
+\end_inset
+
+ increases as 
+\begin_inset Formula $\mu$
+\end_inset
+
+ increases, not 
+\begin_inset Formula $y$
+\end_inset
+
+, the former increases faster than the latter.
+\end_layout
+
+\begin_layout Itemize
+A mature dragon needs 140, 000 million calories per two days.
 \end_layout
 
 \begin_layout Standard
-As for minmum area required to support three dragons, accoarding to Eq.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Prey intake-age=501.svg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Energy expenditures of a dragon in two days
+\begin_inset Formula $-age$
+\end_inset
+
+ curve
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Z-En-year"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As for minmum area required to support the three dragons, accoarding to
+ Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -646,10 +840,20 @@ noprefix "false"
 \end_inset
 
 , we can determine the minmum area to support a dragon.
- We suppose that these three dragons are far away from each other while
- they will not influence other's predating by the competiton effect.
+ We suppose that these three dragons are far away from each other
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+记得加到 assumptions 中
+\end_layout
+
+\end_inset
+
+ while they will not influence each other's predating by the competiton
+ effect.
  Then the minmum area of three dragons is three times of 
-\begin_inset Formula $S(year)$
+\begin_inset Formula $S(age)$
 \end_inset
 
  obtained by Eq.
@@ -675,59 +879,31 @@ noprefix "false"
 \end_inset
 
 .
- We can see that we need at least about 14000 km
+ We can see that:
+\end_layout
+
+\begin_layout Itemize
+The trajectory is the same as that of the Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-En-year"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ This is because the area required is proportional to the preys eaten.
+\end_layout
+
+\begin_layout Itemize
+We need at least about 14, 000 km
 \begin_inset Formula $^{2}$
 \end_inset
 
  area to support three mature dragons.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/Prey intake-age=501.svg
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Formula $E_{n}-year$
-\end_inset
-
- Curve
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "Z-En-year"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -752,11 +928,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Minmum Area
-\begin_inset Formula $-year$
+Minmum area required to support the three dragons
+\begin_inset Formula $-age$
 \end_inset
 
- Curve
+ curve
 \end_layout
 
 \end_inset

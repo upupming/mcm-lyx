@@ -1616,13 +1616,35 @@ noprefix "false"
 
 \end_inset
 
+ and Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.21-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
  below:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{n}=0.57\eta nm_{p}E_{a}\label{eq:3.c.21}
+E_{n}=0.57\eta E_{a}\label{eq:3.c.21}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{a}=nm_{p}E_{p}\label{eq:3.c.21-1}
 \end{equation}
 
 \end_inset
@@ -1640,6 +1662,10 @@ Not all parts of the preies can be eaten by the dragon.
  eats.
  
 \begin_inset Formula $E_{a}$
+\end_inset
+
+ is the absorbed energy and 
+\begin_inset Formula $E_{q}$
 \end_inset
 
  is the energy per kilograms for the preies.
@@ -1661,7 +1687,7 @@ noprefix "false"
 \begin_inset Formula $0.57$
 \end_inset
 
- times of the absorbing energy.
+ times of the absorbed energy.
 \end_layout
 
 \begin_layout Standard
@@ -1926,10 +1952,10 @@ Step 4:
 Step 5: 
 \series default
 While 
-\begin_inset Formula $0.57\eta nm_{p}E_{a}<E_{n},$
+\begin_inset Formula $0.57\eta E_{a}<E_{n},$
 \end_inset
 
-do the following steps:
+ do the following steps:
 \end_layout
 
 \begin_layout Plain Layout
@@ -1986,7 +2012,7 @@ L(x,y)=\sqrt{\left(x-x_{d}\right)^{2}+\left(y-y_{d}\right)^{2}}
 
 \begin_inset Formula 
 \[
-\left(x^{*},y^{*}\right)=\argmin_{(x,y)} L(x,y)
+\left(x^{*},y^{*}\right)=\argmin_{(x,y)}L(x,y)
 \]
 
 \end_inset
@@ -2042,7 +2068,7 @@ or
 \begin_inset Formula $n_{sheep},$
 \end_inset
 
-and update 
+ and update 
 \begin_inset Formula $(x_{d},y_{d})=(x^{*},y^{*})$
 \end_inset
 
@@ -2060,7 +2086,7 @@ and update
 \end_inset
 
 .
- Update the energy absorbed = 
+ Update the energy absorbed 
 \begin_inset Formula $E_{a}=E_{a}+E_{prey}$
 \end_inset
 
@@ -2146,7 +2172,7 @@ Let
 \end_inset
 
  in supported area 
-\begin_inset Formula $S(year)$
+\begin_inset Formula $S(age)$
 \end_inset
 
  can be written as:
@@ -2155,7 +2181,7 @@ Let
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-v_{i}=\frac{B_{i}}{2\frac{t_{b}}{t_{d}}}\cdot\eta_{i}m_{pi}E_{ai}\rho_{i}S(year)\label{eq:3.c.22}
+v_{i}=\frac{B_{i}}{2\frac{t_{b}}{t_{d}}}\cdot\eta_{i}m_{pi}E_{ai}\rho_{i}S(age)\label{eq:3.c.22}
 \end{equation}
 
 \end_inset
@@ -2195,7 +2221,7 @@ by transient energy balance:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{n}(year)=\sum_{i=1}^{w}v_{i}\label{eq:3.c.23}
+E_{n}(age)=\sum_{i=1}^{w}v_{i}\label{eq:3.c.23}
 \end{equation}
 
 \end_inset
@@ -2224,7 +2250,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-S(year)=2\frac{t_{b}}{t_{d}}\cdot\frac{E_{n}(year)}{\sum_{i=1}^{w}B_{i}\eta_{i}m_{pi}E_{ai}\rho_{i}}\label{eq:3.c.24}
+S(age)=2\frac{t_{b}}{t_{d}}\cdot\frac{E_{n}(age)}{\sum_{i=1}^{w}B_{i}\eta_{i}m_{pi}E_{ai}\rho_{i}}\label{eq:3.c.24}
 \end{equation}
 
 \end_inset
