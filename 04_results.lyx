@@ -587,5 +587,274 @@ The time when the dragon reaches maximum growth rate
  is around 52 years old, and it weights 81,800.71 kg.
 \end_layout
 
+\begin_layout Subsection
+Results of the Model of Dragon's Energy Expenditures
+\end_layout
+
+\begin_layout Standard
+We consume that dragons eat once every two days.
+ By running Algorithm 1, we get the output as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-En-year"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+From Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-En-year"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can see the energy a dragon need is also S-shaped.
+ A mature dragon need 140000 million calories per two days.
+\end_layout
+
+\begin_layout Standard
+As for minmum area required to support three dragons, accoarding to Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.24"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can determine the minmum area to support a dragon.
+ We suppose that these three dragons are far away from each other while
+ they will not influence other's predating by the competiton effect.
+ Then the minmum area of three dragons is three times of 
+\begin_inset Formula $S(year)$
+\end_inset
+
+ obtained by Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.24"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, which is shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ We can see that we need at least about 14000 km
+\begin_inset Formula $^{2}$
+\end_inset
+
+ area to support three mature dragons.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Prey intake-age=501.svg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{n}-year$
+\end_inset
+
+ Curve
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Z-En-year"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/area-501.svg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Minmum Area
+\begin_inset Formula $-year$
+\end_inset
+
+ Curve
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Z-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Results of the model of the climate condition
+\end_layout
+
+\begin_layout Subsection
+Results of the Model of Interaction with Environment
+\end_layout
+
+\begin_layout Subsubsection
+Results of 
+\series bold
+Interaction Ⅰ
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/percentage-day=0.svg
+	scale 20
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/percentage-day=20.svg
+	scale 20
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/percentage-day=50.svg
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+123
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Results of
+\series default
+ 
+\series bold
+Interaction Ⅱ
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document

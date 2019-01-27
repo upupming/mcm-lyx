@@ -1694,10 +1694,27 @@ noprefix "false"
 \begin_layout Standard
 Our algorithm supposes that the dragon will find the nearest preies relating
  to its position, for this corresponds the lowest energy expenditure.
- Here are our algorithm's steps:
+ Our algorithm's steps are shown in Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 
 \series bold
 Step 1:
@@ -1719,7 +1736,7 @@ Step 1:
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Step 2:
@@ -1740,7 +1757,7 @@ Step 2:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Step 3:
@@ -1752,9 +1769,19 @@ Step 3:
 
  reaches the maximum stage, stop the algorithm.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+output what?
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \series bold
 Step 4:
@@ -1763,7 +1790,7 @@ Step 4:
  distribution randomly.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Step 5:
@@ -1783,7 +1810,7 @@ L(x_{n},y_{n},year)=\sqrt{\left(x_{n}-x_{d}\right)^{2}+\left(y_{n}-y_{d}\right)^
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 L_{d}(n+1,year)=L_{d}\left(n,year\right)+L\left(x_{n},y_{n},year\right)
@@ -1794,7 +1821,7 @@ L_{d}(n+1,year)=L_{d}\left(n,year\right)+L\left(x_{n},y_{n},year\right)
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Step 6:
@@ -1821,7 +1848,7 @@ Step 6:
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Step 7:
@@ -1832,6 +1859,30 @@ Step 7:
 
 , then jump to Step 5.
  
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hunting Algorithm
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Z-algorithm"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
