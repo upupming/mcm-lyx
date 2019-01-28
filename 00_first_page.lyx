@@ -2714,7 +2714,7 @@ Fictional Dragons in Real World
 \end_layout
 
 \begin_layout Abstract
-The dragon is a mysterious and formidable creature widely known by people.
+The dragon is a mysterious and formidable creature widely known by us.
  Three dragons appearing in 
 \shape italic
 Game of Thrones
@@ -2755,51 +2755,52 @@ To determine the growth of the dragon, we suppose the dragon is geometrically
 
 \begin_layout Abstract
 To calculate the energy expenditure for the dragon, we suppose that the
- dragon will not fly and breathe fire unless predating.
+ dragon will not fly and breath fire unless predating.
  Our model divide the energy required into five parts, which are: the energy
  for basic metabolism, the energy for growth, the energy for flight, the
  energy for breathing fire and energy for recovery of trauma.
  These five parts are derived by the chemical formula of dragon's respiration,
  the derivative of 'S' trend curve, the empirical formula between speed
- consuming minimum power and the dragon's weight, the SFM model of the heating
+ consumed minimum power and the dragon's weight, the SFM model of the heating
  transferation and the coefficient describing the possibility of trauma.
- Since the energy of flying and breathing fire are coupling with the total
- energy expenditure by the flying distance and the number of preys, we develop
- an algorithm to calculate the total energy expenditure.
- This energy also presents a 'S' curve as time goes by.
- Finally, we answer the question of how much area is required to the three
- dragons', we use the method solving 'Cattle Grazing Problem' for reference.
+ Since it is a coupled model, we create the Hunting Algorithm to calculate
+ the total energy expenditure.
+ Finally, we estimate that how much area is required to the three dragons',
+ we use the method solving 'Cattle Grazing Problem' for reference.
+ The results show that a mature dragon requires about 140000 million calories
+ each two days, which includes of a community of 470 cattles and 178 sheep,
+ and it needs at least about 14000 km
+\begin_inset Formula $^{2}$
+\end_inset
+
+ area to support three mature dragons to live.
 \end_layout
 
 \begin_layout Abstract
 After that, we build a model analyzing the manifestation of the dragon under
- different climate condition.
- The total energy expenditure and the distribution of the preies will both
- be affected by this factor.
- We use the density data of sheep and cattle in Australia to simulate.
- Our results shows that the higher temperature, the less energy the dragon
- consumes.
- The higher the humidity, the lower the energy the dragon need.
+ different climate conditions.
+ The total energy expenditure and the preys' distribution will both be affected
+ by this factor.
+ We use the density data of sheep and cattles in Australia to simulate.
+ Our results show that the higher temperature, the less energy the dragon
+ consumed.
+ The higher the humidity, the lower the energy the dragon needs.
  And the influence of temperature on the dragon is greater than humidity.
  
 \end_layout
 
 \begin_layout Abstract
 At last, our model analyze the interaction between the dragon and environment.
- Cattle are most affected, followed by sheep, and hares have the least impact,
- and we can draw a conclusion that the dragon has a greater impact on the
- prey with high energy and dense distribution.
+ We simulate an ecosystem with three several types of preys that differ
+ in distribution density and meat energy.
+ We draw a conclusion that the dragon has a greater impact on the prey with
+ high energy and dense distribution.
 \end_layout
 
 \begin_layout Abstract
 Sensitivity analysis shows that the trauma coefficient , the ratio of dragon's
  bone and muscle and the sheep's density are not sensitive to the total
- energy expenditure.
- For the first two factors, the energy for growth and recovery of trauma
- only take a low proportion of the total energy expenditure.
- For the last factor, this will only changes the energy for flying a little
- with flying distance's varying, which also takes a low proportion of the
- total energy.
+ energy expenditure, which imply the robustness of our model.
 \end_layout
 
 \begin_layout Abstract
