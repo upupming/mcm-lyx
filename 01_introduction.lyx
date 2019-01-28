@@ -144,10 +144,10 @@ Daenerys Stormborn
 
 \begin_layout Standard
 Dragons are the creatures standing on the top of the food chain.
- Their existence will have an great impact on the ecological environment.
- It will consume quantities of resources to supply their survival.
+ Their existence will have a great impact on the ecological environment.
+ It will consume quantities of resources to secure their survival.
  In order to make the existence of the dragon more possible, we need to
- figure out those processes.
+ figure out these processes.
 \end_layout
 
 \begin_layout Standard
@@ -182,7 +182,7 @@ How will the dragon interact with the ecological environment?
 
 \begin_layout Itemize
 Will the dragon perform differently in different environments? If true,
- how is the discrepancy?
+ what is the discrepancy?
 \end_layout
 
 \begin_layout Standard
@@ -260,7 +260,7 @@ literal "false"
 
 \end_inset
 
-, and he used it for fish weight studies successfully.
+, and he used this for fish weight studies successfully.
  In 1959, 
 \shape italic
 F.J.
@@ -294,13 +294,26 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Species distribution models (SDMs) mainly use species distribution data
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+此处的括号中的两个文献已在reference文献中存在，但仍然无法插入
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Species Distribution Models (SDMs) mainly use species distribution data
  and environmental data to estimate the niche of a species according to
  a specific algorithm.
  And project it into the landscape to indicate the species' preference for
  habitat in probabilistic.
  The results can be interpreted as the probability of occurrence of species,
- habitat suitability or species richness, etc.
+ habitat suitability or species richness, etc..
  In the 1970s, Nix et al first used SDMs to predict the spatial distribution
  of species
 \begin_inset CommandInset citation

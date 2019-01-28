@@ -2803,7 +2803,14 @@ At last, our model analyze the interaction between the dragon and environment.
 \end_layout
 
 \begin_layout Abstract
-Sensitivity analysis shows that ...
+Sensitivity analysis shows that the trauma coefficient , the ratio of dragon's
+ bone and muscle and the sheep's density are not sensitive to the total
+ energy expenditure.
+ For the first two factors, the energy for growth and recovery of trauma
+ only take a low proportion of the total energy expenditure.
+ For the last factor, this will only raise the energy for flying a little
+ with flying distance's increasing, which also takes a low proportion of
+ the total energy.
 \end_layout
 
 \begin_layout Abstract

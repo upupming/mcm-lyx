@@ -130,7 +130,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sigmoid form curve of growth process
+Sigmoid Form Curve of Growth Process
 \end_layout
 
 \end_inset
@@ -286,8 +286,8 @@ noprefix "false"
 
 \end_inset
 
- only has three parameters that need to determine, which transforms Bertaianffy
- equation.
+ only has three parameters that need being determined, which transforms
+ Bertaianffy equation.
  Considering the requirements in the problem that dragon's weight is 
 \begin_inset Formula $10$
 \end_inset
@@ -338,7 +338,7 @@ Z：需要补上原文
 
 .
  We set the carriage to have length of 4 m.
- Then, accoarding to geometrically similarity, we can derive:
+ Then, according to geometrical similarity, we can derive:
 \end_layout
 
 \begin_layout Standard
@@ -405,7 +405,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Flow chart of energy distribution
+Flow Chart of Energy Distribution
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Flow-chart-of"
@@ -436,9 +436,9 @@ name "Z-energy distribution"
 To estimate the total energy intake of a dragon, we need to determine net
  energy.
  By our analysis, net energy can be divided into five parts, which are:
- Energy for basic metabolish, Energy for growth, Energy for flight, Energy
- for breathing fire and Energy for recovery of trauma.
- As we can see them locating in Tab.
+ energy for basic metabolish, energy for growth, energy for flight, energy
+ for breathing fire and energy for recovery of trauma.
+ As we can see them located in Tab.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -463,7 +463,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Energy cost activities we need to analyze
+Energy Cost Activities We Need to Analyze
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Energy-cost-activities"
@@ -677,7 +677,8 @@ From the consuming side, the total energy
 \begin_inset Formula $E_{n}$
 \end_inset
 
- for the dragon can be written as Eq 
+ for the dragon can be written as Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.Energy"
@@ -773,7 +774,7 @@ Let
 \begin_inset Formula $V_{o_{2}}$
 \end_inset
 
-/kg per minute.
+/kg/min.
  By referring to the literature, we can get that 
 \family roman
 \series medium
@@ -864,11 +865,12 @@ E_{m}=\frac{\rho_{o}m_{d}V_{E}t}{6\mu_{o}}E_{o}
 \begin_inset Formula $E_{o}$
 \end_inset
 
- means the energy providing by 
+ means the energy provided by 
 \begin_inset Formula $1$
 \end_inset
 
- mol oxygen through Eq
+ mol oxygen through Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.2.1.c"
@@ -1058,11 +1060,11 @@ Let
 \begin_inset Formula $dm_{b}$
 \end_inset
 
- be the bone's mass increment, 
+ be the bone's weight increment, 
 \begin_inset Formula $dm_{m}$
 \end_inset
 
- be the muscle's mass increment.
+ be the muscle's weight increment.
  Suppose the 
 \begin_inset Formula $dm_{m}$
 \end_inset
@@ -1076,11 +1078,11 @@ Let
 \begin_inset Formula $E_{p}$
 \end_inset
 
- is the energy per kg protein contained, 
+ is the energy/kg protein contained, 
 \begin_inset Formula $E_{bone}$
 \end_inset
 
- is the energy per kg bone contained.
+ is the energy/kg bone contained.
  By referring to the literature, we can get bone consists of 
 \begin_inset Formula $10$
 \end_inset
@@ -1098,7 +1100,7 @@ literal "false"
 \end_inset
 
 .
- Other part are water and bone mineral which do not contain energy.
+ Other parts are water and bone mineral which do not contain energy.
  So we set 
 \begin_inset Formula $E_{bone}=0.2E_{p}$
 \end_inset
@@ -1177,7 +1179,8 @@ We set
 \end_inset
 
 .
- Through Eq 
+ Through Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.10.c"
@@ -1192,7 +1195,8 @@ noprefix "false"
 \end_inset
 
  .
- Then we could derive the energy of growth by Eq 
+ Then we could derive the energy of growth by Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.11.c"
@@ -1211,8 +1215,8 @@ Energy for flight
 
 \begin_layout Standard
 Dragons are aggresive, so they do not have any natural enemy.
- We suppose that the drangons always fly in the speed by consuming minimum
- power, because they will not escape.
+ We suppose that drangons always fly in the speed by consuming minimum power,
+ because they will not escape.
  Accroding to the literature, we can get the relationship between dragon's
  flying speed 
 \begin_inset Formula $v_{d}$
@@ -1287,7 +1291,7 @@ Energy for breathing fire
 \end_layout
 
 \begin_layout Standard
-Accroding to our assumption, the dragon need to roast preies, for they have
+Accroding to our assumption, the dragon need to roast preys, for they have
  to eat them.
  The breathing fire can be depicted by flame.
  For analysis, we cannot and do not need the whole temperature field's distribut
@@ -1349,7 +1353,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1409,7 +1413,7 @@ name "Z-Heat_transfer"
 \begin_inset Formula $r_{h}$
 \end_inset
 
- is the radius of the dragon's mouth which is propotional to the , 
+ is the radius of the dragon's mouth, 
 \begin_inset Formula $l_{c}$
 \end_inset
 
@@ -1439,7 +1443,11 @@ We set
 \begin_inset Formula $\phi_{b}$
 \end_inset
 
- are propotional to the tranferring area, which can be determined:
+ are propotional to the tranferring area, and heat transfer ratio 
+\begin_inset Formula $q$
+\end_inset
+
+ be a constant, which can be determined:
 \end_layout
 
 \begin_layout Standard
@@ -1454,7 +1462,8 @@ We set
 \end_layout
 
 \begin_layout Standard
-By referring to Eq 
+By referring to Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.13"
@@ -1496,6 +1505,11 @@ We set the heat capacity of the prey as
 \end_inset
 
 .
+ We also set 
+\begin_inset Formula $l_{c}=4r_{h}$
+\end_inset
+
+, for this will keep almost the same while the dragon grows.
  The prey's temperature needs to be appropriate for the dragon to eat, and
  we set this as 
 \begin_inset Formula $T_{p}$
@@ -1521,8 +1535,9 @@ We let
 \begin_inset Formula $n$
 \end_inset
 
- be the number of the preies.
- Accroding to the Eq 
+ be the number of the preys.
+ Accroding to the Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.13"
@@ -1576,7 +1591,7 @@ Energy for recovery of trauma
 
 \begin_layout Standard
 As we metioned above, the dragons are aggresive, so they seldom get hurt
- from the preies.
+ from the preys.
  We suppose this part of energy is propotional to the energy for basic metabolis
 h, and the coeficient for the ratio 
 \begin_inset Formula $\xi$
@@ -1666,12 +1681,12 @@ E_{a}={\displaystyle \underset{i}{\Sigma}}n_{i}m_{pi}E_{pi}\label{eq:3.c.21-1}
 \end_layout
 
 \begin_layout Standard
-Not all parts of the preies can be eaten by the dragon.
+Not all parts of the preys can be eaten by the dragon.
  
 \begin_inset Formula $\eta$
 \end_inset
 
- is the efficiency which indicates the propotion of preie that the dragon
+ is the efficiency which indicates the propotion of preys that the dragon
  eats.
  
 \begin_inset Formula $E_{a}$
@@ -1681,8 +1696,9 @@ Not all parts of the preies can be eaten by the dragon.
 \begin_inset Formula $E_{q}$
 \end_inset
 
- is the energy per kilograms for the preies.
- From Fig 
+ is the energy per kilograms for the preys.
+ From Fig.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Flow-chart-of"
@@ -1704,7 +1720,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-From Eq 
+From Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.15-1"
@@ -1733,9 +1750,9 @@ noprefix "false"
 \begin_inset Formula $E_{b}$
 \end_inset
 
- is proportional to the number of preies.
+ is proportional to the number of preys.
  So these two parts of energy are associated to a single prey's energy and
- the preies' distribution, and this will make the total energy expenditure
+ the preys' distribution, and this will set the total energy expenditure
  uncertain.
  In order to calculate the total energy expenditure, we develop an algorithm
  and keep the category of the preys and their distribution type fixed.
@@ -1753,9 +1770,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Our algorithm supposes that the dragon will find the nearest preies relating
+Our algorithm supposes that the dragon will find the nearest prey relating
  to its position, because this corresponds the lowest energy expenditure.
- Our algorithm is shown in Algorithm 
+ Our algorithm is shown in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "Z-algorithm"
@@ -2154,7 +2171,7 @@ We can calculate the energy expenditure
 .
  Then we can estimate the minimun area for the living of three dragons.
  This is similar to the famous 'Cattle grazing problem' proposed by Newton.
- Dragons are eating the preies and the preies will reproduce, and they would
+ Dragons are eating the preys and the preys will reproduce, and they would
  reach a transient balance.
 \end_layout
 
@@ -2203,7 +2220,8 @@ v_{i}=\frac{B_{i}}{2\frac{t_{b}}{t_{d}}}\cdot\eta_{i}m_{pi}E_{pi}\rho_{pi}S(age)
 \end_layout
 
 \begin_layout Standard
-In Eq 
+In Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.22"
@@ -2218,7 +2236,8 @@ noprefix "false"
 \end_inset
 
  means that each newborn prey is breeded by two mature preies.
- Also we can get Eq 
+ Also we can get Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.23"
@@ -2247,7 +2266,8 @@ So we can derive
 \begin_inset Formula $S$
 \end_inset
 
- by Eq 
+ by Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.24"
@@ -2279,7 +2299,7 @@ The model of the climate condition
 Climate condition changes may have several influence on our model, mostly
  changing the temperature and the humidity of environment.
  We tend to analyze this influence for two parts: the influence on the dragon
- itself and the influence on the preies's distribution.
+ itself and the influence on the preys's distribution.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2289,8 +2309,9 @@ The influence on the dragon
 \begin_layout Standard
 After referring to the literature, we find that the higher environment temperatu
 re causes the more energy consuming for basic metabolish and we suppose
- that the tendency of this phemomenon is similar to the bird.
- Then we can get Eq
+ that the tendency of this phemomenon is similar to a bird.
+ Then we can get Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.22.c"
@@ -2356,7 +2377,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Obviously, the temperature of environment will also influnce 
+Obviously, the temperature of environment will also influence 
 \begin_inset Formula $E_{b}$
 \end_inset
 
@@ -2408,7 +2429,7 @@ literal "false"
 
 \end_inset
 
-, we can find the temperature and humidity of different states.
+, we can find the states with different temperature and humidity.
  According to website 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2417,7 +2438,7 @@ literal "false"
 
 \end_inset
 
-, we can determine the number of cattle and sheep in different states.
+, we could determine the number of cattles and sheep in different states.
  
 \end_layout
 
@@ -2924,9 +2945,9 @@ Model of Interaction with Environment
 \end_layout
 
 \begin_layout Standard
-In this part, we tend to determine which type of prey will be affected mostly
- by the dragon.
- We define three preies in our model, which are different in distribution
+In this part, we tend to determine which type of preys will be affected
+ mostly by the dragon.
+ We define three preys in our model, which are different in distribution
  density and meat energy.
  The detailed data of them is shown in Tab.
  
