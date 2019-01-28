@@ -280,8 +280,15 @@ literal "false"
 
 \begin_layout Standard
 Two general approaches have been in use to determine the distance to specified
- level of heat flux hazard from fires (Raj, 1977; Raj 1979; Considine, 1984;
- Moorehouse & Pritchard, 1982; McGrattan, et al., 2000).
+ level of heat flux hazard from fires 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-raj-1977-calculations,C-raj-1979-experiments,C-considine1984thermal,C-moorehouse1982thermal,C-mcgrattan2000thermal"
+literal "false"
+
+\end_inset
+
+.
  These are the so-called Solid Flame Model and the Point Source Model
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -291,19 +298,6 @@ literal "false"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-此处的括号中的两个文献已在reference文献中存在，但仍然无法插入
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard

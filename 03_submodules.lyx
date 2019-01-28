@@ -1222,20 +1222,15 @@ Dragons are aggresive, so they do not have any natural enemy.
 \begin_inset Formula $v_{d}$
 \end_inset
 
- and its weight:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-此处有个文献无法插入，注意后续要插入
-\end_layout
+ and its weight 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-Wang-2002"
+literal "false"
 
 \end_inset
 
-
+:
 \end_layout
 
 \begin_layout Standard
@@ -1258,21 +1253,16 @@ Let
 \begin_inset Formula $E_{v}$
 \end_inset
 
- be the cost energy /kg/hour which can be estimated by the literature.
- We can get the energy for flight below:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-此处也存在一个文献无法插入的情况
-\end_layout
+ be the cost energy /kg/hour which can be estimated by the literature 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-flint-1984-flight"
+literal "false"
 
 \end_inset
 
-
+.
+ We can get the energy for flight below:
 \end_layout
 
 \begin_layout Standard
@@ -2308,8 +2298,16 @@ The influence on the dragon
 
 \begin_layout Standard
 After referring to the literature, we find that the higher environment temperatu
-re causes the more energy consuming for basic metabolish and we suppose
- that the tendency of this phemomenon is similar to a bird.
+re causes the more energy consuming 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-schleucher1991life"
+literal "false"
+
+\end_inset
+
+ for basic metabolish and we suppose that the tendency of this phemomenon
+ is similar to a bird.
  Then we can get Eq.
  
 \begin_inset CommandInset ref
@@ -2322,19 +2320,6 @@ noprefix "false"
 \end_inset
 
  by averaging the consumption in daytime and at night:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-此处也存在一个文献无法插入的情况
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
