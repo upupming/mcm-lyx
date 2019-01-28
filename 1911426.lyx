@@ -27,6 +27,7 @@
 \usepackage{amsmath}
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator*{\argmin}{arg\,min}
+\usepackage{hyperref}
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -293,16 +294,6 @@ LatexCommand bibtex
 btprint "btPrintCited"
 bibfiles "reference"
 options "unsrt"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-参考文献有两个网站不对，需要写tex代码。
-\end_layout
 
 \end_inset
 
