@@ -2306,7 +2306,7 @@ status open
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{E_{m}(T_{e})}{E_{m}\left(T_{r}\right)}=\frac{V_{E}\left(T_{e}\right)}{V_{E}\left(T_{r}\right)}=1.82-0.033T\label{eq:3.22.c}
+\frac{E_{m}(T_{e})}{E_{m}\left(T_{r}\right)}=\frac{V_{E}\left(T_{e}\right)}{V_{E}\left(T_{r}\right)}=b+cT\label{eq:3.22.c}
 \end{equation}
 
 \end_inset
@@ -2315,6 +2315,26 @@ status open
 \end_layout
 
 \begin_layout Standard
+In Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.22.c"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $b=1.82$
+\end_inset
+
+, 
+\begin_inset Formula $c=-0.033$
+\end_inset
+
+.
 \begin_inset Formula $T_{r}$
 \end_inset
 
@@ -2352,7 +2372,8 @@ Obviously, the temperature of environment will also influnce
 \end_inset
 
 .
- From Eq 
+ From Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.15"

@@ -79,8 +79,154 @@
 Sensitivity Analysis
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
+parameters for calculating the net energy
+\end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+首先做一个关于参数
+\begin_inset Formula $\xi$
+\end_inset
+
+，
+\begin_inset Formula $V_{E}$
+\end_inset
+
+的参数敏感性分析，分析参数
+\begin_inset Formula $\xi$
+\end_inset
+
+，
+\begin_inset Formula $V_{E}$
+\end_inset
+
+在百分号变化范围内的情况下，
+\begin_inset Formula $E_{n}$
+\end_inset
+
+的百分比变化情况。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the Tab.
+ ...
+ , we can see that parameter 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $V_{E}$
+\end_inset
+
+ will not influence the net energy 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ a lot.
+ So these parameters are not sensitive to the results, for the energy of
+ basic metabolish 
+\begin_inset Formula $E_{m}$
+\end_inset
+
+ and recovery of trauma 
+\begin_inset Formula $E_{t}$
+\end_inset
+
+ only take a small proportion of 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+parameters for model of climate condition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+其次可以做一个关于参数
+\begin_inset Formula $c$
+\end_inset
+
+，
+\begin_inset Formula $b$
+\end_inset
+
+的敏感性分析，分析这两个参数对
+\begin_inset Formula $E_{n}$
+\end_inset
+
+的百分比情况。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the Tab.
+ ...
+ , we can get that parameter 
+\begin_inset Formula $c$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+ will not affect 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ obviously, so these parameters are not sensitive to the results.
+ Similarly, it is because 
+\begin_inset Formula $E_{m}$
+\end_inset
+
+ only takes a small proportion of 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+parameters for model of interaction with environment
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+再次，可以做一个关于鸡的密度的参数敏感性情况分析。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From the Tab.
+ ...
+ , we can get that the hunt's density and energy are not sensitive to the
+ final distribution, for the dragon has a low posibility to eat hunts.
+ 
 \end_layout
 
 \end_body
