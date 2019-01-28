@@ -136,10 +136,10 @@ s, which is adapted from your famous novel
 A Song of Ice and Fire
 \shape default
 .
- We are especially interested with the three dragons appearing in your novel.
+ We are especially interested in the three dragons appearing in your novel.
  Dragon is a mysterious and formidable creature, which raises our curiosity
- for a deeply research.
- We present our findings in this letter, hopping these will be helpful for
+ for deeply research.
+ We present our findings in this letter, hoping these will be helpful for
  your writing.
 \begin_inset Newline newline
 \end_inset
@@ -161,7 +161,7 @@ We take the biggest dragon Balerion, the Black Dread, as an example.
  By referring to the biological law, we determine that it takes 280 years
  for Barlerion to reach its upper limit weight.
  Its growing curve can be depicted as 'S' trend.
- The dragon is in initial growth stage before the age of 19.
+ The dragon is in the initial growth stage before the age of 19.
  After the age of 131, the dragon enters steady growth stage.
  The exponential growth stage comes from age 19 till 131.
  The dragon grows fastest at the age of 52.
@@ -184,7 +184,7 @@ For the total energy expenditure for a dragon, we do not consider the case
  We suppose that the dragon will fly and breath fire only while it is predating,
  and the time period for its predation lasts for two days.
  It will consume almost 140 billion calories.
- This means the dragon has to eat 470 cattles and 178 sheep per two days,
+ This means the dragon has to eat 470 cattle and 178 sheep per two days,
  which is tremendous.
  The total energy expenditure for dragon mostly consists of the energy for
  basic metabolism in its whole life.
@@ -201,9 +201,9 @@ For the total energy expenditure for a dragon, we do not consider the case
 \noindent
 
 \size large
-Besides, if the dragon exists in the real life, this will obviously bring
- a great impact on the environment.
- We consider a situation of an area including three preys: sheep, cattle
+Besides, if the dragon exists in real life, this will obviously bring a
+ great impact on the environment.
+ We consider a situation of an area including three preys: sheep, cattle,
  and hare, which differs a lot in distribution density and meat energy.
  Then we stimulate the condition within the time period for a two days'
  predation.
@@ -229,7 +229,7 @@ Then, our model considers that dragons might travel to different regions
  The climate changes will both influence the dragon and the preys' distribution.
  We choose four states in Australia to simulate, of which the temperature
  and humidity are different.
- Our results show that the higher temperature, the less energy the dragon
+ Our results show that the higher the temperature, the less energy the dragon
  consumes.
  The higher the humidity, the lower the energy the dragon needs.
  And the influence of temperature on the dragon is greater than humidity.
@@ -247,7 +247,7 @@ Then, our model considers that dragons might travel to different regions
 Besides, if we suppose the dragons breed through sexual multiplication,
  it will not be stable for three dragons to make up of a population.
  According to scientific researches, we discover that the number of individuals
- which consists of a stably population will be more than 500.
+ which consists of a stable population will be more than 500.
  After modeling, we find it will take approximately 2.33
 \begin_inset Formula $\times$
 \end_inset

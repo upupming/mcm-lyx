@@ -84,7 +84,7 @@ Parameters for Calculating the Net Energy
 \end_layout
 
 \begin_layout Standard
-From the Tab.
+From Tab.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -662,9 +662,8 @@ noprefix "false"
 
 \end_inset
 
- , we can get that the sheep's density and energy are not sensitive to the
- final distribution, because the varying density only causes the change
- of the energy for flying 
+ , we can get that energy are not sensitive to the density of sheep, because
+ the varying density only causes the change of the energy for flying 
 \begin_inset Formula $E_{f}$
 \end_inset
 
@@ -673,7 +672,6 @@ noprefix "false"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard

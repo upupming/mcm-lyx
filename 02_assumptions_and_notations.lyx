@@ -563,7 +563,7 @@ J
 \begin_inset Text
 
 \begin_layout Plain Layout
-the weight of dragon
+the weight of the dragon
 \end_layout
 
 \end_inset
@@ -907,7 +907,7 @@ m
 \begin_inset Text
 
 \begin_layout Plain Layout
-the temperature of environment
+the temperature of the environment
 \end_layout
 
 \end_inset
@@ -1220,7 +1220,7 @@ Constant
 \begin_inset Text
 
 \begin_layout Plain Layout
-the energy producing by 
+the energy produced by 
 \begin_inset Formula $1$
 \end_inset
 
@@ -1292,7 +1292,7 @@ kJ/kg
 \begin_inset Text
 
 \begin_layout Plain Layout
-the energy producing by 
+the energy produced by 
 \begin_inset Formula $1$
 \end_inset
 

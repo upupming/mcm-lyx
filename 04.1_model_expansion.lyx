@@ -100,6 +100,18 @@ literal "false"
 \end_inset
 
  to model the species geographic distributions.
+ The Maxent software is implemented in Java and available at 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://biodiversityinformatics.amnh.org/open_source/maxent/
+\end_layout
+
+\end_inset
+
+.
  In maximum entropy density estimation, we input the species distribution
  samples' data (species name, longitude, latitude)
 \begin_inset CommandInset citation
@@ -109,7 +121,7 @@ literal "false"
 
 \end_inset
 
- of cattles, sheep and climate data 
+ of cattle, sheep and climate data 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "L-worldclim"
@@ -188,7 +200,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Cattles distribution model
+cattle distribution model
 \end_layout
 
 \end_inset
@@ -241,7 +253,7 @@ Sheep distribution model
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Maxent species distribution modeling result for cattles and sheep in Australia
+Maxent species distribution modeling result for cattle and sheep in Australia
 \end_layout
 
 \end_inset

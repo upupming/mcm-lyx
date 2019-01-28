@@ -91,7 +91,7 @@ The Model of Dragon's Growth
 \end_layout
 
 \begin_layout Standard
-Organism has a common feature on it's growing speed, which can be described
+The organism has a common feature on it's growing speed, which can be described
  as Slow-Fast-Slow.
  Fig.
  
@@ -166,7 +166,7 @@ noprefix "false"
 \end_inset
 
 , the total growth of the organism shows an 'S' trend that includes three
- stages: the initial growth stage, the exponential growth stage and the
+ stages: the initial growth stage, the exponential growth stage, and the
  steady growth stage.
  These three stages are determined by two crossover point, which the tangent
  line of the inflection point intersects with 
@@ -288,8 +288,8 @@ noprefix "false"
 
 \end_inset
 
- only has three parameters that need being determined, and it transforms
- to Bertaianffy equation.
+ only has three parameters that need to be determined, and it transforms
+ to Bertalanffy equation.
  Considering the requirements in the problem that dragon's weight is 
 \begin_inset Formula $10$
 \end_inset
@@ -298,7 +298,7 @@ noprefix "false"
 \begin_inset Formula $30-40$
 \end_inset
 
- kg after a year's growing, so we need another requirement.
+ kg after a year's growth, so we need another requirement.
  We tend to determine this by estimating 
 \begin_inset Formula $A$
 \end_inset
@@ -307,8 +307,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Since the dragon does not exist in the real life, we use the data of real
- creatures to analogize the weight of a mature dragon.
+Since the dragon does not exist in real life, we use the data of real creatures
+ to analogize the weight of a mature dragon.
  Tyrannosaurus Rex is a good choice whose shape is very similar to the dragon.
  After our investigation, we found that the largest T.
  rex weighs about 14.85 tons.
@@ -333,7 +333,7 @@ Game of Thrones
 the biggest (dragon) was the size of a carriage.
 
 \shape default
- We set the carriage with length of 4 m.
+ We set the carriage with a length of 4 m.
  Then, according to geometrical similarity, we can derive:
 \end_layout
 
@@ -710,7 +710,7 @@ E_{n}=E_{m}+E_{g}+E_{f}+E_{b}+E_{t}\label{eq:3.c.Energy}
 \end_layout
 
 \begin_layout Standard
-Next we will determine each five part of 
+Next, we will determine each five part of 
 \begin_inset Formula $E_{n}$
 \end_inset
 
@@ -750,7 +750,7 @@ C_{6}H_{12}O_{6}+6H_{2}O+6O_{2}\rightarrow6CO_{2}+12H_{2}O+energy\label{eq:3.2.1
 
 \begin_layout Standard
 If we could determine the oxygen consumption, then we can get the energy
- releasing by the cellular respiration.
+ released by the cellular respiration.
 \end_layout
 
 \begin_layout Standard
@@ -1282,7 +1282,7 @@ Dragons are aggressive, so they do not have any natural enemy.
 \series bold
 We suppose that dragons always fly in the speed by consuming minimum power
 \series default
-, because they will not escape.
+ because they will not escape.
  According to the literature
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1354,7 +1354,7 @@ Energy for Breathing Fire
 \end_layout
 
 \begin_layout Standard
-The dragon need to roast preys, for they have to eat them.
+The dragon needs to roast preys, for they have to eat them.
  The breathing fire can be depicted by flame.
  For analysis, we cannot and do not need the whole temperature field's distribut
 ion accurately, but using the Solid Flame Model (SFM) to simplify the flame
@@ -1397,7 +1397,7 @@ In the SFM, we suppose
 \color inherit
 the heat transfer ratio keeps the same for each direction
 \series default
-, which can be depicted by the Fig.
+, which can be depicted by Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1461,7 +1461,7 @@ name "Z-Heat_transfer"
 \begin_inset Formula $\phi_{b}$
 \end_inset
 
- is the heat flux at the bottom of cylinder, which outputs to the prey.
+ is the heat flux at the bottom of the cylinder, which outputs to the prey.
  
 \begin_inset Formula $\phi_{l}$
 \end_inset
@@ -1472,7 +1472,7 @@ name "Z-Heat_transfer"
 \begin_inset Formula $\phi_{t}$
 \end_inset
 
- is the heat flux provided by dragon.
+ is the heat flux provided by the dragon.
  
 \begin_inset Formula $r_{h}$
 \end_inset
@@ -1571,7 +1571,7 @@ We set the heat capacity of the prey as
 \begin_inset Formula $m_{p}$
 \end_inset
 
- , heating time as 
+, heating time as 
 \begin_inset Formula $t_{p}$
 \end_inset
 
@@ -1814,7 +1814,8 @@ noprefix "false"
 \end_inset
 
  is proportional to the flying distance.
- From Eq 
+ From Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.19"
@@ -1829,8 +1830,8 @@ noprefix "false"
 \end_inset
 
  is proportional to the number of preys.
- So these two parts of energy are associated to a single prey's energy and
- the preys' distribution, and this will set the total energy expenditure
+ So these two parts of energy are associated with a single prey's energy
+ and the preys' distribution, and this will set the total energy expenditure
  uncertain.
  In order to calculate the total energy expenditure with the time period
  
@@ -1852,7 +1853,6 @@ literal "false"
 \end_inset
 
  for a better simulation.
- 
 \end_layout
 
 \begin_layout Standard
@@ -1860,8 +1860,8 @@ Our algorithm supposes that
 \series bold
  the dragon will find the nearest prey relating to its position
 \series default
-, because this corresponds the lowest energy expenditure.
- We define this as the Hunting Algorithm, whose steps are shown in Algorithm
+ because this corresponds the lowest energy expenditure.
+ We define this as dragon Hunting Algorithm, whose steps are shown in Algorithm
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2101,10 +2101,10 @@ Step 2:
 \begin_inset Formula $a$
 \end_inset
 
-, and generate preys(cattles and sheep) according the area of the square
+, and generate preys(cattle and sheep) according the area of the square
  and the density of each kind of prey by using random distribution.
  Initialize the number of preys caught by the dragon 
-\begin_inset Formula $n_{cattles}=n_{sheep}=0$
+\begin_inset Formula $n_{cattle}=n_{sheep}=0$
 \end_inset
 
 .
@@ -2325,7 +2325,7 @@ Eat the prey at position
 \end_inset
 
  and update 
-\begin_inset Formula $n_{cattles}$
+\begin_inset Formula $n_{cattle}$
 \end_inset
 
 or 
@@ -2365,7 +2365,7 @@ where the
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-the Hunting Algorithm
+Dragon Hunting Algorithm
 \end_layout
 
 \end_inset
@@ -2390,8 +2390,8 @@ The Model of the Climate Condition
 \end_layout
 
 \begin_layout Standard
-Climate condition changes may have several influence on our model, mostly
- altering the temperature and the humidity of environment.
+Climate condition changes may have several influences on our model, mostly
+ altering the temperature and the humidity of the environment.
  We tend to analyze this influence for two parts: the influence on the dragon
  itself and the influence on the preys' distribution.
 \end_layout
@@ -2497,8 +2497,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-There will be no obvious influence on dragon while the humidity of environment
- varies, which agrees with our basic knowledge.
+There will be no obvious influence on the dragon while the humidity of the
+ environment varies, which agrees with our basic knowledge.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2506,10 +2506,10 @@ The Influence on the Preys' Distribution
 \end_layout
 
 \begin_layout Standard
-Different climates such as a arid region, a warm temperate region, and an
- arctic region, also affect the distribution of the dragon's preys.
+Different climates such as an arid region, a warm temperate region, and
+ an arctic region, also affect the distribution of the dragon's preys.
  We still take the Australia continent as an example.
- According to website 
+ According to the website 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Z-Climate"
@@ -2518,7 +2518,7 @@ literal "false"
 \end_inset
 
 , we can find the states with different temperature and humidity in Australia.
- According to website 
+ According to the website 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Z-Sheep,Z-Cattle"
@@ -2526,7 +2526,7 @@ literal "false"
 
 \end_inset
 
-, we could determine the number of cattles and sheep in different states.
+, we could determine the number of cattle and sheep in different states.
  
 \end_layout
 
@@ -2560,7 +2560,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Statistics for Australian States
+Statistics for the Australian States
 \end_layout
 
 \end_inset

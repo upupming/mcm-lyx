@@ -145,7 +145,7 @@ status open
 \begin_layout Plain Layout
 对于龙所需要的能量开支，我们的模型不考虑魔法的元素，即龙不能自己创造能量。一只龙需要消耗能量的地方主要有：基础代谢、生长代谢、喷火、飞翔和痊愈伤害。如果我们假设
 龙只在捕猎的时候飞翔和喷火。假设龙每两天需要进食一次，那么像Balerion这么大的龙，每次进食需要摄入about 140000 million
- calories的能量。这意味着它一次进食需要吃掉470 cattles and 178 sheep，which is a terrible
+ calories的能量。这意味着它一次进食需要吃掉470 cattle and 178 sheep，which is a terrible
  amount.
  龙摄入的大部分能量都将用来维持自身的基础代谢。
 \end_layout

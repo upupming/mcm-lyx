@@ -82,16 +82,17 @@ Future Work
 \begin_layout Itemize
 We could consider the categories of preys will vary with districts under
  different climates.
- For example, the dragon can predate polar bears and walrus in Arctic while
- penguins in Antarctic, but these animals do not exist in the tropical area.
+ For example, the dragon can predate polar bears and walrus in the Arctic
+ while penguins in the Antarctic, but these animals do not exist in the
+ tropical area.
 \end_layout
 
 \begin_layout Itemize
 We could consider the different predating difficulties provided by the environme
 nt.
- For example, the landform is grass in temperate zone causing a easier predating
-, while that is forest causing a hurdle for predating because of the predator's
- hiding.
+ For example, the landform is grass in temperate zone causing an easier
+ predating, while that is forest causing a hurdle for predating because
+ of the predator's hiding.
 \end_layout
 
 \begin_layout Itemize
@@ -138,8 +139,8 @@ Be clear about what factors you are considering when addressing these questions.
 Through our model, we derive that the dragon's growth curve is S-shaped.
  It takes 280 years for a dragon to reach the upper limit of weight, which
  is 281.6 tons.
- The dragon is in initial growth stage before the age of 19.
- After the age of 131, the dragon enter steady growth stage.
+ The dragon is in the initial growth stage before the age of 19.
+ After the age of 131, the dragon enters steady growth stage.
  The age from 19 to 131 is exponential growth stage, while the dragon grew
  fastest at the age of 52.
 \end_layout
@@ -151,7 +152,7 @@ By analyzing the energy composition required by a dragon, our model figured
  energy for breathing fire and energy for recovery of trauma.
  The curve of the energy a dragon's need vary with time is also S-shaped.
  A mature dragon requires about 140000 million calories each two days, which
- includes of a community of 470 cattles and 178 sheep.
+ includes a community of 470 cattle and 178 sheep.
  The energy for breathing fire takes a high percentage of the total energy
  expenditure when the dragon is young.
  The energy for basic metabolism takes the most percentage of the total
@@ -166,16 +167,16 @@ By analyzing the energy composition required by a dragon, our model figured
 \begin_layout Standard
 As for the influence of climate conditions, we consider the factors of the
  temperature and the humidity.
- Our results show that the higher temperature, the less energy the dragon
+ Our results show that the higher the temperature, the less energy the dragon
  consumes.
- The higher the humidity, the lower the energy the dragon need.
+ The higher the humidity, the lower the energy the dragon needs.
  And the influence of temperature on the dragon is greater than that of
  humidity.
 \end_layout
 
 \begin_layout Standard
-To determine what is the ecological impact of a dragon, we simulated a ecosystem
- with three different types of preys.
+To determine what is the ecological impact of a dragon, we simulated an
+ ecosystem with three different types of preys.
  The results reveal the dragon has a great impact on the prey with high
  energy and dense distribution, while has little impact on prey with low
  energy and sparse distribution.
@@ -184,8 +185,8 @@ To determine what is the ecological impact of a dragon, we simulated a ecosystem
 \begin_layout Standard
 Besides, if we suppose the dragons breed through sexual multiplication,
  it will not be stable for three dragons to make up of a population.
- By referring to the literature, we discover that the number of individual
- that consists of a stably population will be more than 500 
+ By referring to the literature, we discover that the number of the individual
+ that consists of a stable population will be more than 500 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Z-conclusion"

@@ -115,7 +115,7 @@ Weakness
 \begin_deeper
 \begin_layout Itemize
 While comparing the manifestation between different climates, our model
- chooses the data of climates and the distribution of sheep and cattles
+ chooses the data of climates and the distribution of sheep and cattle
  in Australia to simulate.
  Nevertheless, due to the lackness of data, the maximum discrepancy in temperatu
 re or humidity between two states in Australia that we gets are not prominent
@@ -125,7 +125,7 @@ re or humidity between two states in Australia that we gets are not prominent
 
 \begin_layout Itemize
 As we determine the minimum area needed for the growth of three dragons,
- we suppose that there are only sheep and cattles for the dragons to predate.
+ we suppose that there are only sheep and cattle for the dragons to predate.
  However, the preys' distribution will be more complex, and competition
  effect among the dragons and other predators will exist.
  Our model cannot analyze this situation.
