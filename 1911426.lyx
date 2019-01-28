@@ -26,7 +26,7 @@
 \usepackage{amsmath}
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator*{\argmin}{arg\,min}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 \usepackage{listings}
 \usepackage{color}
