@@ -27,6 +27,9 @@
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator*{\argmin}{arg\,min}
 \usepackage{hyperref}
+
+\usepackage{listings}
+\usepackage{color}
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -313,6 +316,16 @@ options "unsrt"
 \begin_inset CommandInset include
 LatexCommand include
 filename "07_appendices.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "algorithm/hunting.tex"
 
 \end_inset
 

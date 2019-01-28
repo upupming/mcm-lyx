@@ -29,6 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +45,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -198,8 +200,13 @@ name "L-fig1-2"
 
 \end_layout
 
+\begin_layout Subsubsection*
+Growth curve function
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
@@ -392,10 +399,6 @@ name "L-res-1"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section*
-Appendix B
 \end_layout
 
 \end_body
