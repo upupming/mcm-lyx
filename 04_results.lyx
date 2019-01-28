@@ -86,7 +86,7 @@ Results
 \end_layout
 
 \begin_layout Subsection
-Results of the Model of Dragon Growing
+Results of the Model of Dragon's Growth
 \end_layout
 
 \begin_layout Subsubsection
@@ -161,7 +161,7 @@ we solve the value of
 \begin_inset Formula $\mu_{m}$
 \end_inset
 
-using SciPy's scipy.optimize.fsolve function.
+ using SciPy's scipy.optimize.fsolve function.
  Because the result obtained by SciPy is related to the given initial value,
  we traverse all the initial values using step size 10 from 1 to 1000 for
  
@@ -410,7 +410,7 @@ noprefix "false"
 \begin_inset Formula $\mu_{m}$
 \end_inset
 
-, because the dragon can grow bigger at a short time, and then it will grow
+, because the dragon can grow bigger in a short time, and then it will grow
  faster when bigger, which forms a virtuous cycle.
 \end_layout
 
@@ -599,83 +599,6 @@ The time when the dragon reaches maximum growth rate
  is around 52 years old, and it weights 81,800.71 kg.
 \end_layout
 
-\begin_layout Standard
-The predating path of the dragon is shown in Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Z-predator path"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/eaten-225.svg
-	lyxscale 20
-	scale 15
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename figures/eaten-300.svg
-	lyxscale 20
-	scale 15
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename figures/eaten-375.svg
-	lyxscale 20
-	scale 15
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Predating Path of Dragon
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "Z-predator path"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Results of the Model of Dragon's Energy Expenditures
 \begin_inset CommandInset label
@@ -688,18 +611,8 @@ name "subsec:Results-of-the"
 \end_layout
 
 \begin_layout Standard
-In our implementation of Algorithm 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Z-algorithm"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, we keep the preset parameters unchanged, run and output the results for
- further analysis.
+By applying the Hunting Algorithm, we keep the preset parameters unchanged,
+ run and output the results for further analysis.
 \end_layout
 
 \begin_layout Subsubsection
@@ -719,7 +632,11 @@ We simulate the age of dragon form
 \end_layout
 
 \begin_layout Itemize
-The dragon hunts once every 2 days.
+The dragon hunts once every 
+\begin_inset Formula $t_{d}=$
+\end_inset
+
+2 days.
 \end_layout
 
 \begin_layout Itemize
@@ -997,7 +914,7 @@ the air density of oxygen at 1atm
 \begin_inset Text
 
 \begin_layout Plain Layout
-the desity of dragon's bone
+the density of dragon's bone
 \end_layout
 
 \end_inset
@@ -1033,7 +950,7 @@ the desity of dragon's bone
 \begin_inset Text
 
 \begin_layout Plain Layout
-the distribution denstity of cattle
+the distribution density of cattle
 \end_layout
 
 \end_inset
@@ -1073,7 +990,7 @@ km
 \begin_inset Text
 
 \begin_layout Plain Layout
-the distribution denstity of sheep
+the distribution density of sheep
 \end_layout
 
 \end_inset
@@ -1113,7 +1030,7 @@ km
 \begin_inset Text
 
 \begin_layout Plain Layout
-the desity of dragon's muscle
+the density of dragon's muscle
 \end_layout
 
 \end_inset
@@ -1285,7 +1202,7 @@ the weight of a sheep
 \begin_inset Text
 
 \begin_layout Plain Layout
-the absorbing coeffcient for prey
+the absorbing coefficient for prey
 \end_layout
 
 \end_inset
@@ -1657,7 +1574,7 @@ A mature dragon needs 470 cattles and 178 sheep, which is 140, 000 million
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1702,7 +1619,7 @@ name "Z-En-year"
 \end_layout
 
 \begin_layout Standard
-Minmum area required to support the three dragons vary with age is shown
+Minimum area required to support the three dragons vary with age is shown
  in Fig.
  
 \begin_inset CommandInset ref
@@ -1715,7 +1632,7 @@ noprefix "false"
 \end_inset
 
 .
- As for minmum area required to support the three dragons, accoarding to
+ As for minimum area required to support the three dragons, according to
  Eq.
  
 \begin_inset CommandInset ref
@@ -1727,8 +1644,8 @@ noprefix "false"
 
 \end_inset
 
-, we can determine the minmum area to support a dragon.
- Then the minmum area of three dragons is three times of 
+, we can determine the minimum area to support a dragon.
+ Then the minimum area of three dragons is three times of 
 \begin_inset Formula $S(age)$
 \end_inset
 
@@ -1858,7 +1775,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-The energy for basic metabolish 
+The energy for basic metabolism 
 \begin_inset Formula $E_{m}$
 \end_inset
 
@@ -1866,9 +1783,9 @@ The energy for basic metabolish
 \begin_inset Formula $E_{n}$
 \end_inset
 
- during the whole life of the dragon, while the energy of growth, the energy
- of flying and the energy of recovery from trauma only take a low proportion.
- Because the dragon's growth causes an increase on its weight, which will
+ during the whole life of the dragon, while the energy for growth, the energy
+ for flying and the energy for recovery of trauma only take a low proportion.
+ Because the dragon's growth causes increment on its weight, which will
  make 
 \family roman
 \series medium
@@ -1890,16 +1807,16 @@ The energy for basic metabolish
 \end_layout
 
 \begin_layout Itemize
-The energy for Breathing fire 
+The energy for breathing fire 
 \begin_inset Formula $E_{b}$
 \end_inset
 
- first takes a high precentage of 
+ first takes a high percentage of 
 \begin_inset Formula $E_{n}$
 \end_inset
 
  when the dragon is young.
- After it beomes mature, the percentage of 
+ After it becomes mature, the percentage of 
 \begin_inset Formula $E_{b}$
 \end_inset
 
@@ -1911,7 +1828,11 @@ The energy for Breathing fire
 \begin_inset Formula $n$
 \end_inset
 
-.
+, which raises as the weight of the dragon 
+\begin_inset Formula $m_{d}$
+\end_inset
+
+ growing.
 \end_layout
 
 \begin_layout Standard
@@ -1969,7 +1890,7 @@ Energy percentage of a dragon
 \begin_inset Formula $-age$
 \end_inset
 
- histgram
+ histogram
 \end_layout
 
 \end_inset
@@ -1990,7 +1911,7 @@ name "fig:Energy-percentage-of"
 \end_layout
 
 \begin_layout Subsection
-Results of the model of the climate condition
+Results of the Model of the Climate Condition
 \end_layout
 
 \begin_layout Standard
@@ -2028,7 +1949,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2056,7 +1977,7 @@ status collapsed
 \begin_inset Formula $-T_{e}$
 \end_inset
 
- histgram
+ histogram
 \begin_inset space \hspace{}
 \length 1.6cm
 \end_inset
@@ -2065,7 +1986,7 @@ status collapsed
 \begin_inset Formula $-$
 \end_inset
 
-Humidity histgram
+Humidity histogram
 \end_layout
 
 \begin_layout Plain Layout
@@ -2153,7 +2074,7 @@ and
 
 , the higher the density of preys.
  Thus, the dragon can obtain a prey with less flight distance.
- So the results come cout.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -2205,10 +2126,15 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
+
+\size large
+En
+\size default
+
 \begin_inset Graphics
 	filename figures/percentage-6-day=0.svg
 	scale 20
@@ -2233,11 +2159,11 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Preys percentage changes when the dragon is 100 years old
+Preys' percentage changes when the dragon is 100 years old
 \begin_inset Formula $-age$
 \end_inset
 
- histgram
+ histogram
 \end_layout
 
 \end_inset
@@ -2262,11 +2188,88 @@ From the figure, we can conclude that, with dragon hunting, the proportion
  of cattle is smaller than that of normal breeding, and other animals are
  opposite.
  And the increase in the proportion of hare is greater than that of sheep.
- In short, cattle are most affected, followed by sheep, and hares have the
- least impact.
+ In short, cattles are most affected, followed by sheep, and hares have
+ the least impact.
  Therefore, we can draw general conclusions: the dragon has a great impact
  on the prey with high energy and dense distribution, and has little impact
  on prey with low energy and sparse distribution.
+\end_layout
+
+\begin_layout Standard
+The predating path of the dragon is shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-predator path"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/eaten-225.svg
+	lyxscale 20
+	scale 15
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/eaten-300.svg
+	lyxscale 20
+	scale 15
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/eaten-375.svg
+	lyxscale 20
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Predating Path of Dragon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Z-predator path"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

@@ -147,20 +147,7 @@ Dragons are the creatures standing on the top of the food chain.
  Their existence will have a great impact on the ecological environment.
  It will consume quantities of resources to secure their survival.
  In order to make the existence of the dragon more possible, we need to
- figure out these processes.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Z: these processes, 我觉得用词不太当，你们可以改成更好的表达。
-\end_layout
-
-\end_inset
-
-
+ figure out these circumstances around the dragons.
 \end_layout
 
 \begin_layout Subsection
@@ -168,8 +155,8 @@ Restatement of the Problem
 \end_layout
 
 \begin_layout Standard
-To find out how the dragon will live in in a real world.
- We need to analyze the following questions:
+To find out how the dragon will live in in a real world, we need to analyze
+ the following questions:
 \end_layout
 
 \begin_layout Itemize
@@ -221,8 +208,8 @@ Will the dragon perform differently in different environments? If true,
 \begin_inset space \thinspace{}
 \end_inset
 
-In order to answer these questions, we take some of the scientific research
- results in the field of biology today into consideration.
+In order to answer these questions, we take some of the scientific researches
+ in the field of biology today into consideration.
 \end_layout
 
 \begin_layout Subsection
@@ -231,7 +218,7 @@ Literature Review
 
 \begin_layout Standard
 The growth curve model is a model for studying the laws of a certain biological
- indicator's change varying with time.
+ indicator's changes varying with time.
  So far, scientists have used nonlinear curves to fit the growth trajectory
  related to animals.
  In 1838, 
@@ -260,7 +247,7 @@ literal "false"
 
 \end_inset
 
-, and he used this for fish weight studies successfully.
+, and he applied this in the field of fish weight studies successfully.
  In 1959, 
 \shape italic
 F.J.
@@ -318,10 +305,10 @@ literal "false"
 \end_inset
 
 .
- After the 1990s, with the rapid developments of GIS technology and easy
- refining of remote sensing data related to climate, sea surface, land surface,
- greatly enhance the application of SDMs, a large number of species distribution
- models and software emerged.
+ After the 1990s, as the rapid developments of GIS technology and easy refining
+ of remote sensing data related to climate, sea surface, land surface take
+ place, it greatly enhance the application of SDMs, together with a large
+ number of species distribution models and software emerged.
 \end_layout
 
 \end_body

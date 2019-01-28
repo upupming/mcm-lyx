@@ -2717,21 +2717,20 @@ Fictional Dragons in Real World
 The dragon is a mysterious and formidable creature widely known by people.
  Three dragons appearing in 
 \shape italic
-Game of Throne
+Game of Thrones
 \shape default
  and 
 \shape italic
 A Song of Ice and Fire
 \shape default
- are people's favorite.
- For a long time, we people do not even know whether the dragon exists.
+ are particularly popular.
  Through our model, we can analyze the requirements for the dragon's living
- detaily.
+ in details.
  
 \end_layout
 
 \begin_layout Abstract
-To determine the growth of the dragon, we suppose the dragon is geometrical
+To determine the growth of the dragon, we suppose the dragon is geometrically
  similar as time goes by.
  We use Richards equation to simulate, which presents a clear 'S' curve
  varying with time.
@@ -2757,25 +2756,19 @@ To determine the growth of the dragon, we suppose the dragon is geometrical
 \begin_layout Abstract
 To calculate the energy expenditure for the dragon, we suppose that the
  dragon will not fly and breathe fire unless predating.
- First we yield the conversion efficiency of the dragon's preies that net
- energy takes over 
-\begin_inset Formula $57\%$
-\end_inset
-
- of the whole absorbing energy.
- Second, we divide the net energy into five parts, which are: the energy
- for basic metabolish, the energy for growth, the energy for flight, the
+ Our model divide the energy required into five parts, which are: the energy
+ for basic metabolism, the energy for growth, the energy for flight, the
  energy for breathing fire and energy for recovery of trauma.
  These five parts are derived by the chemical formula of dragon's respiration,
- the derivative of 'S' trend curve, the emprical formula between speed consuming
- minimum power and the dragon's weight, the SFM model of the heating transferati
-on and the coefficient describing the posibility of trauma.
+ the derivative of 'S' trend curve, the empirical formula between speed
+ consuming minimum power and the dragon's weight, the SFM model of the heating
+ transferation and the coefficient describing the possibility of trauma.
  Since the energy of flying and breathing fire are coupling with the total
- energy expenditure by the flying distance and the number of preies, we
- develop an algorithm to calculate the total energy expenditure.
+ energy expenditure by the flying distance and the number of preys, we develop
+ an algorithm to calculate the total energy expenditure.
  This energy also presents a 'S' curve as time goes by.
- Finally, we answer the question of 'how much area is required to the three
- dragons', we use the method solving 'Cattle grazing problem' for reference.
+ Finally, we answer the question of how much area is required to the three
+ dragons', we use the method solving 'Cattle Grazing Problem' for reference.
 \end_layout
 
 \begin_layout Abstract
@@ -2940,7 +2933,7 @@ textbf{Keywords: } #1
 
 
 \backslash
-keywords{the dragon, growth curve, the SFM model, Maximum entropy method}
+keywords{ growth curve, the SFM model, the Hunting Algorithm, Maxent method}
 \end_layout
 
 \end_inset

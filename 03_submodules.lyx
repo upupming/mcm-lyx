@@ -87,11 +87,11 @@ Model Establishment
 \end_layout
 
 \begin_layout Subsection
-The Model of Dragon Growing
+The Model of Dragon's Growth
 \end_layout
 
 \begin_layout Standard
-Organism has a common feature on it's growing speed, which can be discribed
+Organism has a common feature on it's growing speed, which can be described
  as Slow-Fast-Slow.
  Fig.
  
@@ -104,7 +104,7 @@ noprefix "false"
 
 \end_inset
 
- Clarifies the growth process of the organism.
+ clarifies the growth process of the organism.
  
 \end_layout
 
@@ -154,9 +154,20 @@ name "Fig: growth curve"
 \end_layout
 
 \begin_layout Standard
-As we can see, the total growth of the organism shows a 'S' trend that includes
- three stages: the initial growing stage, the exponential growing stage
- and the steady growing stage.
+As we can see in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Fig: growth curve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the total growth of the organism shows an 'S' trend that includes three
+ stages: the initial growth stage, the exponential growth stage and the
+ steady growth stage.
  These three stages are determined by two crossover point, which the tangent
  line of the inflection point intersects with 
 \begin_inset Formula $y=0$
@@ -171,7 +182,7 @@ As we can see, the total growth of the organism shows a 'S' trend that includes
 
 \begin_layout Standard
 Richards equation can simulate these three stages by four parameters with
- boilogical meanings: the maximum specific growth rate 
+ biological meanings: the maximum specific growth rate 
 \begin_inset Formula $\mu_{m}$
 \end_inset
 
@@ -210,8 +221,12 @@ y=A\left\{ 1+v\cdot\exp(1+v)\cdot\exp\left[\frac{\mu_{m}}{A}\cdot\left(1+v\right
 \end_layout
 
 \begin_layout Standard
-In order to simplify the problem, We suppose the dragon's shape satisfying
- geometrically similar with time going by
+In order to simplify the problem, 
+\series bold
+we suppose the dragon's shape satisfying geometrically similar with time
+ going by
+\series default
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C-giordano-2013-first"
@@ -228,19 +243,6 @@ literal "false"
 \begin{equation}
 S=kV^{\frac{2}{3}}\label{eq:3.c.2}
 \end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-此处几何相似性的假设在后面多次用到，看看是否需要加入到开头的总体假设之中
-\end_layout
 
 \end_inset
 
@@ -286,13 +288,13 @@ noprefix "false"
 
 \end_inset
 
- only has three parameters that need being determined, which transforms
- Bertaianffy equation.
+ only has three parameters that need being determined, and it transforms
+ to Bertaianffy equation.
  Considering the requirements in the problem that dragon's weight is 
 \begin_inset Formula $10$
 \end_inset
 
-kg when they were hatched and 
+ kg when hatched and 
 \begin_inset Formula $30-40$
 \end_inset
 
@@ -301,14 +303,14 @@ kg when they were hatched and
 \begin_inset Formula $A$
 \end_inset
 
-, which represents the maximum weight of the dragon.
+, which indicates the maximum weight of the dragon.
 \end_layout
 
 \begin_layout Standard
 Since the dragon does not exist in the real life, we use the data of real
- creatures to analogize the weight of adult dragons.
+ creatures to analogize the weight of a mature dragon.
  Tyrannosaurus Rex is a good choice whose shape is very similar to the dragon.
- After investigation, we found that the largest T.
+ After our investigation, we found that the largest T.
  rex weighs about 14.85 tons.
  The latest T.
  rex was found in Montana, USA, in 1987.
@@ -326,18 +328,12 @@ literal "false"
 \shape italic
 Game of Thrones
 \shape default
-, '....'s head is as large as a carriage'
-\begin_inset Note Note
-status open
+, 
+\shape italic
+the biggest (dragon) was the size of a carriage.
 
-\begin_layout Plain Layout
-Z：需要补上原文
-\end_layout
-
-\end_inset
-
-.
- We set the carriage to have length of 4 m.
+\shape default
+ We set the carriage with length of 4 m.
  Then, according to geometrical similarity, we can derive:
 \end_layout
 
@@ -354,7 +350,7 @@ Z：需要补上原文
 \end_layout
 
 \begin_layout Standard
-We yield 
+From the equation above, we yield 
 \begin_inset Formula $A=281.6$
 \end_inset
 
@@ -362,13 +358,13 @@ We yield
 \end_layout
 
 \begin_layout Subsection
-The Model of Dragon's Energy Expenditures
+The Model of Dragon's Energy Expenditure
 \end_layout
 
 \begin_layout Standard
 After clarifying how the dragon grows, we need to determine the energy that
  the dragon needs in daily life.
- Accoarding to the research results in bioenergetics, we divide the individual
+ According to the researches in bioenergetics, we divide the individual
  biological energy flow into several categories, which is shown in Fig.
  
 \begin_inset CommandInset ref
@@ -381,6 +377,16 @@ noprefix "false"
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+插入一个文献
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -393,8 +399,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/energy distribution.png
-	scale 40
+	filename figures/energy distribution.svg
+	lyxscale 50
+	scale 50
 
 \end_inset
 
@@ -433,10 +440,10 @@ name "Z-energy distribution"
 \end_layout
 
 \begin_layout Standard
-To estimate the total energy intake of a dragon, we need to determine net
+To estimate the total energy intake of a dragon, we tend to determine net
  energy.
  By our analysis, net energy can be divided into five parts, which are:
- energy for basic metabolish, energy for growth, energy for flight, energy
+ energy for basic metabolism, energy for growth, energy for flight, energy
  for breathing fire and energy for recovery of trauma.
  As we can see them located in Tab.
  
@@ -491,7 +498,7 @@ name "tab:Energy-cost-activities"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Energy cost activity
+energy cost activity
 \end_layout
 
 \end_inset
@@ -509,7 +516,7 @@ category
 \begin_inset Text
 
 \begin_layout Plain Layout
-Influencing factor
+influencing factor
 \end_layout
 
 \end_inset
@@ -520,7 +527,7 @@ Influencing factor
 \begin_inset Text
 
 \begin_layout Plain Layout
-Energy for basic metabolish
+energy for basic metabolism
 \end_layout
 
 \end_inset
@@ -529,7 +536,7 @@ Energy for basic metabolish
 \begin_inset Text
 
 \begin_layout Plain Layout
-Basal Metabolism
+basal metabolism
 \end_layout
 
 \end_inset
@@ -549,7 +556,7 @@ weight
 \begin_inset Text
 
 \begin_layout Plain Layout
-Energy for growth
+energy for growth
 \end_layout
 
 \end_inset
@@ -558,7 +565,7 @@ Energy for growth
 \begin_inset Text
 
 \begin_layout Plain Layout
-Growth Energy
+growth energy
 \end_layout
 
 \end_inset
@@ -578,7 +585,7 @@ time
 \begin_inset Text
 
 \begin_layout Plain Layout
-Energy for flight
+energy for flight
 \end_layout
 
 \end_inset
@@ -587,7 +594,7 @@ Energy for flight
 \begin_inset Text
 
 \begin_layout Plain Layout
-Activity Metabolism
+activity metabolism
 \end_layout
 
 \end_inset
@@ -607,7 +614,7 @@ location of food
 \begin_inset Text
 
 \begin_layout Plain Layout
-Energy for breathing fire 
+energy for breathing fire 
 \end_layout
 
 \end_inset
@@ -616,7 +623,7 @@ Energy for breathing fire
 \begin_inset Text
 
 \begin_layout Plain Layout
-Activity Metabolism
+activity metabolism
 \end_layout
 
 \end_inset
@@ -636,7 +643,7 @@ amount of food
 \begin_inset Text
 
 \begin_layout Plain Layout
-Energy for recovery of trauma 
+energy for recovery of trauma 
 \end_layout
 
 \end_inset
@@ -645,7 +652,7 @@ Energy for recovery of trauma
 \begin_inset Text
 
 \begin_layout Plain Layout
-Activity Metabolism
+activity metabolism
 \end_layout
 
 \end_inset
@@ -711,14 +718,14 @@ Next we will determine each five part of
 \end_layout
 
 \begin_layout Subsubsection
-Energy for basic metabolish
+Energy for Basic Metabolism
 \end_layout
 
 \begin_layout Standard
 Animals produce energy by breathing while they live on earth, which is called
  cellular respiration.
  Even though an animal remains static in a certain place, they need the
- energy for basic metabolish 
+ energy for basic metabolism 
 \begin_inset Formula $E_{m}$
 \end_inset
 
@@ -742,7 +749,7 @@ C_{6}H_{12}O_{6}+6H_{2}O+6O_{2}\rightarrow6CO_{2}+12H_{2}O+energy\label{eq:3.2.1
 \end_layout
 
 \begin_layout Standard
-If we could calculate the oxygen consumption, then we can get the energy
+If we could determine the oxygen consumption, then we can get the energy
  releasing by the cellular respiration.
 \end_layout
 
@@ -751,13 +758,13 @@ Oxygen consumption
 \begin_inset Formula $V_{o_{2}}$
 \end_inset
 
- increases progressively less with the increase in species body mass.
+ increases progressively less with the increase in species' weight.
  
 \begin_inset Formula $V_{o_{2}}$
 \end_inset
 
 /kg is larger in small animals than in large animals, for small mammals
- have a larger body surface area/body mass ratio than heavier mammals.
+ will have a larger body surface area/body mass ratio than heavier mammals.
  Dragon is a huge organism, so they may have less 
 \begin_inset Formula $V_{o_{2}}$
 \end_inset
@@ -774,8 +781,24 @@ Let
 \begin_inset Formula $V_{o_{2}}$
 \end_inset
 
-/kg/min.
- By referring to the literature, we can get that 
+
+\begin_inset Formula $/$
+\end_inset
+
+(kg
+\begin_inset Formula $\cdot$
+\end_inset
+
+min).
+ By referring to the literature
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-mortola-1985-breathing"
+literal "false"
+
+\end_inset
+
+, we can get that 
 \family roman
 \series medium
 \shape up
@@ -809,7 +832,15 @@ Let
 \begin_inset Formula $150$
 \end_inset
 
- ml/kg/min, and we also can get that 
+ ml
+\begin_inset Formula $/$
+\end_inset
+
+(kg
+\begin_inset Formula $\cdot$
+\end_inset
+
+min) in average, and we also can get that 
 \begin_inset Formula $V_{E}$
 \end_inset
 
@@ -817,16 +848,16 @@ Let
 \begin_inset Formula $600$
 \end_inset
 
- ml/kg/min, almost four times of an adult
-\begin_inset CommandInset citation
-LatexCommand cite
-key "C-mortola-1985-breathing"
-literal "false"
-
+ ml
+\begin_inset Formula $/$
 \end_inset
 
-.
- Because the scale comparism between a dragon and an aldult is similar to
+(kg
+\begin_inset Formula $\cdot$
+\end_inset
+
+min) in average, almost four times of an adult.
+ Because the scale comparison between a dragon and an adult is similar to
  that between an adult and a mouse, we can estimate 
 \begin_inset Formula $V_{E}$
 \end_inset
@@ -835,7 +866,15 @@ literal "false"
 \begin_inset Formula $37.5$
 \end_inset
 
- ml/kg/min.
+ ml
+\begin_inset Formula $/$
+\end_inset
+
+(kg
+\begin_inset Formula $\cdot$
+\end_inset
+
+min).
 \end_layout
 
 \begin_layout Standard
@@ -884,14 +923,14 @@ noprefix "false"
 \end_layout
 
 \begin_layout Subsubsection
-Energy for growth
+Energy for Growth
 \end_layout
 
 \begin_layout Standard
 The dragon's body mostly consists of bone and muscle, so the energy for
  dragon growing can be estimated by the bone growth and muscle growth.
  As we assume that the dragon's shape satisfying geometrically similar varying
- with time, the aixal growth rate for these two conponents remains the same
+ with time, the axial growth rate for these two components remains the same
  but becomes different in radial direction.
  This process can be shown by Fig.
  
@@ -917,7 +956,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/growth energy.png
+	filename figures/growth energy.svg
 	scale 50
 
 \end_inset
@@ -983,7 +1022,7 @@ Let
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{dV_{b}}{dV_{m}}=\frac{2\pi r_{b}\cdot dr_{b}\cdot l}{2\pi r_{m}\cdot dr_{m}\cdot l}\label{eq:3.c.5}
+\frac{dV_{b}}{dV_{m}}=\frac{2\pi r_{b}\cdot dr_{b}\cdot dl}{2\pi r_{m}\cdot dr_{m}\cdot dl}\label{eq:3.c.5}
 \end{equation}
 
 \end_inset
@@ -1003,7 +1042,23 @@ dV=dV_{b}+dV_{m}
 \end_layout
 
 \begin_layout Standard
-In order to keep the ratio of bone and muscle in cross section remaining
+In Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $dl$
+\end_inset
+
+ is the growth of axial length.
+ In order to keep the ratio of bone and muscle in cross section remaining
  the same, we can derive:
 \end_layout
 
@@ -1073,7 +1128,7 @@ Let
 \begin_inset Formula $dm_{b}$
 \end_inset
 
- is contributed by protein partialy.
+ is contributed by protein partially.
  
 \begin_inset Formula $E_{p}$
 \end_inset
@@ -1131,7 +1186,14 @@ E_{gb}=\rho_{b}dV_{b}E_{bone}
 \end_layout
 
 \begin_layout Standard
-While 
+\begin_inset Formula $E_{gm}$
+\end_inset
+
+ and 
+\begin_inset Formula $E_{gb}$
+\end_inset
+
+ are the growth energy of muscle and bone, while 
 \begin_inset Formula $\rho_{m}$
 \end_inset
 
@@ -1139,7 +1201,8 @@ While
 \begin_inset Formula $\rho_{b}$
 \end_inset
 
- are the density of muscle and bone, 
+ are the density of muscle and bone.
+ 
 \begin_inset Formula $dm_{d}$
 \end_inset
 
@@ -1210,19 +1273,17 @@ noprefix "false"
 \end_layout
 
 \begin_layout Subsubsection
-Energy for flight
+Energy for Flying
 \end_layout
 
 \begin_layout Standard
-Dragons are aggresive, so they do not have any natural enemy.
- We suppose that drangons always fly in the speed by consuming minimum power,
- because they will not escape.
- Accroding to the literature, we can get the relationship between dragon's
- flying speed 
-\begin_inset Formula $v_{d}$
-\end_inset
-
- and its weight 
+Dragons are aggressive, so they do not have any natural enemy.
+ 
+\series bold
+We suppose that dragons always fly in the speed by consuming minimum power
+\series default
+, because they will not escape.
+ According to the literature
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C-Wang-2002"
@@ -1230,7 +1291,11 @@ literal "false"
 
 \end_inset
 
-:
+, we can get the relationship between dragon's flying speed 
+\begin_inset Formula $v_{d}$
+\end_inset
+
+ and its weight :
 \end_layout
 
 \begin_layout Standard
@@ -1249,11 +1314,19 @@ Let
 \begin_inset Formula $L_{d}$
 \end_inset
 
- be the total distance that the dragon fly to the prey, 
+ be the total distance that the dragon fly to the preys, 
 \begin_inset Formula $E_{v}$
 \end_inset
 
- be the cost energy /kg/hour which can be estimated by the literature 
+ be the cost energy 
+\begin_inset Formula $/$
+\end_inset
+
+(kg
+\begin_inset Formula $\cdot$
+\end_inset
+
+hour) which can be estimated by the literature 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C-flint-1984-flight"
@@ -1277,12 +1350,11 @@ E_{f}=m_{d}\frac{L_{d}}{v_{d}}E_{v}\label{eq:3.c.15-1}
 \end_layout
 
 \begin_layout Subsubsection
-Energy for breathing fire
+Energy for Breathing Fire
 \end_layout
 
 \begin_layout Standard
-Accroding to our assumption, the dragon need to roast preys, for they have
- to eat them.
+The dragon need to roast preys, for they have to eat them.
  The breathing fire can be depicted by flame.
  For analysis, we cannot and do not need the whole temperature field's distribut
 ion accurately, but using the Solid Flame Model (SFM) to simplify the flame
@@ -1310,9 +1382,9 @@ In the SFM, we suppose
 \uwave off
 \noun off
 \color none
- the prey's shap is similar to the dragon's mouth
+ 
 \family default
-\series default
+\series bold
 \shape default
 \size default
 \emph default
@@ -1323,8 +1395,9 @@ In the SFM, we suppose
 \uwave default
 \noun default
 \color inherit
-, so the shape of the fire is chosen to be a circular cylinder, which can
- be depicted by the Fig.
+the heat transfer ratio keeps the same for each direction
+\series default
+, which can be depicted by the Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1348,8 +1421,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/Fire.png
-	scale 50
+	filename figures/Fire.svg
+	lyxscale 50
+	scale 25
 
 \end_inset
 
@@ -1393,12 +1467,12 @@ name "Z-Heat_transfer"
 \end_inset
 
  is the heat flux transferring to the side lateral area of the cylinder,
- which represents the lost.
+ which indicates the lost.
  
 \begin_inset Formula $\phi_{t}$
 \end_inset
 
- is the heat flux inputted by dragon.
+ is the heat flux provided by dragon.
  
 \begin_inset Formula $r_{h}$
 \end_inset
@@ -1433,11 +1507,22 @@ We set
 \begin_inset Formula $\phi_{b}$
 \end_inset
 
- are propotional to the tranferring area, and heat transfer ratio 
+ are proportional to the transferring area, and heat transfer ratio 
 \begin_inset Formula $q$
 \end_inset
 
- be a constant, which can be determined:
+ as a constant, which can be determined by Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.13"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -1499,7 +1584,8 @@ We set the heat capacity of the prey as
 \begin_inset Formula $l_{c}=4r_{h}$
 \end_inset
 
-, for this will keep almost the same while the dragon grows.
+, for the dragon will roast food in a comfortable position while the dragon
+ grows.
  The prey's temperature needs to be appropriate for the dragon to eat, and
  we set this as 
 \begin_inset Formula $T_{p}$
@@ -1526,7 +1612,7 @@ We let
 \end_inset
 
  be the number of the preys.
- Accroding to the Eq.
+ According to the Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1537,7 +1623,8 @@ noprefix "false"
 
 \end_inset
 
-
+, Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.14"
@@ -1547,7 +1634,8 @@ noprefix "false"
 
 \end_inset
 
-
+ and Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:3.c.15"
@@ -1576,14 +1664,14 @@ E_{b}=\phi_{t}t_{p}=nc_{p}m_{p}\left(1+\frac{2l_{c}}{r_{h}}\right)\left(T_{p}-T_
 \end_layout
 
 \begin_layout Subsubsection
-Energy for recovery of trauma
+Energy for Recovery of Trauma
 \end_layout
 
 \begin_layout Standard
-As we metioned above, the dragons are aggresive, so they seldom get hurt
+As we mentioned above, the dragons are aggressive, so they seldom get hurt
  from the preys.
- We suppose this part of energy is propotional to the energy for basic metabolis
-h, and the coeficient for the ratio 
+ We suppose this part of energy is proportional to the energy for basic
+ metabolism, and the coefficient for the possibility to get hurt 
 \begin_inset Formula $\xi$
 \end_inset
 
@@ -1603,7 +1691,7 @@ E_{t}=\xi E_{m}
 \end_layout
 
 \begin_layout Subsubsection
-Algorithm for calculating the total energy expenditure
+Algorithm for Calculating the Total Energy Expenditure
 \end_layout
 
 \begin_layout Standard
@@ -1623,7 +1711,7 @@ noprefix "false"
 \end_inset
 
  from the consuming side.
- In the aspect of absorbing side, We can calculate the net energy by Eq.
+ In the aspect of absorbing side, we can calculate the net energy by Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1676,7 +1764,7 @@ Not all parts of the preys can be eaten by the dragon.
 \begin_inset Formula $\eta$
 \end_inset
 
- is the efficiency which indicates the propotion of preys that the dragon
+ is the efficiency which indicates the proportion of preys that the dragon
  eats.
  
 \begin_inset Formula $E_{a}$
@@ -1686,7 +1774,7 @@ Not all parts of the preys can be eaten by the dragon.
 \begin_inset Formula $E_{q}$
 \end_inset
 
- is the energy per kilograms for the preys.
+ is the energy per kg for the preys.
  From Fig.
  
 \begin_inset CommandInset ref
@@ -1744,8 +1832,16 @@ noprefix "false"
  So these two parts of energy are associated to a single prey's energy and
  the preys' distribution, and this will set the total energy expenditure
  uncertain.
- In order to calculate the total energy expenditure, we develop an algorithm
- and keep the category of the preys and their distribution type fixed.
+ In order to calculate the total energy expenditure with the time period
+ 
+\begin_inset Formula $t_{d}$
+\end_inset
+
+, we develop an algorithm and 
+\series bold
+keep the category of the preys and their distribution type fixed
+\series default
+.
  We also find the population density of these preys in Australia online
  
 \begin_inset CommandInset citation
@@ -1760,9 +1856,13 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Our algorithm supposes that the dragon will find the nearest prey relating
- to its position, because this corresponds the lowest energy expenditure.
- Our algorithm is shown in 
+Our algorithm supposes that
+\series bold
+ the dragon will find the nearest prey relating to its position
+\series default
+, because this corresponds the lowest energy expenditure.
+ We define this as the Hunting Algorithm, whose steps are shown in Algorithm
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "Z-algorithm"
@@ -1772,7 +1872,151 @@ noprefix "false"
 
 \end_inset
 
+.
+\end_layout
+
+\begin_layout Standard
+After that, we can calculate the energy expenditure 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ with the time period 
+\begin_inset Formula $t_{d}$
+\end_inset
+
+ for each 
+\begin_inset Formula $age$
+\end_inset
+
+ through this algorithm, and get the curve of 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ versus 
+\begin_inset Formula $age$
+\end_inset
+
+.
+ Then we can estimate the minimum area for the living of three dragons.
+ This is similar to the famous 'Cattle Grazing Problem' proposed by Newton.
+ Dragons are eating the preys and the preys will reproduce, and they would
+ reach a transient balance.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ be the adding number of prey type 
+\begin_inset Formula $i$
+\end_inset
+
+ by considering breeding among time period 
+\begin_inset Formula $t_{b}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{d}$
+\end_inset
+
+ be the time period for the dragon's predation.
+ Then the absorbing energy producing by prey type 
+\begin_inset Formula $i$
+\end_inset
+
+ in period 
+\begin_inset Formula $t_{b}$
+\end_inset
+
+ in supported area 
+\begin_inset Formula $S(age)$
+\end_inset
+
+ can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{vi}=\frac{B_{i}}{2\frac{t_{b}}{t_{d}}}\cdot\eta m_{pi}E_{pi}\rho_{pi}S(age)\label{eq:3.c.22}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.22"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ , the formula dividing 
+\begin_inset Formula $2$
+\end_inset
+
+ means that each newborn prey is bred by two mature preys.
+ Also we can get Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.23"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ by transient energy balance:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{n}(age)=\sum_{i}E_{vi}\label{eq:3.c.23}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we can derive 
+\begin_inset Formula $S(age)$
+\end_inset
+
+ by Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.24"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
 :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S(age)=2\frac{t_{b}}{t_{d}}\cdot\frac{E_{n}(age)}{\eta\sum_{i}B_{i}m_{pi}E_{pi}\rho_{pi}}\label{eq:3.c.24}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1858,7 +2102,7 @@ Step 2:
 \end_inset
 
 , and generate preys(cattles and sheep) according the area of the square
- and the density of each kind of prey using random distribution.
+ and the density of each kind of prey by using random distribution.
  Initialize the number of preys caught by the dragon 
 \begin_inset Formula $n_{cattles}=n_{sheep}=0$
 \end_inset
@@ -2101,7 +2345,7 @@ or
 \begin_inset Formula $E_{b}$
 \end_inset
 
-, and update the energy consumed 
+, together with updating the energy consumed 
 \begin_inset Formula $E_{n}=E_{n}+E_{f}+E_{b}$
 \end_inset
 
@@ -2121,7 +2365,7 @@ where the
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Hunting Algorithm
+the Hunting Algorithm
 \end_layout
 
 \end_inset
@@ -2141,164 +2385,24 @@ name "Z-algorithm"
 
 \end_layout
 
-\begin_layout Standard
-We can calculate the energy expenditure 
-\begin_inset Formula $E_{n}$
-\end_inset
-
- for each 
-\begin_inset Formula $age$
-\end_inset
-
- through this algorithm, and get the curve of 
-\begin_inset Formula $E_{n}$
-\end_inset
-
- versus 
-\begin_inset Formula $age$
-\end_inset
-
-.
- Then we can estimate the minimun area for the living of three dragons.
- This is similar to the famous 'Cattle grazing problem' proposed by Newton.
- Dragons are eating the preys and the preys will reproduce, and they would
- reach a transient balance.
-\end_layout
-
-\begin_layout Standard
-Let 
-\begin_inset Formula $B_{i}$
-\end_inset
-
- be the adding number of prey type 
-\begin_inset Formula $i$
-\end_inset
-
- by considering breeding among time peroid 
-\begin_inset Formula $t_{b}$
-\end_inset
-
-, 
-\begin_inset Formula $t_{d}$
-\end_inset
-
- be the time period for the dragon's predation.
- Then the absorbing energy producing by prey type 
-\begin_inset Formula $i$
-\end_inset
-
- in peroid 
-\begin_inset Formula $t_{b}$
-\end_inset
-
- in supported area 
-\begin_inset Formula $S(age)$
-\end_inset
-
- can be written as:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-v_{i}=\frac{B_{i}}{2\frac{t_{b}}{t_{d}}}\cdot\eta_{i}m_{pi}E_{pi}\rho_{pi}S(age)\label{eq:3.c.22}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.c.22"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- , the formula dividing 
-\begin_inset Formula $2$
-\end_inset
-
- means that each newborn prey is breeded by two mature preies.
- Also we can get Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.c.23"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-by transient energy balance:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-E_{n}(age)=\sum_{i}v_{i}\label{eq:3.c.23}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-So we can derive 
-\begin_inset Formula $S$
-\end_inset
-
- by Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.c.24"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-S(age)=2\frac{t_{b}}{t_{d}}\cdot\frac{E_{n}(age)}{\sum_{i}B_{i}\eta_{i}m_{pi}E_{pi}\rho_{pi}}\label{eq:3.c.24}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
-The model of the climate condition
+The Model of the Climate Condition
 \end_layout
 
 \begin_layout Standard
 Climate condition changes may have several influence on our model, mostly
- changing the temperature and the humidity of environment.
+ altering the temperature and the humidity of environment.
  We tend to analyze this influence for two parts: the influence on the dragon
- itself and the influence on the preys's distribution.
+ itself and the influence on the preys' distribution.
 \end_layout
 
 \begin_layout Subsubsection
-The influence on the dragon
+The Influence on the Dragon
 \end_layout
 
 \begin_layout Standard
 After referring to the literature, we find that the higher environment temperatu
-re causes the more energy consuming 
+re causes the more energy consuming for basic metabolism
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C-schleucher1991life"
@@ -2306,8 +2410,7 @@ literal "false"
 
 \end_inset
 
- for basic metabolish and we suppose that the tendency of this phemomenon
- is similar to a bird.
+ and we suppose that the tendency of this phenomenon is similar to a bird.
  Then we can get Eq.
  
 \begin_inset CommandInset ref
@@ -2346,7 +2449,7 @@ noprefix "false"
 \begin_inset Formula $E_{m}\left(T_{e}\right)$
 \end_inset
 
- is the energy consuming for basic metabolish at 
+ is the energy consuming for basic metabolism at 
 \begin_inset Formula $T_{e}$
 \end_inset
 
@@ -2395,18 +2498,18 @@ noprefix "false"
 
 \begin_layout Standard
 There will be no obvious influence on dragon while the humidity of environment
- changes, which agrees with our basic knowledge.
+ varies, which agrees with our basic knowledge.
 \end_layout
 
 \begin_layout Subsubsection
-The influence on the preies's distribution
+The Influence on the Preys' Distribution
 \end_layout
 
 \begin_layout Standard
 Different climates such as a arid region, a warm temperate region, and an
- arctic region, also affect the distribution of the dragon's food.
+ arctic region, also affect the distribution of the dragon's preys.
  We still take the Australia continent as an example.
- For Australia, according to website 
+ According to website 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Z-Climate"
@@ -2414,7 +2517,7 @@ literal "false"
 
 \end_inset
 
-, we can find the states with different temperature and humidity.
+, we can find the states with different temperature and humidity in Australia.
  According to website 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2932,8 +3035,8 @@ Model of Interaction with Environment
 \begin_layout Standard
 In this part, we tend to determine which type of preys will be affected
  mostly by the dragon.
- We define three preys in our model, which are different in distribution
- density and meat energy.
+ We define three types of preys in our model, which are different in distributio
+n density and meat energy.
  The detailed data of them is shown in Tab.
  
 \begin_inset CommandInset ref
@@ -2959,7 +3062,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Detailed Data of Three Preies
+Detailed Data of Three Preys
 \end_layout
 
 \end_inset
@@ -2980,7 +3083,7 @@ Detailed Data of Three Preies
 \begin_inset Text
 
 \begin_layout Plain Layout
-Preies
+Preys
 \end_layout
 
 \end_inset
@@ -3114,8 +3217,8 @@ Hare
 \align center
 
 \shape italic
-(Accorading to biological principle, it is impossible for a species to contain
- high individual energy as well as high distribution density.)
+According to biological principle, it is impossible for a species to contain
+ high individual energy as well as high distribution density.
 \end_layout
 
 \begin_layout Plain Layout
@@ -3146,7 +3249,7 @@ noprefix "false"
 
 \end_inset
 
- into our model, and statistic out the changes in distribution of each species.
+ into our model, and statistic the changes in distribution out of each species.
 \end_layout
 
 \end_body

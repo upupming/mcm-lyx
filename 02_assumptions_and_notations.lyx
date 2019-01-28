@@ -102,8 +102,8 @@ status open
 There is no human intervention in the ecosystem we discuss.
  
 \series default
-We only discuss the dragons' livelihood without human, because human's behavior
- can totally affect the whole objective laws of nature.
+We only discuss the dragons' livelihood without humans, because human's
+ behavior can totally affect the whole objective laws of nature.
 \end_layout
 
 \begin_layout Itemize
@@ -120,19 +120,9 @@ The dragons' flight may consume a lot of energy, and the purposeless flight
 \begin_layout Itemize
 
 \series bold
-The energy of the dragon's fire is provided with food.
+The dragon will not breath fire unless for predation.
  
 \series default
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-龙只在进食的时候喷火？
-\end_layout
-
-\end_inset
-
 In the real world, we do not consider the elements of magic.
  According to the law of conservation of energy, it is impossible for a
  dragon to create the energy for fire.
@@ -151,9 +141,12 @@ The dragons are ferocious, and only eat meat containing sufficient energy.
 
 \series bold
 The three dragons are far away from each other.
-
+ 
 \series default
- They will not influence each other's predating by the competiton effect.
+Competition effect is complex.
+ To simplify our model, we set they will not influence each other's predation
+ by the competition effect.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -342,7 +335,7 @@ kJ
 \begin_inset Text
 
 \begin_layout Plain Layout
-the energy for basic metabolish
+the energy for basic metabolism
 \end_layout
 
 \end_inset
@@ -742,7 +735,7 @@ kg
 \begin_inset Text
 
 \begin_layout Plain Layout
-the heat flux transfer to the side latheral area
+the heat flux transfer to the side lateral area
 \end_layout
 
 \end_inset
@@ -946,7 +939,7 @@ the temperature of environment
 \begin_inset Text
 
 \begin_layout Plain Layout
-the flying speed refering to minimum power
+the flying speed referring to minimum power
 \end_layout
 
 \end_inset
@@ -1415,7 +1408,7 @@ kg/m
 \begin_inset Text
 
 \begin_layout Plain Layout
-the desity of dragon's bone
+the density of dragon's bone
 \end_layout
 
 \end_inset
@@ -1451,7 +1444,7 @@ kg/m
 \begin_inset Text
 
 \begin_layout Plain Layout
-the desity of dragon's muscle
+the density of dragon's muscle
 \end_layout
 
 \end_inset
@@ -1487,7 +1480,7 @@ kg/m
 \begin_inset Text
 
 \begin_layout Plain Layout
-the distribution denstity of prey 
+the distribution density of prey 
 \begin_inset Formula $i$
 \end_inset
 
@@ -1566,7 +1559,7 @@ kg
 \begin_inset Text
 
 \begin_layout Plain Layout
-the absorbing coeffcient for prey
+the absorbing coefficient for prey
 \end_layout
 
 \end_inset

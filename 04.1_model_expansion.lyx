@@ -90,8 +90,8 @@ Our previous model is based on the assumption that species are subject to
 \end_layout
 
 \begin_layout Standard
-In order to get closer to the real situation of species distribution, we
- use Maxent (Maximum entropy)
+In order to get closer to the realistic situation of species distribution,
+ we use Maxent (Maximum entropy)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "L-phillips2008modeling"
@@ -101,7 +101,7 @@ literal "false"
 
  to model the species geographic distributions.
  In maximum entropy density estimation, we input the species distribution
- samples data (species name, longitude, latitude)
+ samples' data (species name, longitude, latitude)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Z-Sheep,Z-Cattle"
@@ -109,7 +109,7 @@ literal "false"
 
 \end_inset
 
- of cattles and sheep and climate data 
+ of cattles, sheep and climate data 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "L-worldclim"
@@ -117,7 +117,7 @@ literal "false"
 
 \end_inset
 
- in Australia, and then the true distribution of a species is represented
+ in Australia, and then the true distribution of a species is simulated
  as a probability distribution 
 \begin_inset Formula $π$
 \end_inset
@@ -144,8 +144,8 @@ literal "false"
  environmental variables, called features.
  The mean of each feature is required to be close (within some error bounds)
  to the empirical average over the union of the presence sites.
- As a result, the species appropriate survival map in Australia is shown
- in the Fig.
+ As a result, the species distribution map for survival appropriation in
+ Australia is shown in the Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -241,7 +241,7 @@ Sheep distribution model
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Maxent species distribution modelling result for cattles and sheep in Australia
+Maxent species distribution modeling result for cattles and sheep in Australia
 \end_layout
 
 \end_inset
@@ -260,15 +260,15 @@ name "L-maxent"
 \align center
 
 \emph on
-Warmer colors indicating areas high probability of suitable conditions for
- the species.
+Warmer colors indicates areas with high probability of suitable conditions
+ for the species,
 \end_layout
 
 \begin_layout Plain Layout
 \align center
 
 \emph on
-White dots show the presence locations used for training.
+while white dots show the presence of locations utilized for training.
 \end_layout
 
 \end_inset
@@ -279,8 +279,8 @@ White dots show the presence locations used for training.
 \begin_layout Standard
 It can be reasonably assumed that the more suitable the species to survive,
  the greater the distribution density of the species.
- So we use the species appropriate survival map to represent the distribution
- density of the species.
+ So we use the species distribution map for survival appropriation to represent
+ the distribution density of the species.
  Replacing the random distribution with this distribution density will make
  our model more realistic.
 \end_layout

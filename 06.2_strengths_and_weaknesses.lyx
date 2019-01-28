@@ -79,50 +79,58 @@
 Strengths and Weaknesses
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Itemize
+
+\series bold
 Strength
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-Our model simplify the whole predating and growing process of the dragon.
+Our model simplifies the whole predating and growing process of the dragon.
  It is easy for us to calculate the total energy expenditure, which will
  make the analysis clearer.
  For example, our model simplify the analysis of the energy for flying and
- recovery of trauma, and the results exactly prove that these two parts
- takes a small proportion.
+ recovery of trauma, while the results exactly prove that these two parts
+ take a low proportion.
  
 \end_layout
 
 \begin_layout Itemize
-Our model use some convincing data in reality and achievements in the literature
-, which will make the result be more realistic and in accrodence with our
- basic experience.
+Our model uses some convincing data in reality and achievements in the literatur
+e, which will make the results be more realistic and in accordance with
+ our basic experience.
  For example, the energy for breathing fire will increase while the dragon
  is in frigid zone comparing to the tropic zone.
  
 \end_layout
 
-\begin_layout Subsubsection
+\end_deeper
+\begin_layout Itemize
+
+\series bold
 Weakness
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-While comparing the manifestation between different climate, our model chooses
- the data of climate and the distribution of sheep and cattle in Australia
- to simulate.
+While comparing the manifestation between different climates, our model
+ chooses the data of climates and the distribution of sheep and cattles
+ in Australia to simulate.
  Nevertheless, due to the lackness of data, the maximum discrepancy in temperatu
-re or humidity betwen two states in Australia that we get are not prominent
+re or humidity between two states in Australia that we gets are not prominent
  enough.
- If the dispcrepancy is more distinctive, results will be more meaningful.
+ If the discrepancy is more distinctive, the results will be more meaningful.
 \end_layout
 
 \begin_layout Itemize
-As we determine the minimum area needed for growing three dragons, we suppose
- that there are only sheep and cattle for the dragons to predate.
- However, the preies' distribution will be more complex, and competition
- effect among the dagons and other predators will exist.
+As we determine the minimum area needed for the growth of three dragons,
+ we suppose that there are only sheep and cattles for the dragons to predate.
+ However, the preys' distribution will be more complex, and competition
+ effect among the dragons and other predators will exist.
  Our model cannot analyze this situation.
 \end_layout
 
+\end_deeper
 \end_body
 \end_document

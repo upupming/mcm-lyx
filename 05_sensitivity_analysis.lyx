@@ -80,7 +80,7 @@ Sensitivity Analysis
 \end_layout
 
 \begin_layout Subsection
-parameters for calculating the net energy
+Parameters for Calculating the Net Energy
 \end_layout
 
 \begin_layout Standard
@@ -118,12 +118,12 @@ noprefix "false"
 \end_inset
 
  a lot.
- So these parameters are not sensitive to the results, for the energy of
+ So these parameters are not sensitive to the results, for the energy for
  growth 
 \begin_inset Formula $E_{g}$
 \end_inset
 
- and recovery from trauma 
+ and recovery of trauma 
 \begin_inset Formula $E_{t}$
 \end_inset
 
@@ -647,7 +647,7 @@ name "tab:The-turbulence-of-r"
 \end_layout
 
 \begin_layout Subsection
-parameters for model of interaction with environment
+Parameters for Model of Interaction with Environment
 \end_layout
 
 \begin_layout Standard
@@ -662,9 +662,9 @@ noprefix "false"
 
 \end_inset
 
- , we can get that the hare's density and energy are not sensitive to the
+ , we can get that the sheep's density and energy are not sensitive to the
  final distribution, because the varying density only causes the change
- of the energy of flying 
+ of the energy for flying 
 \begin_inset Formula $E_{f}$
 \end_inset
 

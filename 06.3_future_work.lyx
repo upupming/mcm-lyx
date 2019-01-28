@@ -80,9 +80,9 @@ Future Work
 \end_layout
 
 \begin_layout Itemize
-We could consider the catagories of preies will change with district with
- different climate.
- For example, the dragon can predate polar bears and morses in Arctic while
+We could consider the categories of preys will vary with districts under
+ different climates.
+ For example, the dragon can predate polar bears and walrus in Arctic while
  penguins in Antarctic, but these animals do not exist in the tropical area.
 \end_layout
 
@@ -90,12 +90,124 @@ We could consider the catagories of preies will change with district with
 We could consider the different predating difficulties provided by the environme
 nt.
  For example, the landform is grass in temperate zone causing a easier predating
-, while that is forest result in a hurdle for predating because of predator's
+, while that is forest causing a hurdle for predating because of the predator's
  hiding.
 \end_layout
 
 \begin_layout Itemize
-We could extend our model ot the condition of predating on the sea.
+We could extend our model to the condition of predating on the sea.
+\end_layout
+
+\begin_layout Subsection
+Our Conclusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+What is the ecological impact and requirements of the dragons? 
+\end_layout
+
+\begin_layout Plain Layout
+What are the energy expenditures of the dragons, and what are their caloric
+ intake requirements? 
+\end_layout
+
+\begin_layout Plain Layout
+How much area is required to support the three dragons? 
+\end_layout
+
+\begin_layout Plain Layout
+How large a community is necessary to support a dragon for varying levels
+ of assistance that can be provided to the dragons? 
+\end_layout
+
+\begin_layout Plain Layout
+Be clear about what factors you are considering when addressing these questions.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Through our model, we derive that the dragon's growth curve is S-shaped.
+ It takes 280 years for a dragon to reach the upper limit of weight, which
+ is 281.6 tons.
+ The dragon is in initial growth stage before the age of 19.
+ After the age of 131, the dragon enter steady growth stage.
+ The age from 19 to 131 is exponential growth stage, while the dragon grew
+ fastest at the age of 52.
+\end_layout
+
+\begin_layout Standard
+By analyzing the energy composition required by a dragon, our model figured
+ out that a dragon's energy expenditure consists of five categories, which
+ are: energy for basic metabolism, energy for growth, energy for flight,
+ energy for breathing fire and energy for recovery of trauma.
+ The curve of the energy a dragon's need vary with time is also S-shaped.
+ A mature dragon requires about 140000 million calories each two days, which
+ includes of a community of 470 cattles and 178 sheep.
+ The energy for breathing fire takes a high percentage of the total energy
+ expenditure when the dragon is young.
+ The energy for basic metabolism takes the most percentage of the total
+ energy expenditure during the whole life of the dragon.
+ And it needs at least about 14000 km
+\begin_inset Formula $^{2}$
+\end_inset
+
+ area to support three mature dragons to live.
+\end_layout
+
+\begin_layout Standard
+As for the influence of climate conditions, we consider the factors of the
+ temperature and the humidity.
+ Our results show that the higher temperature, the less energy the dragon
+ consumes.
+ The higher the humidity, the lower the energy the dragon need.
+ And the influence of temperature on the dragon is greater than that of
+ humidity.
+\end_layout
+
+\begin_layout Standard
+To determine what is the ecological impact of a dragon, we simulated a ecosystem
+ with three different types of preys.
+ The results reveal the dragon has a great impact on the prey with high
+ energy and dense distribution, while has little impact on prey with low
+ energy and sparse distribution.
+\end_layout
+
+\begin_layout Standard
+Besides, if we suppose the dragons breed through sexual multiplication,
+ it will not be stable for three dragons to make up of a population.
+ By referring to the literature, we discover that the number of individual
+ that consists of a stably population will be more than 500 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Z-conclusion"
+literal "false"
+
+\end_inset
+
+.
+ According to our model, it will take approximately 
+\begin_inset Formula $2.33\times10^{6}$
+\end_inset
+
+ km
+\begin_inset Formula $^{2}$
+\end_inset
+
+ area for these dragons to live, almost 
+\begin_inset Formula $30$
+\end_inset
+
+% of Australia.
+ In summary, the dragon can be alive on the earth.
 \end_layout
 
 \end_body

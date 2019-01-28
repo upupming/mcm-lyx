@@ -103,6 +103,10 @@
 \begin_layout Section
 Letter to George R.R.
  Martin
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -123,12 +127,19 @@ Dear Martin,
 
 \size large
 We are a group taking part in the competition of MCM, and we also fascinate
- the TV series Game of Throne, which is adapted from your famous novel A
- Song of Ice and Fire.
+ the TV series 
+\shape italic
+Game of Throne
+\shape default
+s, which is adapted from your famous novel 
+\shape italic
+A Song of Ice and Fire
+\shape default
+.
  We are especially interested with the three dragons appearing in your novel.
  Dragon is a mysterious and formidable creature, which raises our curiosity
  for a deeply research.
- We present our findings in this letter, hopping these will be helpful to
+ We present our findings in this letter, hopping these will be helpful for
  your writing.
 \begin_inset Newline newline
 \end_inset
@@ -142,7 +153,7 @@ We are a group taking part in the competition of MCM, and we also fascinate
 
 \size large
 We take the biggest dragon Balerion, the Black Dread, as an example.
- Accroding to the description in your novel, Balerion's head is as large
+ According to the description in your novel, Balerion's head is as large
  as a carriage.
  We use the body of T.
  rex to analogize, estimating that the mature Barlerion's weight will be
@@ -150,9 +161,9 @@ We take the biggest dragon Balerion, the Black Dread, as an example.
  By referring to the biological law, we determine that it takes 280 years
  for Barlerion to reach its upper limit weight.
  Its growing curve can be depicted as 'S' trend.
- The dragon is in intial growth stage before the age of 19.
- After the age of 131, the dragon enter steady growth stage.
- The exponential growth stage comes between the age 19 to 131.
+ The dragon is in initial growth stage before the age of 19.
+ After the age of 131, the dragon enters steady growth stage.
+ The exponential growth stage comes from age 19 till 131.
  The dragon grows fastest at the age of 52.
 \begin_inset Newline newline
 \end_inset
@@ -165,18 +176,20 @@ We take the biggest dragon Balerion, the Black Dread, as an example.
 \noindent
 
 \size large
-For the total energy expenditure for the dragon, we do not consider the
- case with magic.
+For the total energy expenditure for a dragon, we do not consider the case
+ with magic, which means the dragon cannot create energy by itself.
  The total energy expenditure for the dragon can be divided into five parts:
- the energy for the basic metabolish, growth, flying, breathing fire and
+ the energy for the basic metabolism, growth, flying, breathing fire and
  recovery from trauma.
  We suppose that the dragon will fly and breath fire only while it is predating,
- and the time period for its predation is two days.
+ and the time period for its predation lasts for two days.
  It will consume almost 140 billion calories.
- This means the dragon has to eat 470 cattles and 178 sheep, which is tremendous.
- The total energy expenditure for dragon mostly consist of the energy for
- basic metabolish.
- 
+ This means the dragon has to eat 470 cattles and 178 sheep per two days,
+ which is tremendous.
+ The total energy expenditure for dragon mostly consists of the energy for
+ basic metabolism in its whole life.
+ The energy for breathing fire first takes a high percentage of total energy
+ expenditure when the dragon is young, and then decreases until become steady.
 \begin_inset Newline newline
 \end_inset
 
@@ -190,11 +203,12 @@ For the total energy expenditure for the dragon, we do not consider the
 \size large
 Besides, if the dragon exists in the real life, this will obviously bring
  a great impact on the environment.
- We consider a situation of an area including three preys: sheep, cattle,
- hare.
- Then we stimulate the condition within the time period for predating.
- As a result, cattle are most affected, followed by sheep, and hares have
- the least impact.
+ We consider a situation of an area including three preys: sheep, cattle
+ and hare, which differs a lot in distribution density and meat energy.
+ Then we stimulate the condition within the time period for a two days'
+ predation.
+ As a result, cattle are most affected, followed by sheep, and hares take
+ the least.
  That is to say, the dragon has a great impact on the prey with high energy
  and dense distribution, and has little impact on prey with low energy and
  sparse distribution.
@@ -210,14 +224,14 @@ Besides, if the dragon exists in the real life, this will obviously bring
 \noindent
 
 \size large
-Then, our model consider that dragons might travel to different regions
- of the world with very different climates.
+Then, our model considers that dragons might travel to different regions
+ of the world under different climates.
  The climate changes will both influence the dragon and the preys' distribution.
  We choose four states in Australia to simulate, of which the temperature
  and humidity are different.
- Our results shows that the higher temperature, the less energy the dragon
+ Our results show that the higher temperature, the less energy the dragon
  consumes.
- The higher the humidity, the lower the energy the dragon need.
+ The higher the humidity, the lower the energy the dragon needs.
  And the influence of temperature on the dragon is greater than humidity.
 \begin_inset Newline newline
 \end_inset
@@ -230,10 +244,10 @@ Then, our model consider that dragons might travel to different regions
 \noindent
 
 \size large
-Besides, if we suppose the dragon breed through sexual multiplication, it
- will not be stable for three dragons to make up of a population.
- According to scientific researches, we discover that the number of individual
- which consists of a stably population will be 500.
+Besides, if we suppose the dragons breed through sexual multiplication,
+ it will not be stable for three dragons to make up of a population.
+ According to scientific researches, we discover that the number of individuals
+ which consists of a stably population will be more than 500.
  After modeling, we find it will take approximately 2.33
 \begin_inset Formula $\times$
 \end_inset
@@ -246,14 +260,12 @@ Besides, if we suppose the dragon breed through sexual multiplication, it
 \begin_inset Formula $^{2}$
 \end_inset
 
- area for these dragons to live, almost 30% of Australia.
- In summary, the dragon can be alive on the earth, but require a lot of
- territory.
+ area for these three dragons to live, almost 30% of Australia.
+ In summary, it is possible for the dragon to be alive on the earth theoreticall
+y, but require a lot of resources and territory.
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing onehalf
-\noindent
 \align right
 
 \size large
@@ -261,12 +273,10 @@ Yours sincerely,
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing onehalf
-\noindent
 \align right
 
 \size large
-MCM 1911426
+Team 1911426
 \end_layout
 
 \end_body

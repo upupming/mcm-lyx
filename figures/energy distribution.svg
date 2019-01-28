@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 energy distribution.svg 页-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="6.75312in" height="2.07387in"
+		viewBox="0 0 486.224 149.319" xml:space="preserve" color-interpolation-filters="sRGB" class="st9">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="DocShowPicture" v:prompt="" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:#0c0c0c;stroke-width:0.75}
+		.st2 {fill:#000000;font-family:Times New Roman;font-size:1.00001em}
+		.st3 {font-size:1em}
+		.st4 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st5 {fill:#ffffff;stroke:#ecf0f6;stroke-width:0.75}
+		.st6 {fill:#759fcc;font-family:Calibri;font-size:1.00001em}
+		.st7 {fill:none;stroke:none;stroke-width:0.25}
+		.st8 {fill:#0070c0;font-family:Times New Roman;font-size:1.00001em}
+		.st9 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>页-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape32-1" v:mID="32" v:groupContext="shape" transform="translate(0.75,-81.0374)">
+			<title>高度自调节框</title>
+			<desc>Total Energy Intake</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="38.2677" cy="129.476" width="76.99" height="36.8038"/>
+			<rect x="0" y="109.634" width="76.5354" height="39.685" class="st1"/>
+			<text x="8.28" y="125.88" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>T<tspan class="st3"
+						v:langID="1033">otal </tspan>Energy<tspan class="st3" v:langID="1033"> </tspan><tspan x="23.28" dy="1.2em"
+						class="st3">I</tspan><tspan class="st3" v:langID="1033">ntake</tspan></text>		</g>
+		<g id="shape33-8" v:mID="33" v:groupContext="shape" transform="translate(217.955,-106.549)">
+			<title>高度自调节框.33</title>
+			<desc>Urinary</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="23.2087" cy="137.98" width="48.33" height="22.4037"/>
+			<rect x="0" y="126.642" width="46.4173" height="22.6772" class="st1"/>
+			<text x="4.55" y="141.58" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Urinary</text>		</g>
+		<g id="shape49-11" v:mID="49" v:groupContext="shape" transform="translate(111.301,-52.6909)">
+			<title>高度自调节框.49</title>
+			<desc>Digestible Energy</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="32.8642" cy="129.476" width="60.33" height="36.8038"/>
+			<rect x="0" y="109.634" width="65.7283" height="39.685" class="st1"/>
+			<text x="8.2" y="125.88" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Digestible <tspan
+						x="15.54" dy="1.2em" class="st3">Energy</tspan></text>		</g>
+		<g id="shape51-15" v:mID="51" v:groupContext="shape" transform="translate(77.2854,-100.88)">
+			<title>双树枝直角</title>
+			<v:userDefs>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 149.32 L14.17 149.32" class="st4"/>
+			<path d="M14.17 149.32 L14.17 177.67 L34.02 177.67" class="st4"/>
+			<path d="M14.17 149.32 L14.17 126.64 L140.67 126.64" class="st4"/>
+		</g>
+		<g id="shape52-20" v:mID="52" v:groupContext="shape" transform="translate(177.03,-72.5335)">
+			<title>双树枝直角.52</title>
+			<v:userDefs>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 149.32 L14 149.32" class="st4"/>
+			<path d="M14 149.32 L14 166.33 L31.27 166.33" class="st4"/>
+			<path d="M14 149.32 L14 109.63 L40.93 109.63" class="st4"/>
+		</g>
+		<g id="shape54-25" v:mID="54" v:groupContext="shape" transform="translate(208.299,-38.5177)">
+			<title>高度自调节框.54</title>
+			<desc>Metabolic Energy</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="32.8642" cy="129.476" width="59.66" height="36.8038"/>
+			<rect x="0" y="109.634" width="65.7283" height="39.685" class="st1"/>
+			<text x="8.54" y="125.88" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Metabolic <tspan
+						x="15.54" dy="1.2em" class="st3">Energy</tspan></text>		</g>
+		<g id="shape55-29" v:mID="55" v:groupContext="shape" transform="translate(309.992,-74.376)">
+			<title>高度自调节框.55</title>
+			<desc>Net ENergy</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="32.8642" cy="137.98" width="66.01" height="22.4037"/>
+			<rect x="0" y="126.642" width="65.7283" height="22.6772" class="st5"/>
+			<text x="5.22" y="141.58" class="st6" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>N<tspan class="st3"
+						v:langID="1033">et </tspan>E<tspan class="st3" v:langID="1033">Nergy</tspan></text>		</g>
+		<g id="shape58-34" v:mID="58" v:groupContext="shape" transform="translate(309.992,-18.8169)">
+			<title>高度自调节框.58</title>
+			<desc>Heat Increment</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="32.8642" cy="129.476" width="59.65" height="36.8038"/>
+			<rect x="0" y="109.634" width="65.7283" height="39.685" class="st1"/>
+			<text x="21.54" y="125.88" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Heat <tspan x="8.54"
+						dy="1.2em" class="st3">Increment</tspan></text>		</g>
+		<g id="shape60-38" v:mID="60" v:groupContext="shape" transform="translate(274.028,-58.3602)">
+			<title>双树枝直角.60</title>
+			<v:userDefs>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 149.32 L13.38 149.32" class="st4"/>
+			<path d="M13.38 149.32 L13.38 169.02 L35.96 169.02" class="st4"/>
+			<path d="M13.38 149.32 L13.38 121.96 L35.96 121.96" class="st4"/>
+		</g>
+		<g id="shape65-43" v:mID="65" v:groupContext="shape" transform="translate(409.736,-120.864)">
+			<title>高度自调节框.65</title>
+			<desc>Gross Energy</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="37.8691" cy="137.98" width="76.66" height="22.4037"/>
+			<rect x="0" y="126.642" width="75.7382" height="22.6772" class="st1"/>
+			<text x="5.04" y="141.58" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Gross Energy</text>		</g>
+		<g id="shape67-46" v:mID="67" v:groupContext="shape" transform="translate(408.939,-65.872)">
+			<title>高度自调节框.67</title>
+			<desc>Resting Metabolism</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="38.2677" cy="129.476" width="68.34" height="36.8038"/>
+			<rect x="0" y="109.634" width="76.5354" height="39.685" class="st1"/>
+			<text x="19.93" y="125.88" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Resting <tspan
+						x="9.6" dy="1.2em" class="st3">Metabolism</tspan></text>		</g>
+		<g id="shape68-50" v:mID="68" v:groupContext="shape" transform="translate(408.939,-10.8799)">
+			<title>高度自调节框.68</title>
+			<desc>Activity Metabolism</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="38.2677" cy="129.476" width="68.34" height="36.8038"/>
+			<rect x="0" y="109.634" width="76.5354" height="39.685" class="st1"/>
+			<text x="18.6" y="125.88" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Activity <tspan
+						x="9.6" dy="1.2em" class="st3">Metabolism</tspan></text>		</g>
+		<g id="shape69-54" v:mID="69" v:groupContext="shape" transform="translate(375.72,-85.7146)">
+			<title>多树枝直角</title>
+			<v:userDefs>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M0 149.32 L9.57 149.32" class="st4"/>
+			<path d="M9.57 149.32 L9.57 204.31 L33.22 204.31" class="st4"/>
+			<path d="M9.57 149.32 L9.57 102.83 L34.02 102.83" class="st4"/>
+			<path d="M9.57 149.32 L33.22 149.32" class="st4"/>
+			<path d="M9.57 149.32 L-4.61 149.32" class="st4"/>
+			<path d="M9.57 149.32 L-4.61 149.32" class="st4"/>
+			<path d="M9.57 149.32 L-4.61 149.32" class="st4"/>
+		</g>
+		<g id="shape63-63" v:mID="63" v:groupContext="shape" transform="translate(309.992,-74.376)">
+			<title>高度自调节框.63</title>
+			<desc>Net ENergy</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="32.8642" cy="137.98" width="68.65" height="22.4037"/>
+			<rect x="0" y="126.642" width="65.7283" height="22.6772" class="st1"/>
+			<text x="4.04" y="141.58" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Net ENergy</text>		</g>
+		<g id="shape70-66" v:mID="70" v:groupContext="shape" transform="translate(12.372,-59.7776)">
+			<title>工作表.70</title>
+			<desc>100%</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6457" cy="141.807" width="53.3" height="15.0236"/>
+			<rect x="0" y="134.295" width="53.2913" height="15.0236" class="st7"/>
+			<text x="12.65" y="145.41" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>100%</text>		</g>
+		<g id="shape71-69" v:mID="71" v:groupContext="shape" transform="translate(12.372,-59.7776)">
+			<title>工作表.71</title>
+			<desc>100%</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6457" cy="141.807" width="53.3" height="15.0236"/>
+			<rect x="0" y="134.295" width="53.2913" height="15.0236" class="st7"/>
+			<text x="12.65" y="145.41" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>100%</text>		</g>
+		<g id="shape72-72" v:mID="72" v:groupContext="shape" transform="translate(214.518,-134.045)">
+			<title>工作表.72</title>
+			<desc>27%</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6457" cy="141.807" width="53.3" height="15.0236"/>
+			<rect x="0" y="134.295" width="53.2913" height="15.0236" class="st7"/>
+			<text x="15.65" y="145.41" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>27%</text>		</g>
+		<g id="shape74-75" v:mID="74" v:groupContext="shape" transform="translate(12.372,-59.7776)">
+			<title>工作表.74</title>
+			<desc>100%</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6457" cy="141.807" width="53.3" height="15.0236"/>
+			<rect x="0" y="134.295" width="53.2913" height="15.0236" class="st7"/>
+			<text x="12.65" y="145.41" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>100%</text>		</g>
+		<g id="shape75-78" v:mID="75" v:groupContext="shape" transform="translate(117.52,-31.998)">
+			<title>工作表.75</title>
+			<desc>77%</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6457" cy="141.807" width="53.3" height="15.0236"/>
+			<rect x="0" y="134.295" width="53.2913" height="15.0236" class="st7"/>
+			<text x="15.65" y="145.41" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>77%</text>		</g>
+		<g id="shape76-81" v:mID="76" v:groupContext="shape" transform="translate(117.52,-31.998)">
+			<title>工作表.76</title>
+			<desc>77%</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6457" cy="141.807" width="53.3" height="15.0236"/>
+			<rect x="0" y="134.295" width="53.2913" height="15.0236" class="st7"/>
+			<text x="15.65" y="145.41" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>77%</text>		</g>
+		<g id="shape77-84" v:mID="77" v:groupContext="shape" transform="translate(214.518,-18.8169)">
+			<title>工作表.77</title>
+			<desc>73%</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6457" cy="141.807" width="53.3" height="15.0236"/>
+			<rect x="0" y="134.295" width="53.2913" height="15.0236" class="st7"/>
+			<text x="15.65" y="145.41" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>73%</text>		</g>
+		<g id="shape78-87" v:mID="78" v:groupContext="shape" transform="translate(214.518,-18.8169)">
+			<title>工作表.78</title>
+			<desc>73%</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6457" cy="141.807" width="53.3" height="15.0236"/>
+			<rect x="0" y="134.295" width="53.2913" height="15.0236" class="st7"/>
+			<text x="15.65" y="145.41" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>73%</text>		</g>
+		<g id="shape80-90" v:mID="80" v:groupContext="shape" transform="translate(316.211,-100.03)">
+			<title>工作表.80</title>
+			<desc>57%</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6457" cy="141.807" width="53.3" height="15.0236"/>
+			<rect x="0" y="134.295" width="53.2913" height="15.0236" class="st7"/>
+			<text x="15.65" y="145.41" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>57%</text>		</g>
+		<g id="shape81-93" v:mID="81" v:groupContext="shape" transform="translate(316.211,-100.03)">
+			<title>工作表.81</title>
+			<desc>57%</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6457" cy="141.807" width="53.3" height="15.0236"/>
+			<rect x="0" y="134.295" width="53.2913" height="15.0236" class="st7"/>
+			<text x="15.65" y="145.41" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>57%</text>		</g>
+		<g id="shape82-96" v:mID="82" v:groupContext="shape" transform="translate(316.211,-0.25)">
+			<title>工作表.82</title>
+			<desc>16%</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6457" cy="141.807" width="53.3" height="15.0236"/>
+			<rect x="0" y="134.295" width="53.2913" height="15.0236" class="st7"/>
+			<text x="15.65" y="145.41" class="st8" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>16%</text>		</g>
+	</g>
+</svg>
