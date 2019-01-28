@@ -29,6 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +45,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -85,18 +87,72 @@ Our previous model is based on the assumption that species are subject to
  Under this assumption, we ignore the differences in the environment.
  However, in the real world, the environment of a region cannot be the same
  everywhere.
- Therefore, the distribution trend of sheep or cattle should concentrate
- in good environment.
- In order to get closer to the actual situation, we use ...
- to predict.
- This algorithm is based on ...
- principle, 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-a brief introduction to one or two sentences
 \end_layout
+
+\begin_layout Standard
+In order to get closer to the real situation of species distribution, we
+ use Maxent (Maximum entropy)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "L-phillips2008modeling"
+literal "false"
+
+\end_inset
+
+ to model the species geographic distributions.
+ In maximum entropy density estimation, we input the species distribution
+ samples data (species name, longitude, latitude)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Z-Sheep,Z-Cattle"
+literal "false"
+
+\end_inset
+
+ of cattles and sheep and climate data 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "L-worldclim"
+literal "false"
+
+\end_inset
+
+ in Australia, and then the true distribution of a species is represented
+ as a probability distribution 
+\begin_inset Formula $π$
+\end_inset
+
+ over the set 
+\begin_inset Formula $X$
+\end_inset
+
+ of sites in the study area.
+ Thus, 
+\begin_inset Formula $π$
+\end_inset
+
+ assigns a non‐negative value to every site 
+\begin_inset Formula $x$
+\end_inset
+
+ and the values 
+\begin_inset Formula $π(x)$
+\end_inset
+
+ sum to one.
+ The weather constraints are expressed in terms of simple functions of the
+ environmental variables, called features.
+ The mean of each feature is required to be close (within some error bounds)
+ to the empirical average over the union of the presence sites.
+ As a result, the species appropriate survival map in Australia is shown
+ in the Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-maxent"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -104,13 +160,124 @@ a brief introduction to one or two sentences
 \end_layout
 
 \begin_layout Standard
-We determined a test sample of species density based on the number of sheep
- and cattle in states of Australian.
- According to the test samples, we train through machine learning...
- As a result, the species appropriate survival map in Australia is shown
- in the Fig.
- .
- It can be reasonably assumed that the more suitable the species to survive,
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/cattle.png
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cattles distribution model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/sheep.png
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sheep distribution model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Maxent species distribution modelling result for cattles and sheep in Australia
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-maxent"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\emph on
+Warmer colors indicating areas high probability of suitable conditions for
+ the species.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\emph on
+White dots show the presence locations used for training.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It can be reasonably assumed that the more suitable the species to survive,
  the greater the distribution density of the species.
  So we use the species appropriate survival map to represent the distribution
  density of the species.

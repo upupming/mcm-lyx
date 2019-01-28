@@ -21,8 +21,7 @@
 \rfoot{}                                                     
 \lfoot{}   
 \usepackage{tocbibind}
-\usepackage{graphicx}
-\usepackage{subcaption}
+
 \usepackage{indentfirst}
 \usepackage{amsmath}
 \DeclareMathOperator*{\argmax}{arg\,max}
