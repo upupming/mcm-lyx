@@ -147,6 +147,15 @@ The dragons are carnivores.
 The dragons are ferocious, and only eat meat containing sufficient energy.
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+The three dragons are far away from each other.
+
+\series default
+ They will not influence each other's predating by the competiton effect.
+\end_layout
+
 \begin_layout Subsection
 Notations
 \begin_inset CommandInset label
@@ -795,7 +804,11 @@ the consuming oxygen's volume
 \begin_inset Text
 
 \begin_layout Plain Layout
-ml/kg/min
+ml/(kg
+\begin_inset Formula $\cdot$
+\end_inset
+
+min)
 \end_layout
 
 \end_inset
@@ -1005,7 +1018,43 @@ Constant
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $E_{b}$
+\begin_inset Formula $E_{p}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+the energy producing by 
+\begin_inset Formula $1$
+\end_inset
+
+kg protein
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+kJ/kg
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E_{bone}$
 \end_inset
 
 
@@ -1030,7 +1079,7 @@ kg bone
 \begin_inset Text
 
 \begin_layout Plain Layout
-J/kg
+kJ/kg
 \end_layout
 
 \end_inset
@@ -1070,43 +1119,7 @@ mol
 \begin_inset Text
 
 \begin_layout Plain Layout
-J/mol
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $E_{p}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-the energy producing by 
-\begin_inset Formula $1$
-\end_inset
-
-kg protein
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-J/kg
+kJ/mol
 \end_layout
 
 \end_inset
@@ -1254,7 +1267,7 @@ kg prey
 \begin_inset Text
 
 \begin_layout Plain Layout
-J/kg
+kcal/kg
 \end_layout
 
 \end_inset
@@ -1365,7 +1378,7 @@ none
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $c_{p}$
+\begin_inset Formula $c_{pi}$
 \end_inset
 
 
@@ -1377,7 +1390,11 @@ none
 \begin_inset Text
 
 \begin_layout Plain Layout
-the heat capacity of the prey
+the heat capacity of the prey 
+\begin_inset Formula $i$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1386,7 +1403,11 @@ the heat capacity of the prey
 \begin_inset Text
 
 \begin_layout Plain Layout
-kJ/kg/℃
+kJ/(kg
+\begin_inset Formula $\cdot$
+\end_inset
+
+℃)
 \end_layout
 
 \end_inset

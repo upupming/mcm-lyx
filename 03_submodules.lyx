@@ -1064,7 +1064,7 @@ Let
 \end_inset
 
  is the energy per kg protein contained, 
-\begin_inset Formula $E_{b}$
+\begin_inset Formula $E_{bone}$
 \end_inset
 
  is the energy per kg bone contained.
@@ -1087,7 +1087,7 @@ literal "false"
 .
  Other part are water and bone mineral which do not contain energy.
  So we set 
-\begin_inset Formula $E_{b}=0.2E_{p}$
+\begin_inset Formula $E_{bone}=0.2E_{p}$
 \end_inset
 
 :
@@ -1107,7 +1107,7 @@ E_{gm}=\rho_{m}dV_{m}E_{p}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{gb}=\rho_{b}dV_{b}E_{b}
+E_{gb}=\rho_{b}dV_{b}E_{bone}
 \end{equation}
 
 \end_inset
@@ -1150,7 +1150,7 @@ dm_{d}=\rho_{m}dV_{m}+\rho_{b}dV_{b}=\left(\rho_{m}+\rho_{b}\frac{r_{b}^{2}}{r_{
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{g}=E_{gm}+E_{gb}=\left(\rho_{m}\frac{r_{m}^{2}}{r_{m}^{2}+r_{b}^{2}}E_{p}+\rho_{b}\frac{r_{b}^{2}}{r_{m}^{2}+r_{b}^{2}}E_{b}\right)dV\label{eq:3.11.c}
+E_{g}=E_{gm}+E_{gb}=\left(\rho_{m}\frac{r_{m}^{2}}{r_{m}^{2}+r_{b}^{2}}E_{p}+\rho_{b}\frac{r_{b}^{2}}{r_{m}^{2}+r_{b}^{2}}E_{bone}\right)dV\label{eq:3.11.c}
 \end{equation}
 
 \end_inset
