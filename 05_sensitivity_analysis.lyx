@@ -118,8 +118,27 @@ status open
 
 \begin_layout Standard
 From the Tab.
- ...
- , we can see that parameter 
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-turbulence-of-kesi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-turbulence-of-r"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can see that parameter 
 \begin_inset Formula $\xi$
 \end_inset
 
@@ -141,7 +160,7 @@ From the Tab.
 \begin_inset Formula $E_{t}$
 \end_inset
 
- only take a small proportion of 
+ only take a low proportion of 
 \begin_inset Formula $E_{n}$
 \end_inset
 
@@ -161,6 +180,13 @@ status open
 \begin_layout Plain Layout
 The turbulence of 
 \begin_inset Formula $\text{\ensuremath{\xi}}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-turbulence-of-kesi"
+
 \end_inset
 
 
@@ -401,6 +427,13 @@ status open
 \begin_layout Plain Layout
 The turbulence of 
 \begin_inset Formula $\text{\ensuremath{\frac{r_{b}}{r_{m}}}}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-turbulence-of-r"
+
 \end_inset
 
 
@@ -648,9 +681,27 @@ status open
 
 \begin_layout Standard
 From the Tab.
- ...
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-turbulence-of-density"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
  , we can get that the hare's density and energy are not sensitive to the
- final distribution, for the dragon has a low posibility to eat hares.
+ final distribution, because the varying density only causes the change
+ of the energy of flying 
+\begin_inset Formula $E_{f}$
+\end_inset
+
+ through the flying distance, which also takes a little part of 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+.
  
 \end_layout
 
@@ -667,6 +718,13 @@ status open
 
 \begin_layout Plain Layout
 The turbulence of density
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-turbulence-of-density"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
