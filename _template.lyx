@@ -101,6 +101,85 @@
 \begin_body
 
 \begin_layout Standard
+Dear Martin,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+我们是一组团队of MCM，同时是一群资深的权游粉。改编自您的小说冰与火之歌的电视剧权力的游戏，目前风头正盛。我们尤其对其中的三条龙感兴趣。龙是一种受人敬畏的神
+奇而强大的生物，which驱使我们对其进行了一些深入的研究。我们将在这封信里展示我们的发现。希望我们的研究成果能对您的创作有所帮助。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+我们以书中最大的一条龙Balerion the Black Dread为例。根据您书中的描述，Balerion的脑袋有一辆马车那么大。我们使用霸王龙的身体比例进
+行类比，我们估计出成年的Balerion体重约为281.6吨。按照生物学规律，我们发现It takes 280 years for Balerion
+ to reach the upper limit of weight.
+ 我们它的生长速度是S-shaped。The dragon is in initial growth stage before the age
+ of 19.
+ After the age of 131, the dragon enter steady growth stage.
+ The age from 19 to 131 is exponential growth stage.
+ The dragon grew fastest at the age of 52.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+对于龙所需要的能量开支，我们的模型不考虑魔法的元素，即龙不能自己创造能量。一只龙需要消耗能量的地方主要有：基础代谢、生长代谢、喷火、飞翔和痊愈伤害。如果我们假设
+龙只在捕猎的时候飞翔和喷火。假设龙每两天需要进食一次，那么像Balerion这么大的龙，每次进食需要摄入about 140000 million
+ calories的能量。这意味着它一次进食需要吃掉470 cattles and 178 sheep，which is a terrible
+ amount.
+ 龙摄入的大部分能量都将用来维持自身的基础代谢。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+此外，如果龙真的生活在现实世界，那么势必会对现实的生态环境有great impact。我们假设一种情形of在一片区域内同时生活有羊、牛和野兔。然后我们模拟了龙在
+其中捕食一段时间之后的情况。结果表明，牛的比例有所下降，另外两种相反。我们得出结论，（这一部分你看看一鸣写的，可能需要稍微修改一下，先空着加个标签）。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+最后，我们的模型考虑了dragons might travel to different regions of the world with very
+ different climates。气候的变化会同时影响龙本身和它的猎物的分布。我们选取澳大利亚的四个州进行模拟，whose 温度和湿度不一样。
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
