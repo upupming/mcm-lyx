@@ -201,10 +201,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Caption Standard
 
@@ -505,28 +501,7 @@ noprefix "false"
 \end_inset
 
 .
- For the case of 
-\begin_inset Formula $y(1)=30$
-\end_inset
-
- and 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula $y(10)=35$
-\end_inset
-
-
+ 
 \end_layout
 
 \begin_layout Standard
@@ -540,7 +515,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figures/Growth-curve-y_1=40.svg
-	scale 40
+	scale 35
 	BoundingBox 0bp 0bp 980bp 720bp
 
 \end_inset
@@ -622,6 +597,83 @@ The time when the dragon reaches maximum growth rate
 \end_inset
 
  is around 52 years old, and it weights 81,800.71 kg.
+\end_layout
+
+\begin_layout Standard
+The predating path of the dragon is shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-predator path"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/eaten-225.svg
+	lyxscale 20
+	scale 15
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/eaten-300.svg
+	lyxscale 20
+	scale 15
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/eaten-375.svg
+	lyxscale 20
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Predating Path of Dragon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Z-predator path"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -726,9 +778,10 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1580,7 +1633,7 @@ A mature dragon needs 470 cattles and 178 sheep, which is 140, 000 million
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1697,7 +1750,7 @@ We need at least about 14, 000 km
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1815,9 +1868,10 @@ The energy for Breathing fire
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1895,29 +1949,7 @@ name "fig:Energy-percentage-of"
 Results of the model of the climate condition
 \end_layout
 
-\begin_layout Subsubsection
-Influence of environment temperature 
-\begin_inset Formula $T_{e}$
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-In Subsection 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Results-of-the"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, we take 
-\begin_inset Formula $T_{e}=T_{r}=25$
-\end_inset
-
 
 \family roman
 \series medium
@@ -1931,71 +1963,8 @@ noprefix "false"
 \uwave off
 \noun off
 \color none
- ℃
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- as constant (see Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "L-values"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-), so the result of Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3.22.c"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- will be 1.
- Now we simulate using different 
-\begin_inset Formula $T_{e}$
-\end_inset
-
- at -25
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- ℃ and 35 ℃, the density of cattle and sheep of Qld and NSW in Tab.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Z-statistic"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, and fix the dragon's age at 280 years old.
+We fix the dragon's age at 280 years old.
+ Using the data of sheep and cattle density in Qld, NSW, WA and SA.
  The simulation results are shown in Fig.
  
 \begin_inset CommandInset ref
@@ -2012,38 +1981,55 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figures/energy-T.svg
-	scale 30
+	scale 38
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename figures/eaten-T.svg
-	scale 30
+	filename figures/energy-H.svg
+	scale 38
 
 \end_inset
 
 
-\begin_inset Caption Standard
+\end_layout
 
 \begin_layout Plain Layout
-Energy expenditures and preys eaten of a dragon in two days
+\align center
+
+\size tiny
+(a) Energy expenditures of a dragon in two days
 \begin_inset Formula $-T_{e}$
 \end_inset
 
  histgram
+\begin_inset space \hspace{}
+\length 1.6cm
+\end_inset
+
+ (b)Energy expenditures of a dragon in two days
+\begin_inset Formula $-$
+\end_inset
+
+Humidity histgram
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulation Results of the Model of the Climate Condition
 \end_layout
 
 \end_inset
@@ -2112,109 +2098,30 @@ and
 \end_inset
 
 .
- And other energy expenditure components don't change with 
+ And other energy expenditure components do not change with 
 \begin_inset Formula $T_{e}$
 \end_inset
 
-, so the results come cout.
+, so the energy required by the dragon is reduced.
+ At the same time, the higher 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+, the higher the density of preys.
+ Thus, the dragon can obtain a prey with less flight distance.
+ So the results come cout.
 \end_layout
 
 \begin_layout Itemize
-The higher 
-\begin_inset Formula $T_{e}$
-\end_inset
-
-, the more sheep the dragon eats but the fewer cattles the dragon eats.
- This is because according to Tab.
+The higher the humidity, the lower the energy the dragon need.
+ This is because prey is often densely distributed in areas with high humidity,
+ making it easier for dragons to predate.
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Z-statistic"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-, the higher 
-\begin_inset Formula $T_{e}$
-\end_inset
-
-, the higher the density of sheep and the lower energy the dragon needs.
 \end_layout
 
-\begin_layout Standard
-So the environment temperature will influences both the energy expenditures
- and preys eaten of a dragon.
-\end_layout
-
-\begin_layout Subsubsection
-Influence of environment humidity
-\end_layout
-
-\begin_layout Standard
-The humidity influence the dragon only by the preys' distribution density.
- The results are shown in Fig.
+\begin_layout Itemize
+The influence of temperature on the dragon is greater than humidity.
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "L-humi"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/energy-H.svg
-	scale 30
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename figures/eaten-H.svg
-	scale 30
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Energy expenditures and preys eaten of a dragon in two days
-\begin_inset Formula $-$
-\end_inset
-
-Humidity histgram
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "L-humi"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -2246,12 +2153,7 @@ noprefix "false"
 \end_inset
 
 .
- From the figure, we can conclude that, with dragon hunting, the proportion
- of cattle is smaller than that of normal breeding, and other animals are
- opposite.
- This is because when the dragon eats a cattle, it is more likely to eat
- full, so it will not eat other kinds of prey any more and the proportion
- of other preys get larger.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2309,6 +2211,18 @@ name "L-percentage"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+From the figure, we can conclude that, with dragon hunting, the proportion
+ of cattle is smaller than that of normal breeding, and other animals are
+ opposite.
+ And the increase in the proportion of hare is greater than that of sheep.
+ In short, cattle are most affected, followed by sheep, and hares have the
+ least impact.
+ Therefore, we can draw general conclusions: the dragon has a great impact
+ on the prey with high energy and dense distribution, and has little impact
+ on prey with low energy and sparse distribution.
 \end_layout
 
 \end_body

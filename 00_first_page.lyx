@@ -2786,24 +2786,27 @@ After that, we build a model analyzing the manifestation of the dragon under
  For the aspect of the total energy expenditure, the temperature declining
  causing by the climate changes will increase the energy of breathing fire
  and for basic metabolish, which is in accrodance with our life experience.
- For the aspect of the preies distribution, we use the density of sheep
+ For the aspect of the prey's distribution, we use the density of sheep
  and cattle in Australia, and the result shows that ...
  .
 \end_layout
 
 \begin_layout Abstract
 At last, our model analyze the interaction between the dragon and environment.
- We divide the ecosystem into three layers: the predators, the preies and
- the environment.
- Through ...
- method, we determine the impact between first two layers.
- By using the maximum entropy method, we set forth the interaction between
- last two layers.
- 
+ Cattle are most affected, followed by sheep, and hares have the least impact,
+ and we can draw a conclusion that the dragon has a greater impact on the
+ prey with high energy and dense distribution.
 \end_layout
 
 \begin_layout Abstract
-Sensitivity analysis shows that ...
+Sensitivity analysis shows that the trauma coefficient , the ratio of dragon's
+ bone and muscle and the sheep's density are not sensitive to the total
+ energy expenditure.
+ For the first two factors, the energy for growth and recovery of trauma
+ only take a low proportion of the total energy expenditure.
+ For the last factor, this will only changes the energy for flying a little
+ with flying distance's varying, which also takes a low proportion of the
+ total energy.
 \end_layout
 
 \begin_layout Abstract
