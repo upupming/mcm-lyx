@@ -1644,7 +1644,7 @@ E_{n}=0.57\eta E_{a}\label{eq:3.c.21}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{a}=nm_{p}E_{p}\label{eq:3.c.21-1}
+E_{a}={\displaystyle \underset{i}{\Sigma}}n_{i}m_{pi}E_{pi}\label{eq:3.c.21-1}
 \end{equation}
 
 \end_inset
@@ -2181,7 +2181,7 @@ Let
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-v_{i}=\frac{B_{i}}{2\frac{t_{b}}{t_{d}}}\cdot\eta_{i}m_{pi}E_{ai}\rho_{i}S(age)\label{eq:3.c.22}
+v_{i}=\frac{B_{i}}{2\frac{t_{b}}{t_{d}}}\cdot\eta_{i}m_{pi}E_{pi}\rho_{i}S(age)\label{eq:3.c.22}
 \end{equation}
 
 \end_inset
@@ -2250,7 +2250,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-S(age)=2\frac{t_{b}}{t_{d}}\cdot\frac{E_{n}(age)}{\sum_{i=1}^{w}B_{i}\eta_{i}m_{pi}E_{ai}\rho_{i}}\label{eq:3.c.24}
+S(age)=2\frac{t_{b}}{t_{d}}\cdot\frac{E_{n}(age)}{\sum_{i=1}^{w}B_{i}\eta_{i}m_{pi}E_{pi}\rho_{i}}\label{eq:3.c.24}
 \end{equation}
 
 \end_inset

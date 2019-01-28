@@ -667,10 +667,48 @@ The dragon starts hunting at position
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\eta=0.7$
+Values of constant in Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Notations"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
-.
+ we use are shown in Tab.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Values of constant
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -774,7 +812,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-A mature dragon needs 140, 000 million calories per two days.
+A mature dragon needs 470 cows and 178 sheep, which is 140, 000 million
+ calories, per two days.
 \end_layout
 
 \begin_layout Standard
@@ -799,7 +838,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Energy expenditures of a dragon in two days
+Energy expenditures of a dragon and preys eaten in two days
 \begin_inset Formula $-age$
 \end_inset
 
