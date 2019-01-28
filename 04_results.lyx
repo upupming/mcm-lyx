@@ -701,7 +701,7 @@ Values of constant
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="18" columns="3">
+<lyxtabular version="3" rows="20" columns="3">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
@@ -942,6 +942,86 @@ the desity of dragon's bone
 \begin_layout Plain Layout
 1,230 kg/m
 \begin_inset Formula $^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{p0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+the distribution denstity of cattle
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.4514 
+\begin_inset Formula $/$
+\end_inset
+
+km
+\begin_inset Formula $^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho_{p1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+the distribution denstity of sheep
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.4130 
+\begin_inset Formula $/$
+\end_inset
+
+km
+\begin_inset Formula $^{2}$
 \end_inset
 
 
@@ -1291,7 +1371,7 @@ the temperature of environment
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1303,7 +1383,7 @@ the temperature of environment
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1312,7 +1392,7 @@ the temperature of prey able to eat
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1448,7 +1528,7 @@ A mature dragon needs 470 cattles and 178 sheep, which is 140, 000 million
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1565,7 +1645,7 @@ We need at least about 14, 000 km
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1613,11 +1693,7 @@ name "Z-2"
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1693,6 +1769,39 @@ Results of the Model of Interaction with Environment
 \end_layout
 
 \begin_layout Standard
+We preset the age of the dragon to 100 years old, and then run step 2 -
+ 7 of the Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-algorithm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, drawing the distribution changes with dragon's hunting contrast without
+ dragon's hunting as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-percentage"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ From the figure, we can conclude that, with dragon hunting, the proportion
+ of cattle is smaller than that of normal breeding, and other animals are
+ opposite.
+ This is because when the dragon eats a cattle, it is more likely to eat
+ full, so it will not eat other kinds of prey any more and the proportion
+ of other preys get larger.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -1700,22 +1809,23 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename figures/percentage-day=0.svg
+	filename figures/percentage-6-day=0.svg
 	scale 20
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename figures/percentage-day=20.svg
+	filename figures/percentage-6-day=20.svg
 	scale 20
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename figures/percentage-day=50.svg
+	filename figures/percentage-6-day=50.svg
 	scale 20
 
 \end_inset
@@ -1724,8 +1834,19 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-123
+Preys percentage changes when the dragon is 100 years old
+\begin_inset Formula $-age$
+\end_inset
+
+ histgram
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-percentage"
 
 \end_inset
 
