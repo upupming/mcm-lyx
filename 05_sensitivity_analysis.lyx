@@ -93,7 +93,7 @@ status open
 \end_inset
 
 ，
-\begin_inset Formula $V_{E}$
+\begin_inset Formula $\frac{r_{b}}{r_{m}}$
 \end_inset
 
 的参数敏感性分析，分析参数
@@ -101,7 +101,7 @@ status open
 \end_inset
 
 ，
-\begin_inset Formula $V_{E}$
+\begin_inset Formula $\frac{r_{b}}{r_{m}}$
 \end_inset
 
 在百分号变化范围内的情况下，
@@ -124,7 +124,7 @@ From the Tab.
 \end_inset
 
 , 
-\begin_inset Formula $V_{E}$
+\begin_inset Formula $\frac{r_{b}}{r_{m}}$
 \end_inset
 
  will not influence the net energy 
@@ -133,8 +133,8 @@ From the Tab.
 
  a lot.
  So these parameters are not sensitive to the results, for the energy of
- basic metabolish 
-\begin_inset Formula $E_{m}$
+ growth 
+\begin_inset Formula $E_{g}$
 \end_inset
 
  and recovery from trauma 
@@ -142,62 +142,6 @@ From the Tab.
 \end_inset
 
  only take a small proportion of 
-\begin_inset Formula $E_{n}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsection
-parameters for model of climate condition
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-其次可以做一个关于参数
-\begin_inset Formula $c$
-\end_inset
-
-，
-\begin_inset Formula $b$
-\end_inset
-
-的敏感性分析，分析这两个参数对
-\begin_inset Formula $E_{n}$
-\end_inset
-
-的百分比情况。
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-From the Tab.
- ...
- , we can get that parameter 
-\begin_inset Formula $c$
-\end_inset
-
-, 
-\begin_inset Formula $b$
-\end_inset
-
- will not affect 
-\begin_inset Formula $E_{n}$
-\end_inset
-
- obviously, so these parameters are not sensitive to the results.
- Similarly, it is because 
-\begin_inset Formula $E_{m}$
-\end_inset
-
- only takes a small proportion of 
 \begin_inset Formula $E_{n}$
 \end_inset
 

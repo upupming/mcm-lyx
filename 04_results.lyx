@@ -1690,10 +1690,82 @@ name "Z-2"
 \end_layout
 
 \begin_layout Standard
+Through the Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Energy-percentage-of"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we could get the information below:
+\end_layout
+
+\begin_layout Itemize
+The energy for basic metabolish 
+\begin_inset Formula $E_{m}$
+\end_inset
+
+ takes the most percentage of the total energy expenditure 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ during the whole life of the dragon, while the energy of growth, the energy
+ of flying and the energy of recovery from trauma only take a low proportion.
+ Because the dragon's growth causes an increase on its weight, which will
+ make 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $E_{m}$
+\end_inset
+
+ become greater.
+\end_layout
+
+\begin_layout Itemize
+The energy for Breathing fire 
+\begin_inset Formula $E_{b}$
+\end_inset
+
+ first takes a high precentage of 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ when the dragon is young.
+ After it beomes mature, the percentage of 
+\begin_inset Formula $E_{b}$
+\end_inset
+
+ decreases a little and then become stable, for the reason that 
+\begin_inset Formula $E_{b}$
+\end_inset
+
+ is proportional to the number of predated preys 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1745,6 +1817,13 @@ Energy percentage of a dragon
 
  histgram
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Energy-percentage-of"
 
 \end_inset
 
