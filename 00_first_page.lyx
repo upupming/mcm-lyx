@@ -2735,7 +2735,7 @@ To determine the growth of the dragon, we suppose the dragon is geometrical
  similar as time goes by.
  We use Richards equation to simulate, which presents a clear 'S' curve
  varying with time.
- This curve could be divided into three parts, iincluding initial growth
+ This curve could be divided into three parts, including initial growth
  stage, exponential growth stage and steady growth stage.
  The turning points to divide these three stages are at the age of 
 \begin_inset Formula $19$

@@ -157,7 +157,20 @@ name "Fig: growth curve"
 As we can see, the total growth of the organism shows a 'S' trend that includes
  three stages: the initial growing stage, the exponential growing stage
  and the steady growing stage.
- Richards equation can simulate these three stages by four parameters with
+ These three stages are determined by two crossover point, which the tangent
+ line of the inflection point intersects with 
+\begin_inset Formula $y=0$
+\end_inset
+
+ and 
+\begin_inset Formula $y=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Richards equation can simulate these three stages by four parameters with
  boilogical meanings: the maximum specific growth rate 
 \begin_inset Formula $\mu_{m}$
 \end_inset
@@ -2221,7 +2234,7 @@ by transient energy balance:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{n}(age)=\sum_{i=1}^{w}v_{i}\label{eq:3.c.23}
+E_{n}(age)=\sum_{i}v_{i}\label{eq:3.c.23}
 \end{equation}
 
 \end_inset
@@ -2250,7 +2263,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-S(age)=2\frac{t_{b}}{t_{d}}\cdot\frac{E_{n}(age)}{\sum_{i=1}^{w}B_{i}\eta_{i}m_{pi}E_{pi}\rho_{pi}}\label{eq:3.c.24}
+S(age)=2\frac{t_{b}}{t_{d}}\cdot\frac{E_{n}(age)}{\sum_{i}B_{i}\eta_{i}m_{pi}E_{pi}\rho_{pi}}\label{eq:3.c.24}
 \end{equation}
 
 \end_inset
