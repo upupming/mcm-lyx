@@ -1580,7 +1580,7 @@ A mature dragon needs 470 cattles and 178 sheep, which is 140, 000 million
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1895,6 +1895,14 @@ name "fig:Energy-percentage-of"
 Results of the model of the climate condition
 \end_layout
 
+\begin_layout Subsubsection
+Influence of environment temperature 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 In Subsection 
 \begin_inset CommandInset ref
@@ -1989,6 +1997,17 @@ noprefix "false"
 
 , and fix the dragon's age at 280 years old.
  The simulation results are shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-temp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2026,6 +2045,13 @@ Energy expenditures and preys eaten of a dragon in two days
 
  histgram
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-temp"
 
 \end_inset
 
@@ -2120,6 +2146,75 @@ noprefix "false"
 \begin_layout Standard
 So the environment temperature will influences both the energy expenditures
  and preys eaten of a dragon.
+\end_layout
+
+\begin_layout Subsubsection
+Influence of environment humidity
+\end_layout
+
+\begin_layout Standard
+The humidity influence the dragon only by the preys' distribution density.
+ The results are shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-humi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/energy-H.svg
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/eaten-H.svg
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Energy expenditures and preys eaten of a dragon in two days
+\begin_inset Formula $-$
+\end_inset
+
+Humidity histgram
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-humi"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
