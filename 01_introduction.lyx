@@ -112,8 +112,11 @@ and its original novel series
  A Song of Ice and Fire , Daenerys Targaryen 
 \shape default
 is one of the most popular characters.
- The New York Times cites her as one of the author's finest creatures, named
- as 
+ 
+\shape italic
+The New York Times
+\shape default
+ cites her as one of the author's finest creatures, named as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -178,7 +181,7 @@ How will the dragon interact with the ecological environment?
 \end_layout
 
 \begin_layout Itemize
-Will the dragon perform differently in different environments? If ture,
+Will the dragon perform differently in different environments? If true,
  how is the discrepancy?
 \end_layout
 
@@ -273,6 +276,45 @@ literal "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Two general approaches have been in use to determine the distance to specified
+ level of heat flux hazard from fires (Raj, 1977; Raj 1979; Considine, 1984;
+ Moorehouse & Pritchard, 1982; McGrattan, et al., 2000).
+ These are the so-called Solid Flame Model and the Point Source Model
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C-raj2005large"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Species distribution models (SDMs) mainly use species distribution data
+ and environmental data to estimate the niche of a species according to
+ a specific algorithm.
+ And project it into the landscape to indicate the species' preference for
+ habitat in probabilistic.
+ The results can be interpreted as the probability of occurrence of species,
+ habitat suitability or species richness, etc.
+ In the 1970s, Nix et al first used SDMs to predict the spatial distribution
+ of species
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Z-SDMs"
+literal "false"
+
+\end_inset
+
+.
+ After the 1990s, with the rapid developments of GIS technology and easy
+ refining of remote sensing data related to climate, sea surface, land surface,
+ greatly enhance the application of SDMs, a large number of species distribution
+ models and software emerged.
 \end_layout
 
 \end_body
