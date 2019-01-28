@@ -80,32 +80,42 @@ Model Expansion
 \end_layout
 
 \begin_layout Standard
+Our previous model is based on the assumption that species are subject to
+ random distribution.
+ Under this assumption, we ignore the differences in the environment.
+ However, in the real world, the environment of a region cannot be the same
+ everywhere.
+ Therefore, the distribution trend of sheep or cattle should concentrate
+ in good environment.
+ In order to get closer to the actual situation, we use ...
+ to predict.
+ This algorithm is based on ...
+ principle, 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-我们前面的模型是基于物种服从随机分布的假设。然而现实世界中，没有任何一种物种的种群分布是随机分布的。为了更接近实际的情况，我们使用哪个作者的什么算法程序记性预测
-。这个算法是基于什么原理的，简单介绍一两句。
+a brief introduction to one or two sentences
 \end_layout
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-我们根据澳大利亚各州的牛和羊的数量，确定出一个物种密度的测试样本。根据测试样本，我们通过机器学习进行训练...。最后得出了澳大利亚上物种适宜生存程度的分布图如图几所示
-。可以合理地认为，越适合物种生存的地方，该物种的分布密度应该越大。所以我们使用物种适宜生存程度分布图来代表物种的分布密度。用这个分布密度来取代随机分布，将使我们
-的模型更加符合实际情况。
-\end_layout
-
-\end_inset
-
-
+We determined a test sample of species density based on the number of sheep
+ and cattle in states of Australian.
+ According to the test samples, we train through machine learning...
+ As a result, the species appropriate survival map in Australia is shown
+ in the Fig.
+ .
+ It can be reasonably assumed that the more suitable the species to survive,
+ the greater the distribution density of the species.
+ So we use the species appropriate survival map to represent the distribution
+ density of the species.
+ Replacing the random distribution with this distribution density will make
+ our model more realistic.
 \end_layout
 
 \end_body

@@ -243,6 +243,16 @@ filename "04_results.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
+filename "04.1_model_expansion.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
 filename "05_sensitivity_analysis.lyx"
 
 \end_inset
