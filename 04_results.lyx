@@ -1326,7 +1326,7 @@ the trauma coefficient
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.57
+0.1
 \end_layout
 
 \end_inset
@@ -1560,11 +1560,35 @@ noprefix "false"
 
 \end_inset
 
- and
+ and Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Energy-percentage-of"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-From Fig.
+Energy expenditures of a dragon and preys eaten in two days vary with age
+ is shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-En-year"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ From Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1678,7 +1702,20 @@ name "Z-En-year"
 \end_layout
 
 \begin_layout Standard
-As for minmum area required to support the three dragons, accoarding to
+Minmum area required to support the three dragons vary with age is shown
+ in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ As for minmum area required to support the three dragons, accoarding to
  Eq.
  
 \begin_inset CommandInset ref
@@ -1795,7 +1832,18 @@ name "Z-2"
 \end_layout
 
 \begin_layout Standard
-Through the Fig.
+Energy percentage of a dragon in different stages is shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Energy-percentage-of"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Through the Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1871,7 +1919,7 @@ The energy for Breathing fire
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1933,10 +1981,6 @@ name "fig:Energy-percentage-of"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 

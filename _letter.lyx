@@ -1,0 +1,273 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{xeCJK}    %支持中、日、韩语言
+\setCJKmainfont{SimSun}  %宋体
+%\usepackage{tikzit}  %支持tikzit工具
+%\input{sample.tikzstyles}   %导入tikzit样式
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Team \# 1911426} 
+\chead{} 
+\rhead{page \thepage\ of \pageref{LastPage}}
+\cfoot{}                                                
+\rfoot{}                                                     
+\lfoot{}   
+\usepackage{tocbibind}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Times New Roman"
+\font_sans "default" "Times New Roman"
+\font_typewriter "default" "Times New Roman"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style unsrt
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headsep 0.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Letter to George R.R.
+ Martin
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+
+\size large
+Dear Martin,
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+
+\size large
+We are a group taking part in the competition of MCM, and we also fascinate
+ the TV series Game of Throne, which is adapted from your famous novel A
+ Song of Ice and Fire.
+ We are especially interested with the three dragons appearing in your novel.
+ Dragon is a mysterious and formidable creature, which raises our curiosity
+ for a deeply research.
+ We present our findings in this letter, hopping these will be helpful to
+ your writing.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+
+\size large
+We take the biggest dragon Balerion, the Black Dread, as an example.
+ Accroding to the description in your novel, Balerion's head is as large
+ as a carriage.
+ We use the body of T.
+ rex to analogize, estimating that the mature Barlerion's weight will be
+ 281.6 tons.
+ By referring to the biological law, we determine that it takes 280 years
+ for Barlerion to reach its upper limit weight.
+ Its growing curve can be depicted as 'S' trend.
+ The dragon is in intial growth stage before the age of 19.
+ After the age of 131, the dragon enter steady growth stage.
+ The exponential growth stage comes between the age 19 to 131.
+ The dragon grows fastest at the age of 52.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+
+\size large
+For the total energy expenditure for the dragon, we do not consider the
+ case with magic.
+ The total energy expenditure for the dragon can be divided into five parts:
+ the energy for the basic metabolish, growth, flying, breathing fire and
+ recovery from trauma.
+ We suppose that the dragon will fly and breath fire only while it is predating,
+ and the time period for its predation is two days.
+ It will consume almost 140 billion calories.
+ This means the dragon has to eat 470 cattles and 178 sheep, which is tremendous.
+ The total energy expenditure for dragon mostly consist of the energy for
+ basic metabolish.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+
+\size large
+Besides, if the dragon exists in the real life, this will obviously bring
+ a great impact on the environment.
+ We consider a situation of an area including three preys: sheep, cattle,
+ hare.
+ Then we stimulate the condition within the time period for predating.
+ As a result, cattle are most affected, followed by sheep, and hares have
+ the least impact.
+ That is to say, the dragon has a great impact on the prey with high energy
+ and dense distribution, and has little impact on prey with low energy and
+ sparse distribution.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+
+\size large
+Then, our model consider that dragons might travel to different regions
+ of the world with very different climates.
+ The climate changes will both influence the dragon and the preys' distribution.
+ We choose four states in Australia to simulate, of which the temperature
+ and humidity are different.
+ Our results shows that the higher temperature, the less energy the dragon
+ consumes.
+ The higher the humidity, the lower the energy the dragon need.
+ And the influence of temperature on the dragon is greater than humidity.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+
+\size large
+Besides, if we suppose the dragon breed through sexual multiplication, it
+ will not be stable for three dragons to make up of a population.
+ According to scientific researches, we discover that the number of individual
+ which consists of a stably population will be 500.
+ After modeling, we find it will take approximately 2.33
+\begin_inset Formula $\times$
+\end_inset
+
+10
+\begin_inset Formula $^{6}$
+\end_inset
+
+ km
+\begin_inset Formula $^{2}$
+\end_inset
+
+ area for these dragons to live, almost 30% of Australia.
+ In summary, the dragon can be alive on the earth, but require a lot of
+ territory.
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+\align right
+
+\size large
+Yours sincerely,
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing onehalf
+\noindent
+\align right
+
+\size large
+MCM 1911426
+\end_layout
+
+\end_body
+\end_document

@@ -116,22 +116,9 @@ Be clear about what factors you are considering when addressing these questions.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-前面叙述结论，最后可以加一段，考虑到物种的繁衍，龙能稳定存在所需要的最小种群规模是多大，才不至于近亲繁殖灭绝。这个最小种群规模，需要多大的面积来供养他们。结合地
-球实际的数据，我们断定，龙是不可能在地球上生存的。
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Through our model, we derived that the dragon's growth curve is S-shaped.
- It takes 280 years for a dragon to reach the upper limit of weight.
+ It takes 280 years for a dragon to reach the upper limit of weight, which
+ is 281.6 tons.
  The dragon is in initial growth stage before the age of 19.
  After the age of 131, the dragon enter steady growth stage.
  The age from 19 to 131 is exponential growth stage.
@@ -140,20 +127,16 @@ Through our model, we derived that the dragon's growth curve is S-shaped.
 
 \begin_layout Standard
 By analyzing the energy composition required by a dragon, our model figured
- out that a dragon's energy expenditures consist of five categories.
+ out that a dragon's energy expenditures consist of five categories, which
+ are: Energy for basic metabolish, Energy for growth, Energy for flight,
+ Energy for breathing fire and Energy for recovery of trauma.
  The curve of the energy a gragon need vary with time is also S-shaped.
- A mature dragon need about 140000 million calories per two days, which
- consist of a community of 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-多少只羊，多少只牛
-\end_layout
-
-\end_inset
-
-.
+ A mature dragon require about 140000 million calories per two days, which
+ consist of a community of 470 cattles and 178 sheep.
+ The energy for Breathing fire takes a high precentage of the total energy
+ expenditure when the dragon is young.
+ The energy for basic metabolish takes the most percentage of the total
+ energy expenditure during the whole life of the dragon.
  And it needs at least about 14000 km
 \begin_inset Formula $^{2}$
 \end_inset
@@ -162,7 +145,41 @@ status open
 \end_layout
 
 \begin_layout Standard
+As for the influence of climate conditions, we consider both temperature
+ and humidity.
+ Our results shows that the higher temperature, the less energy the dragon
+ consumes.
+ The higher the humidity, the lower the energy the dragon need.
+ And the influence of temperature on the dragon is greater than humidity.
+\end_layout
 
+\begin_layout Standard
+To dertermine what is the ecological impact of a dragon, we simulated a
+ ecosystem with three different types of prey.
+ The results reveal the dragon has a great impact on the prey with high
+ energy and dense distribution, and has little impact on prey with low energy
+ and sparse distribution.
+\end_layout
+
+\begin_layout Standard
+Besides, if we suppose the dragon breed through sexual multiplication, it
+ will not be stable for three dragons to make up of a population.
+ By referring to the literature, we discover that the number of individual
+ that consists of a stably population will be 500.
+ Accroding to our model, it will take approximately 
+\begin_inset Formula $2.33\times10^{6}$
+\end_inset
+
+ km
+\begin_inset Formula $^{2}$
+\end_inset
+
+ area for these dragons to live, almost 
+\begin_inset Formula $30$
+\end_inset
+
+% of Australia.
+ In summary, the dragon can be alive on the earth.
 \end_layout
 
 \end_body
