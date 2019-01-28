@@ -626,6 +626,13 @@ The time when the dragon reaches maximum growth rate
 
 \begin_layout Subsection
 Results of the Model of Dragon's Energy Expenditures
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Results-of-the"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -721,7 +728,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -738,7 +745,7 @@ Values of constant
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="19" columns="3">
+<lyxtabular version="3" rows="20" columns="3">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
@@ -1349,6 +1356,38 @@ the heat capacity of sheep
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $T_{r}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+the reference temperature
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25 ℃
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Formula $T_{e}$
 \end_inset
 
@@ -1409,6 +1448,13 @@ the temperature of prey able to eat
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "L-values"
 
 \end_inset
 
@@ -1651,7 +1697,7 @@ We need at least about 14, 000 km
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1849,6 +1895,233 @@ name "fig:Energy-percentage-of"
 Results of the model of the climate condition
 \end_layout
 
+\begin_layout Standard
+In Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Results-of-the"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we take 
+\begin_inset Formula $T_{e}=T_{r}=25$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ ℃
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ as constant (see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "L-values"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), so the result of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.22.c"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ will be 1.
+ Now we simulate using different 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+ at -25
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ ℃ and 35 ℃, the density of cattle and sheep of Qld and NSW in Tab.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-statistic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and fix the dragon's age at 280 years old.
+ The simulation results are shown in Fig.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/energy-T.svg
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/eaten-T.svg
+	scale 30
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Energy expenditures and preys eaten of a dragon in two days
+\begin_inset Formula $-T_{e}$
+\end_inset
+
+ histgram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can conclude that:
+\end_layout
+
+\begin_layout Itemize
+The higher 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+, the less energy the dragon consumes.
+ This is because according to Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.c.19"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.22.c"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the higher 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+, the less 
+\begin_inset Formula $E_{b}$
+\end_inset
+
+and 
+\begin_inset Formula $E_{m}$
+\end_inset
+
+.
+ And other energy expenditure components don't change with 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+, so the results come cout.
+\end_layout
+
+\begin_layout Itemize
+The higher 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+, the more sheep the dragon eats but the fewer cattles the dragon eats.
+ This is because according to Tab.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Z-statistic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the higher 
+\begin_inset Formula $T_{e}$
+\end_inset
+
+, the higher the density of sheep and the lower energy the dragon needs.
+\end_layout
+
+\begin_layout Standard
+So the environment temperature will influences both the energy expenditures
+ and preys eaten of a dragon.
+\end_layout
+
 \begin_layout Subsection
 Results of the Model of Interaction with Environment
 \end_layout
@@ -1891,7 +2164,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center

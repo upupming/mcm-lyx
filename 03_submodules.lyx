@@ -2319,7 +2319,7 @@ status open
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{E_{m}(T_{e})}{E_{m}\left(T_{r}\right)}=\frac{V_{E}\left(T_{e}\right)}{V_{E}\left(T_{r}\right)}=1.82-0.033T\label{eq:3.22.c}
+\frac{E_{m}(T_{e})}{E_{m}\left(T_{r}\right)}=\frac{V_{E}\left(T_{e}\right)}{V_{E}\left(T_{r}\right)}=1.82-0.033T_{e}\label{eq:3.22.c}
 \end{equation}
 
 \end_inset
@@ -2398,7 +2398,7 @@ The influence on the preies's distribution
 
 \begin_layout Standard
 Different climates such as a arid region, a warm temperate region, and an
- arctic region, also affects the distribution of the dragon's food.
+ arctic region, also affect the distribution of the dragon's food.
  We still take the Australia continent as an example.
  For Australia, according to website 
 \begin_inset CommandInset citation
