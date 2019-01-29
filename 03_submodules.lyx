@@ -1861,7 +1861,7 @@ Our algorithm supposes that
  the dragon will find the nearest prey relating to its position
 \series default
  because this corresponds the lowest energy expenditure.
- We define this as dragon Hunting Algorithm, whose steps are shown in Algorithm
+ We define this as Dragon Hunting Algorithm, whose steps are shown in Algorithm
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2094,6 +2094,22 @@ Step 1:
 \end_inset
 
 
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \series bold
 Step 2:
 \series default
@@ -2127,6 +2143,22 @@ Step 2:
 \end_inset
 
 
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \series bold
 Step 3:
 \series default
@@ -2138,6 +2170,22 @@ Step 3:
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -2212,6 +2260,22 @@ Step 4:
 \end_inset
 
 
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \series bold
 Step 5: 
 \series default
@@ -2223,6 +2287,38 @@ While
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -2285,6 +2381,38 @@ L(x,y)=\sqrt{\left(x-x_{d}\right)^{2}+\left(y-y_{d}\right)^{2}}
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
 \begin_inset space \thinspace{}
 \end_inset
 

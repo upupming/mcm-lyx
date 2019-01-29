@@ -2763,7 +2763,7 @@ To calculate the energy expenditure for the dragon, we suppose that the
  the derivative of 'S' trend curve, the empirical formula between speed
  consumed minimum power and the dragon's weight, the SFM model of the heating
  transformation and the coefficient describing the possibility of trauma.
- Since it is a coupled model, we create dragon Hunting Algorithm to calculate
+ Since it is a coupled model, we create Dragon Hunting Algorithm to calculate
  the total energy expenditure.
  Finally, we estimate that how much area is required to the three dragons',
  we use the method solving 'Cattle Grazing Problem' for reference.
@@ -2934,7 +2934,7 @@ textbf{Keywords: } #1
 
 
 \backslash
-keywords{ growth curve, the SFM model, dragon Hunting Algorithm, Maxent
+keywords{ growth curve, the SFM model, Dragon Hunting Algorithm, Maxent
  method}
 \end_layout
 

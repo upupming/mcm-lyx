@@ -30,6 +30,8 @@
 
 \usepackage{listings}
 \usepackage{color}
+\usepackage{enumitem}
+\setlist{nolistsep}
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -286,6 +288,16 @@ filename "06.2_strengths_and_weaknesses.lyx"
 \begin_inset CommandInset include
 LatexCommand input
 filename "06.3_future_work.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "06.4_insight_for_realm.lyx"
 
 \end_inset
 

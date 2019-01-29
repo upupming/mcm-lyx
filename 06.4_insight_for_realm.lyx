@@ -1,0 +1,153 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{xeCJK}    %支持中、日、韩语言
+\setCJKmainfont{SimSun}  %宋体
+\usepackage{tikzit}  %支持tikzit工具
+\input{sample.tikzstyles}   %导入tikzit样式
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Team \# 77824} 
+\chead{} 
+\rhead{page \thepage\ of \pageref{LastPage}}
+\cfoot{}                                                
+\rfoot{}                                                     
+\lfoot{}   
+\usepackage{tocbibind}
+\end_preamble
+\use_default_options false
+\begin_modules
+shapepar
+tabs-within-sections
+eqs-within-sections
+figs-within-sections
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Times New Roman"
+\font_sans "default" "Times New Roman"
+\font_typewriter "default" "Times New Roman"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style unsrt
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headsep 0.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection
+Insight for Other Realms
+\end_layout
+
+\begin_layout Standard
+Our model focuses on the dragon, which is a fictional creature that does
+ not exist in the real world.
+ Nevertheless, our model has great inspiration for biological species research.
+ Researchers can use our model with a few modifications to make it suitable
+ for:
+\end_layout
+
+\begin_layout Enumerate
+Study the growth of individual species.
+\end_layout
+
+\begin_layout Enumerate
+Study the energy consumption of individual species, the energy conversion
+ relationship between several species.
+\end_layout
+
+\begin_layout Enumerate
+Determine the impact of new species on the environment and whether it can
+ adapt to the local environment.
+\end_layout
+
+\begin_layout Enumerate
+Predict the distribution of various species.
+\end_layout
+
+\begin_layout Enumerate
+Forecasting biological invasions.
+\end_layout
+
+\begin_layout Standard
+For example, we need to analyze the endangered species.
+ We can simulate the survival of these species according to the environmental
+ conditions, and judge whether these species can continue to survive.
+ If they can't survive, we need to make helpful changes to its preys and
+ living environment to help them survive, which can be derived by our model.
+\end_layout
+
+\end_body
+\end_document

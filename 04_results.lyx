@@ -611,12 +611,8 @@ name "subsec:Results-of-the"
 \end_layout
 
 \begin_layout Standard
-By applying dragon Hunting Algorithm, we keep the preset parameters unchanged,
- run and output the results for further analysis.
-\end_layout
-
-\begin_layout Subsubsection
-Preset Parameters
+By applying Dragon Hunting Algorithm, we keep the preset parameters unchanged,
+ run and output the results for further analysis:
 \end_layout
 
 \begin_layout Itemize
@@ -829,7 +825,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-A mature dragon needs 470 cattle and 178 sheep, which is 140, 000 million
+A mature dragon needs 178 sheep and 470 cattle, which is 140, 000 million
  calories of energy, per two days.
 \end_layout
 
