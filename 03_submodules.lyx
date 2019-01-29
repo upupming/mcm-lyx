@@ -1861,8 +1861,11 @@ Our algorithm supposes that
  the dragon will find the nearest prey relating to its position
 \series default
  because this corresponds the lowest energy expenditure.
- We define this as Dragon Hunting Algorithm, whose steps are shown in Algorithm
- 
+ We define this as
+\series bold
+ Dragon Hunting Algorithm
+\series default
+, whose steps are shown in Algorithm 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "Z-algorithm"
@@ -2117,7 +2120,7 @@ Step 2:
 \begin_inset Formula $a$
 \end_inset
 
-, and generate preys(cattle and sheep) according the area of the square
+, and generate preys(sheep and cattle) according the area of the square
  and the density of each kind of prey by using random distribution.
  Initialize the number of preys caught by the dragon 
 \begin_inset Formula $n_{cattle}=n_{sheep}=0$
@@ -2654,7 +2657,7 @@ literal "false"
 
 \end_inset
 
-, we could determine the number of cattle and sheep in different states.
+, we could determine the number of sheep and cattle in different states.
  
 \end_layout
 

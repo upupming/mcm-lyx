@@ -21,6 +21,8 @@
 \rfoot{}                                                     
 \lfoot{}   
 \usepackage{tocbibind}
+\usepackage{enumitem}
+\setlist{nolistsep}
 \end_preamble
 \use_default_options false
 \begin_modules

@@ -100,14 +100,12 @@ literal "false"
 \end_inset
 
  to model the species geographic distributions.
- The Maxent software is implemented in Java and available at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-https://biodiversityinformatics.amnh.org/open_source/maxent/
-\end_layout
+ The Maxent software is implemented in Java and available at the website
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "L-Maxent"
+literal "false"
 
 \end_inset
 
@@ -121,7 +119,7 @@ literal "false"
 
 \end_inset
 
- of cattle, sheep and climate data 
+ of sheep, cattle and climate data 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "L-worldclim"
@@ -188,41 +186,6 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/cattle.png
-	scale 15
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-cattle distribution model
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
 	filename figures/sheep.png
 	scale 15
 
@@ -243,6 +206,37 @@ Sheep distribution model
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/cattle.png
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cattle distribution model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Plain Layout
 
 \end_layout
@@ -253,7 +247,7 @@ Sheep distribution model
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Maxent species distribution modeling result for cattle and sheep in Australia
+Maxent species distribution modeling result for sheep and cattle in Australia
 \end_layout
 
 \end_inset

@@ -508,7 +508,11 @@ the cost energy for flying
 \begin_inset Text
 
 \begin_layout Plain Layout
-J/(kg·hour)
+J/(kg
+\begin_inset Formula $\cdot$
+\end_inset
+
+hour)
 \end_layout
 
 \end_inset

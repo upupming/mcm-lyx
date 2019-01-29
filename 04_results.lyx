@@ -576,15 +576,15 @@ noprefix "false"
 \end_layout
 
 \begin_layout Enumerate
-Initial growth stage: 0 - 19 years old
+The nitial growth stage: 0 - 19 years old
 \end_layout
 
 \begin_layout Enumerate
-Exponential growth stage: 19 - 131 years old
+The exponential growth stage: 19 - 131 years old
 \end_layout
 
 \begin_layout Enumerate
-Steady growth stage: 
+The steady growth stage: 
 \begin_inset Formula $>$
 \end_inset
 
@@ -1210,7 +1210,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1243,7 +1243,7 @@ status collapsed
 \length 1.6cm
 \end_inset
 
- (b)Energy expenditures of a dragon in two days
+ (b) Energy expenditures of a dragon in two days
 \begin_inset Formula $-$
 \end_inset
 
@@ -1319,7 +1319,7 @@ noprefix "false"
 \begin_inset Formula $E_{b}$
 \end_inset
 
-and 
+ and 
 \begin_inset Formula $E_{m}$
 \end_inset
 

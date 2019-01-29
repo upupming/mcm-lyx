@@ -2735,22 +2735,25 @@ To determine the growth of the dragon, we suppose the dragon is geometrically
  We use the Richards equation to simulate, which presents a clear 'S' curve
  varying with time.
  This curve could be divided into three parts, including the initial growth
- stage, exponential growth stage, and steady growth stage.
+ stage, the exponential growth stage, and the steady growth stage.
  The turning points to divide these three stages are at the age of 
-\begin_inset Formula $19$
-\end_inset
-
+\series bold
+19
+\series default
  and 
-\begin_inset Formula $131$
-\end_inset
-
+\series bold
+131
+\series default
 .
  The fastest growing speed occurs when the dragon is 
-\begin_inset Formula $52$
-\end_inset
-
- years old.
+\series bold
+52 
+\series default
+years old.
  
+\series bold
+It takes 280 years for a dragon to reach the upper limit of weight, which
+ is 281.6 tons.
 \end_layout
 
 \begin_layout Abstract
@@ -2765,15 +2768,25 @@ To calculate the energy expenditure for the dragon, we suppose that the
  transformation and the coefficient describing the possibility of trauma.
  Since it is a coupled model, we create Dragon Hunting Algorithm to calculate
  the total energy expenditure.
- Finally, we estimate that how much area is required to the three dragons',
- we use the method solving 'Cattle Grazing Problem' for reference.
- The results show that a mature dragon requires about 140000 million calories
- each two days, which includes of a community of 178 sheep and 470 cattle,
- and it needs at least about 14000 km
+ Finally, we estimate that how much area is required for the three dragons,
+ and we use the method solving 'Cattle Grazing Problem' for reference..
+ The results show that a mature dragon requires about 
+\series bold
+140,000 million calories
+\series default
+ each two days, which includes of
+\series bold
+ a community of 178 sheep and 470 cattle
+\series default
+, and it needs
+\series bold
+ at least about 14,000 km
 \begin_inset Formula $^{2}$
 \end_inset
 
- area to support three mature dragons to live.
+ area
+\series default
+ to support three mature dragons to live.
 \end_layout
 
 \begin_layout Abstract
@@ -2782,19 +2795,28 @@ After that, we build a model analyzing the manifestation of the dragon under
  The total energy expenditure and the preys' distribution will both be affected
  by this factor.
  We use the density data of sheep and cattles in Australia to simulate.
- Our results show that the higher the temperature, the less energy the dragon
- consumed.
- The higher the humidity, the lower the energy the dragon needs.
+ Our results show that 
+\series bold
+the higher the temperature, the less energy the dragon consumed.
+
+\series default
+ 
+\series bold
+The higher the humidity, the lower the energy the dragon needs.
+
+\series default
  And the influence of temperature on the dragon is greater than humidity.
 \end_layout
 
 \begin_layout Abstract
 At last, our model analyzes the interaction between the dragon and the environme
 nt.
- We simulate an ecosystem with three several types of preys that differ
- in distribution density and meat energy.
- We draw a conclusion that the dragon has a greater impact on the prey with
- high energy and dense distribution.
+ We simulate an ecosystem with three types of preys that differ in distribution
+ density and meat energy.
+ We draw a conclusion that 
+\series bold
+the dragon has a greater impact on the prey with high energy and dense distribut
+ion.
 \end_layout
 
 \begin_layout Abstract

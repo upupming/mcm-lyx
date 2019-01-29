@@ -140,7 +140,7 @@ Through our model, we derive that the dragon's growth curve is S-shaped.
  It takes 280 years for a dragon to reach the upper limit of weight, which
  is 281.6 tons.
  The dragon is in the initial growth stage before the age of 19.
- After the age of 131, the dragon enters steady growth stage.
+ After the age of 131, the dragon enters the steady growth stage.
  The age from 19 to 131 is exponential growth stage, while the dragon grew
  fastest at the age of 52.
 \end_layout
