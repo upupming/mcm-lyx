@@ -330,7 +330,7 @@ Game of Thrones
 \shape default
 , 
 \shape italic
-the biggest (dragon) was the size of a carriage.
+the biggest (skull of dragon) was the size of a carriage.
 
 \shape default
  We set the carriage with a length of 4 m.
@@ -661,7 +661,7 @@ activity metabolism
 \begin_inset Text
 
 \begin_layout Plain Layout
-constant
+proportional to the energy for basic metabolism
 \end_layout
 
 \end_inset

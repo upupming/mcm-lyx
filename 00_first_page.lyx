@@ -2761,14 +2761,18 @@ To calculate the energy expenditure for the dragon, we suppose that the
  dragon will not fly and breath fire unless predating.
  Our model divides the energy required into five parts, which are: the energy
  for basic metabolism, the energy for growth, the energy for flight, the
- energy for breathing fire and energy for recovery of trauma.
+ energy for breathing fire and the energy for recovery of trauma.
  These five parts are derived by the chemical formula of dragon's respiration,
  the derivative of 'S' trend curve, the empirical formula between speed
  consumed minimum power and the dragon's weight, the SFM model of the heating
  transformation and the coefficient describing the possibility of trauma.
+
+\series bold
  Since it is a coupled model, we create Dragon Hunting Algorithm to calculate
  the total energy expenditure.
- Finally, we estimate that how much area is required for the three dragons,
+ 
+\series default
+Finally, we estimate that how much area is required for the three dragons,
  and we use the method solving 'Cattle Grazing Problem' for reference..
  The results show that a mature dragon requires about 
 \series bold
@@ -2794,7 +2798,7 @@ After that, we build a model analyzing the manifestation of the dragon under
  different climate conditions.
  The total energy expenditure and the preys' distribution will both be affected
  by this factor.
- We use the density data of sheep and cattles in Australia to simulate.
+ We use the density data of sheep and cattle in Australia to simulate.
  Our results show that 
 \series bold
 the higher the temperature, the less energy the dragon consumed.
