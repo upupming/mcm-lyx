@@ -1,22 +1,15 @@
-# mcm
+# mcm-lyx
 
-mcm paper template for LyX.
+LyX template for COMAP's Mathematical Contest in Modeling (MCM)
 
 ## Project structure
 
-```files
-- _template.lyx 只设置了 Document 属性的模板，咱们所有文件都应该从这个模板开始
-- 1911426.lyx 文档主入口，包含所有组件的引用，1911426 Control Number
-
-- 01_first_page.lyx 首页，包括：标题、summary
-- 02_...
-- ... 子文档，文件名都是自解释的
-- 10_appendices.lyx
-```
-
-## Glossary
-
-See https://docs.qq.com/sheet/DTFJVWkJDbnRVYmtZ?tab=BB08J2
+- `_template.lyx`: A template with preset document properties. All of our new files should start here.
+- `1911426.lyx`: The main LyX file includes all other sub-documents. 1911426 is our team's control number. Feel free to rename it to your own control number.
+- `01_first_page.lyx` The first page, including Title and Summary.
+- `02_...`
+- `...` Sub-documents, with a self-explained name. They are all included in `1911426.lyx`.
+- `10_appendices.lyx`
 
 ## Tips
 
@@ -26,17 +19,23 @@ See https://docs.qq.com/sheet/DTFJVWkJDbnRVYmtZ?tab=BB08J2
 
 ### All in one editor
 
-保持所有子文档和 `main.lyx` 在同一个编辑窗口内，这样才可以在子文档内正确地引用 `main.lyx` 内面的 `.bib` 库文件，而且编辑的时候在子文档内 `section` 的标号也将会按照整体结构来。Demo 如下：
+Keep all sub-documents and the main LyX file in one editor window, in this way, you will have 3 advantages:
+
+1. The sub-documents will be able to cite the references defined by the `.bib` file which is included in the main LyX file.
+2. Also, the sub-documents' Section number will show up correctly.
+3. You don't need to save the sub-documents before you compile all the documents. Just click the first eye or use <kbd>Ctrl</kbd>+<kbd>R</kbd> to compile the main document is okay.
 
 ![all-in-one](docs/images/all-in-one.gif)
 
 ### Math shortcut
 
-按 `Ctrl` + `M` 进入数学模式，可以写 TeX 语法的数学公式，按 `Tab` 键确认；并且无需保存子文档，直接在 `main.lyx` 内面使用 `Ctrl` + `R` 就可以编译所有子文档的改动。Demo 如下：
+Use shortcut <kbd>Ctrl</kbd>+<kbd>M</kbd> to enter math mode, where you can write math equations using TeX syntax with `Tab` for auto-completing.
 
 ![raw-math](docs/images/raw-math.gif)
 
 ### Useful shortcuts
+
+<center>
 
 |           Shortcut           | Function |
 | :--------------------------: | :------: |
@@ -45,3 +44,5 @@ See https://docs.qq.com/sheet/DTFJVWkJDbnRVYmtZ?tab=BB08J2
 | <kbd>Alt</kbd>+<kbd>P</kbd>, <kbd>B</kbd> | Itemized list|
 | <kbd>Alt</kbd>+<kbd>P</kbd>, <kbd>E</kbd> | Numbered list|
 | <kbd>Alt</kbd>+<kbd>A</kbd>, <kbd>L/C/R</kbd> | Align Left/Center/Right|
+
+</center>
