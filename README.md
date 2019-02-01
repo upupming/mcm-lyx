@@ -1,5 +1,8 @@
 # mcm-lyx
 
+![release](https://img.shields.io/github/release/upupming/mcm-lyx.svg?style=flat)
+![authors](https://img.shields.io/badge/Author-Yiming%20Li%2C%20Pinjun%20Zheng%2C%20Tanci%20Chen-orange.svg)
+
 LyX template for COMAP's Mathematical Contest in Modeling (MCM)
 
 ## Project structure
