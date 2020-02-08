@@ -14,12 +14,12 @@
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{Team \# 1911426} 
-\chead{} 
+\lhead{Team \# 2008005}
+\chead{}
 \rhead{page \thepage\ of \pageref{LastPage}}
-\cfoot{}                                                
-\rfoot{}                                                     
-\lfoot{}   
+\cfoot{}
+\rfoot{}
+\lfoot{}
 \usepackage{tocbibind}
 \end_preamble
 \use_default_options true

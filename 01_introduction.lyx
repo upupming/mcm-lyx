@@ -14,12 +14,12 @@
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{Team \# 1911426} 
-\chead{} 
+\lhead{Team \# 2008005}
+\chead{}
 \rhead{page \thepage\ of \pageref{LastPage}}
-\cfoot{}                                                
-\rfoot{}                                                     
-\lfoot{}   
+\cfoot{}
+\rfoot{}
+\lfoot{}
 \usepackage{tocbibind}
 \end_preamble
 \use_default_options true
@@ -103,20 +103,20 @@ Background
 \end_layout
 
 \begin_layout Standard
-In the famous fantasy drama television series 
+In the famous fantasy drama television series
 \shape italic
-Game of Thrones 
+Game of Thrones
 \shape default
 and its original novel series
 \shape italic
- A Song of Ice and Fire, Daenerys Targaryen 
+ A Song of Ice and Fire, Daenerys Targaryen
 \shape default
 is one of the most popular characters.
- 
+
 \shape italic
 The New York Times
 \shape default
- cites her as one of the author's finest creatures, named as 
+ cites her as one of the author's finest creatures, named as
 \begin_inset Quotes eld
 \end_inset
 
@@ -124,16 +124,16 @@ Mother of Dragons
 \begin_inset Quotes erd
 \end_inset
 
-, for she has three dragons: 
+, for she has three dragons:
 \shape italic
-Drogon, Rhaegal, 
+Drogon, Rhaegal,
 \shape default
 and
 \shape italic
  Viserion.
- 
+
 \shape default
-We appreciate 
+We appreciate
 \shape italic
 Daenerys Stormborn
 \shape default
@@ -221,7 +221,7 @@ The growth curve model is a model for studying the laws of a certain biological
  indicator's changes varying with time.
  So far, scientists have used nonlinear curves to fit the growth trajectory
  related to animals.
- In 1838, 
+ In 1838,
 \shape italic
 Verhulst
 \shape default
@@ -234,7 +234,7 @@ literal "false"
 \end_inset
 
 .
- In 1938, 
+ In 1938,
 \shape italic
 Von Bertalanffy
 \shape default
@@ -248,7 +248,7 @@ literal "false"
 \end_inset
 
 , and he applied this in the field of fish weight studies successfully.
- In 1959, 
+ In 1959,
 \shape italic
 F.J.
  Richards
@@ -267,7 +267,7 @@ literal "false"
 
 \begin_layout Standard
 Two general approaches have been in use to determine the distance to a specified
- level of heat flux hazard from fires 
+ level of heat flux hazard from fires
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C-raj-1977-calculations,C-raj-1979-experiments,C-considine1984thermal,C-moorehouse1982thermal,C-mcgrattan2000thermal"

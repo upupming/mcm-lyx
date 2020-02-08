@@ -8,10 +8,10 @@ LyX template for COMAP's Mathematical Contest in Modeling (MCM)
 ## Project structure
 
 - `_template.lyx`: A template with preset document properties. All of our new files should start here.
-- `1911426.lyx`: The main LyX file includes all other sub-documents. 1911426 is our team's control number. Feel free to rename it to your own control number.
+- `2008005.lyx`: The main LyX file includes all other sub-documents. 2008005 is our team's control number. Feel free to rename it to your own control number.
 - `01_first_page.lyx` The first page, including Title and Summary.
 - `02_...`
-- `...` Sub-documents, with a self-explained name. They are all included in `1911426.lyx`.
+- `...` Sub-documents, with a self-explained name. They are all included in `2008005.lyx`.
 - `10_appendices.lyx`
 
 ## Tips

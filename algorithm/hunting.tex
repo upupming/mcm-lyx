@@ -26,15 +26,15 @@
 % \begin{document}
 \begin{lstlisting}
 	# Name: Dragon Hunting Algorithm
-	# Author: Team 1911426 at MCM contest
+	# Author: Team 2008005 at MCM contest
 	# Time: 2019.1.28
-	
+
 	# ### Important ###
-	# Units for functions parameters and global variables standard: 
+	# Units for functions parameters and global variables standard:
 	# kg for weight, calories for energy, km for area,  days for time
-	
+
 	import numpy as np
-	
+
 	# ##### Begin Global variables #####
 	# Species names
 	SPECIES_NAME = [
@@ -66,28 +66,28 @@
 			[0, 0, 0],
 			[0, 0, 0]
 	]
-	
+
 	# The side length of the square area
 	SIDE_LENGTH = 10.0
 	# The area of the square area
 	AREA = SIDE_LENGTH ** 2
-	
+
 	# Times of hunting
 	HUNTIMG_TIMES = 0
-	
+
 	# Number of species
 	NUM_OF_SPECIES_PER_SPECIES = np.array(AREA * np.array(DENSITY), dtype=int)
 	NUM_OF_SPECIES = np.sum(NUM_OF_SPECIES_PER_SPECIES)
-	
+
 	# Species used in our
 	COW = SPECIES_NAME[0][0]
 	SHEEP = SPECIES_NAME[0][1]
 	# # Comment it out if you want to add more species
 	# HARE = SPECIES_NAME[0][2]
-	
+
 	# Time period of dragon hunting
 	DAYS = 2
-	
+
 	# The dragon's initial position in the area
 	DRAGON_POS = np.array([
 			[0],
@@ -95,14 +95,14 @@
 	])
 	# Not reachable area's position
 	NOT_REACHABLE = np.inf
-	
+
 	# Net energy percentage
 	NET_ENERGY_PERCENTAGE = 0.57
 	# eta, see the paper
 	ETA = 0.7
 	# ##### End Global variables #####
-	
-	
+
+
 	# ##### Begin Helper functions #####
 	def get_mu_and_weight_at(age):
 			"""
@@ -112,21 +112,21 @@
 			lam = 19.76261573148329
 			v = - 1/3
 			A = 281.6 * 1000
-	
+
 			from sympy import symbols, exp
-	
+
 			t = symbols('t')
-	
+
 			temp1 = (mu_m / A) * ((1+v) ** (1 + 1/v)) * (lam - t)
 			temp2 = exp(temp1)
 			temp3 = v * exp(1 + v) * temp2
 			temp4 = A * (1 + temp3)**(-1/v)
-	
+
 			y = temp4
 			y_derivative = y.diff(t)
-	
+
 			return (y_derivative.subs(t, age), y.subs(t, age))
-	
+
 	def find_nearest(array, value):
 			"""
 			Find the nearest element to `value`, return its index in `array`.
@@ -138,7 +138,7 @@
 					norm_array[i] = new_array[0][i] ** 2 + new_array[1][i] ** 2
 			idx = norm_array.argmin()
 			return idx
-	
+
 	def get_basic_metabolish_energy(weight):
 			"""
 			Calculate E_m.
@@ -167,7 +167,7 @@
 			coefficient_1 = rho_m + rho_b * (r_b ** 2) / (r_m ** 2)
 			coefficient_2 = (r_b ** 2) / (r_b ** 2 + r_m ** 2)
 			dS = dmd / coefficient_1 / coefficient_2
-	
+
 			E_p = 17130 * 1000 / 4.184
 			E_b = 0.1 * E_p
 			coefficient_3 = rho_m * (r_m ** 2) / (r_b ** 2 + r_m ** 2) * E_p
@@ -197,16 +197,16 @@
 			constant = 5
 			delta_T = 80 - 25
 			return c_p * m_p * constant * delta_T
-	
+
 	def get_reproduction_res(index, now, period):
 			"""
 			Index: 0-cattle,1-sheep,2-hare
 			period: in days
 			"""
 			per_day_animal = np.array([0.5, 4, 6]) / 365
-	
+
 			return int(now + now * per_day_animal[index] * period)
-	
+
 	def get_pos(idx):
 			accr = np.cumsum(NUM_OF_SPECIES_PER_SPECIES)
 			# Calculate species class from index in `total` (all the species)
@@ -219,7 +219,7 @@
 			y = index1 % 3
 			return (x, y)
 	# ##### End Helper functions #####
-	
+
 	def hunting_at_age(age):
 			"""
 			Main entraince of Dragon hunting algorithm.
@@ -227,16 +227,16 @@
 			global HUNTIMG_TIMES
 			print(f'############### Hunting times: {HUNTIMG_TIMES} at age {age} ###############')
 			HUNTIMG_TIMES += 1
-	
+
 			(mu, weight) = get_mu_and_weight_at(age)
-	
+
 			# Regenerate animals
 			global NUM_OF_SPECIES_PER_SPECIES
 			cow = np.random.rand(2, NUM_OF_SPECIES_PER_SPECIES[0][0]) * SIDE_LENGTH
 			sheep = np.random.rand(2, NUM_OF_SPECIES_PER_SPECIES[0][1]) * SIDE_LENGTH
 			# # Comment it out if you want to add more species
 			# hare = np.random.rand(2, NUM_OF_SPECIES_PER_SPECIES[0][2]) * SIDE_LENGTH
-	
+
 			# Recovery dragon hunting animals
 			total = np.append(cow, sheep, axis=1)
 			# # Comment it out if you want to add more species
@@ -245,10 +245,10 @@
 			#     hare,
 			#     axis=1
 			# )
-	
+
 			# Generate dragon
 			dragon_pos = DRAGON_POS
-	
+
 			energy_got = 0
 			base_consumption = get_basic_metabolish_energy(weight)
 			print('Base consumption:', base_consumption)
@@ -259,7 +259,7 @@
 			fly_consumption = 0
 			fire_cos = 0
 			energy_consumed = base_consumption + growth_consumption + hurt_consumption
-	 
+
 			# Begin iteration
 			iter_times = 0
 			hunted_number = 0
@@ -273,16 +273,16 @@
 					iter_times += 1
 					print('=======================')
 					print(f'Iteration: {iter_times}')
-	
+
 					idx = find_nearest(total, dragon_pos)
 					(x, y) = get_pos(idx)
-	
+
 					# ######### Begin hunting ##########
 					hunted_number += 1
 					hunted_each[x][y] += 1
-	
+
 					energy_got += ENERGY_PER_MASS[x][y] * MASS[x][y]
-	
+
 					temp_fire_energy = get_fire_energy(weight, x, y)
 					fire_cos += temp_fire_energy
 					energy_consumed += temp_fire_energy
@@ -290,15 +290,15 @@
 							weight, np.linalg.norm(dragon_pos-np.array([total[:,idx]]).T))
 					fly_consumption += temp_fly_energy
 					energy_consumed += temp_fly_energy
-	
+
 					print('Delta Energy this round: ',
 								ENERGY_PER_MASS[x][y] * MASS[x][y] - temp_fire_energy - temp_fly_energy)
-	
+
 					print(f'Nearest point {SPECIES_NAME[x][y]} at ({total[0][idx]}, {total[1][idx]}) hunted')
 					dragon_pos = np.array([total[:, idx]]).T
 					total[0][idx] = total[1][idx] = NOT_REACHABLE
 					# ######### End hunting ##########
-	
+
 					if energy_got * NET_ENERGY_PERCENTAGE * ETA >= energy_consumed:
 							print('Success got all energy')
 							print('Animals before:\n', NUM_OF_SPECIES_PER_SPECIES)
@@ -310,7 +310,7 @@
 									NUM_OF_SPECIES_PER_SPECIES[0][i] = get_reproduction_res(i, NUM_OF_SPECIES_PER_SPECIES[0][i], DAYS)
 							print('Animals after reproduction:\n', NUM_OF_SPECIES_PER_SPECIES)
 							NUM_OF_SPECIES = np.sum(NUM_OF_SPECIES_PER_SPECIES)
-	
+
 					else:
 							print('energy_got * NET_ENERGY_PERCENTAGE * ETA', energy_got * NET_ENERGY_PERCENTAGE * ETA)
 							print('energy_consumed:', energy_consumed)
@@ -318,11 +318,11 @@
 							print('Energy got:', energy_got)
 							print('Fire energy need:', temp_fire_energy)
 							print('Fly energy need:', temp_fly_energy)
-	
+
 			print(hunted_each)
 			print('################################################################')
 			return hunted_each
-	
+
 	if __name__ == "__main__":
 			hunting_at_age(100)
 \end{lstlisting}

@@ -113,7 +113,7 @@ figs-within-sections
 \begin_inset space \thinspace{}
 \end_inset
 
-For office use only 
+For office use only
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -213,7 +213,7 @@ For office use only
 \begin_inset space \thinspace{}
 \end_inset
 
- Team Control Number 
+ Team Control Number
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -483,7 +483,7 @@ T1
 \begin_inset space \thinspace{}
 \end_inset
 
- 
+
 \series bold
 \size larger
 \bar default
@@ -607,7 +607,7 @@ T1
 \begin_inset space \thinspace{}
 \end_inset
 
-1911426
+2008005
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -1039,7 +1039,7 @@ T2
 \begin_inset space \thinspace{}
 \end_inset
 
- 
+
 \series bold
 \size larger
 \bar default
@@ -1195,7 +1195,7 @@ T2
 \begin_inset space \thinspace{}
 \end_inset
 
- 
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -1671,7 +1671,7 @@ T3
 \begin_inset space \thinspace{}
 \end_inset
 
- 
+
 \series bold
 \size larger
 \bar default
@@ -2211,7 +2211,7 @@ T4
 \begin_inset space \thinspace{}
 \end_inset
 
- 
+
 \series bold
 \size larger
 \bar default
@@ -2710,23 +2710,23 @@ thispagestyle{empty}
 
 \series bold
 \size larger
-Fictional Dragons in Real World 
+Fictional Dragons in Real World
 \end_layout
 
 \begin_layout Abstract
 The dragon is a mysterious and formidable creature widely known by us.
- Three dragons appearing in 
+ Three dragons appearing in
 \shape italic
 Game of Thrones
 \shape default
- and 
+ and
 \shape italic
 A Song of Ice and Fire
 \shape default
  are particularly popular.
  Through our model, we can analyze the requirements for the dragon's living
  in details.
- 
+
 \end_layout
 
 \begin_layout Abstract
@@ -2736,21 +2736,21 @@ To determine the growth of the dragon, we suppose the dragon is geometrically
  varying with time.
  This curve could be divided into three parts, including the initial growth
  stage, the exponential growth stage, and the steady growth stage.
- The turning points to divide these three stages are at the age of 
+ The turning points to divide these three stages are at the age of
 \series bold
 19
 \series default
- and 
+ and
 \series bold
 131
 \series default
 .
- The fastest growing speed occurs when the dragon is 
+ The fastest growing speed occurs when the dragon is
 \series bold
-52 
+52
 \series default
 years old.
- 
+
 \series bold
 It takes 280 years for a dragon to reach the upper limit of weight, which
  is 281.6 tons.
@@ -2770,11 +2770,11 @@ To calculate the energy expenditure for the dragon, we suppose that the
 \series bold
  Since it is a coupled model, we create Dragon Hunting Algorithm to calculate
  the total energy expenditure.
- 
+
 \series default
 Finally, we estimate that how much area is required for the three dragons,
  and we use the method solving 'Cattle Grazing Problem' for reference..
- The results show that a mature dragon requires about 
+ The results show that a mature dragon requires about
 \series bold
 140,000 million calories
 \series default
@@ -2799,12 +2799,12 @@ After that, we build a model analyzing the manifestation of the dragon under
  The total energy expenditure and the preys' distribution will both be affected
  by this factor.
  We use the density data of sheep and cattle in Australia to simulate.
- Our results show that 
+ Our results show that
 \series bold
 the higher the temperature, the less energy the dragon consumed.
 
 \series default
- 
+
 \series bold
 The higher the humidity, the lower the energy the dragon needs.
 
@@ -2817,7 +2817,7 @@ At last, our model analyzes the interaction between the dragon and the environme
 nt.
  We simulate an ecosystem with three types of preys that differ in distribution
  density and meat energy.
- We draw a conclusion that 
+ We draw a conclusion that
 \series bold
 the dragon has a greater impact on the prey with high energy and dense distribut
 ion.
@@ -2933,14 +2933,14 @@ keywords}[1]
 
 \begin_layout Plain Layout
 
-	
+
 \backslash
 small
 \end_layout
 
 \begin_layout Plain Layout
 
-	
+
 \backslash
 quad
 \backslash
